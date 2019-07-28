@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test Js</title>
+</head>
+<body>
+
+<h1 id="title">Blackjack</h1>
+<p id="paragraph">Some text</p>
+<p style="display: none;" id="cart">0</p>
+<button id="ok-btn">OK</button>
+
+<script type="text/javascript" src="test.js"></script>
+</body>
+</html>
+
+<!-- Deals
+
+padding: 10px; */
+    /* border-bottom: 1px solid #ededed; */
+    background: linear-gradient(to bottom,#FF9800 0%,#FF5722 100%);
+    box-shadow: 0px 0px 6px rgba(32, 33, 36, 0.28);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    /* padding-left: 20px; */
+ -->
+
+<!-- web app manifest specs
+<link rel="manifest" href="/manifest.json" >
+
+window.addEventListener('beforeinstallprompt', evt = > {
+	evt.preventDdefault();
+	promptEvt =evt;
+	return false;
+	if (promptEvt !== undefined){
+	
+	promptEvt.prompt();
+	promptEvt.userChoice.then(choice = >{
+			console.log('User Choice', choice.outcome);
+	});
+	}
+
+	evt.UserChoice.then( choice = >{
+	var message = choice.outcoome =='dismissed'
+	? 'User cancelled'
+	: 'User installed';
+
+	console.log(message);
+	});
+});
+
+n.close()
+// PUSH NOTIFICATIONS
+//Notification granter check
+if (Notification.permission == 'granted'){
+showNotification();
+return;
+}
+
+if (Notification.permission !== 'denied'){
+Notification.request.Permission().then(p=>{
+		if (p === 'granted')showNotification();
+})
+}
+
+//Push content
+
+var n = new Notification('Title',
+{
+	body: 'body-text';
+	badge: /////,
+	icon: '////,
+	image: ////,
+	tag: '..',, // notifications with the same tag will be treated as one
+	renotify: true,
+	data: {}
+});
+
+
+//interactive push notification
+recquireInteraction: false,
+actions : [{
+	action : 'id',
+	title: '',
+	icon: '',
+	silent: true/false
+	sound:  /path/to/file,
+	vibrate: [200,100,200],
+	dir: 'ltr'
+	lang: 'en-US',
+	timestamp: Date.now()
+}],
+
+
+
+ -->

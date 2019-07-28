@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
+    />
+    <link rel="stylesheet" type="text/css" href="account.css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>My Account | Velocity Ghana</title>
+    <style>
+      .dashboard-row {
+        margin: auto;
+        max-width: 1184px;
+        padding-top: 32px;
+        display: flex;
+        padding-top: 65px;
+        padding-bottom: 32px;
+      }
+
+      .user-card {
+        padding: 8px;
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+        margin-bottom: 10px;
+      }
+      .dashboard-controls {
+        flex-basis: 25%;
+        max-width: 25%;
+        min-width: 25%;
+        padding-left: 8px;
+        padding-right: 8px;
+        width: 25%;
+      }
+
+      .controls-menu {
+        background-color: white;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+        /* height: 120px; .Temporary */
+      }
+
+      .dashboard-view {
+        flex-basis: 75%;
+        max-width: 75%;
+        min-width: 75%;
+        width: 75%;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      .view-container {
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+        background-color: white;
+        padding: 10px;
+      }
+
+      .control-item {
+        /* padding: 16px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        align-items: center;
+        font-weight: 500; */
+      }
+
+      .account-menu {
+        padding: 16px;
+        border-bottom: 1px solid #efebeb;
+      }
+
+      .menu-text {
+        text-transform: capitalize;
+        color: gray;
+        text-decoration: none;
+        margin-left: 10px;
+      }
+
+      .submenu {
+        display: grid;
+        margin-left: 10px;
+      }
+
+      .submenu > a:hover {
+        font-weight: 600;
+      }
+
+      .submenu-text {
+        text-decoration: none;
+        margin-bottom: 15px;
+        color: black;
+        /* text-align: center; */
+        margin-left: 20px;
+        font-family: Roboto-Regular;
+        font-weight: 400;
+      }
+
+      .heading {
+        display: flex;
+      }
+
+      .product-view {
+        /* padding: 16px; */
+        border: 1px solid #ece8e8;
+        margin-bottom: 5px;
+      }
+
+      .product-image {
+        width: 20%;
+      }
+
+      .order-image {
+        max-width: 100px;
+        max-height: 100px;
+      }
+
+      .right-content {
+        width: 80%;
+      }
+
+      .order-text-wrap {
+        display: flex;
+        padding: 5px;
+      }
+
+      .order-number {
+        padding: 6px;
+        color: white;
+        background: #ffb000;
+        font-family: Roboto-medium;
+      }
+
+      .order-details {
+        padding: 8px;
+        color: white;
+        background: lightgray;
+        font-family: Roboto-medium;
+        text-decoration: none;
+        margin-left: 600px;
+      }
+
+      p {
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-content">
+    <div class="vel-header">
+      <div class="head-wrapper">
+        <!-- Logo -->
+        <div class="logo" style="visibility:visible;justify-content: flex-end;">
+          <a
+            style="font-size: 0;"
+            href="#"
+            title="Velocity - Shop from the biggest selection for electronics , fashion more..."
+          >
+            <i class="fas fa-align-justify"></i>
+            <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />
+          </a>
+        </div>
+        <!-- Search -->
+        <div class="vel-search">
+          <!-- <form method="POST"> -->
+          <input
+            type="text"
+            class="keywords"
+            placeholder="Search Brands & Products"
+          />
+          <button class="searchgo" type="submit">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 17 18"
+              class=""
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#232f3e" fill-rule="evenodd">
+                <path
+                  class="search"
+                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
+                ></path>
+                <path
+                  class="srch"
+                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <!-- </form> -->
+        </div>
+        <!--Sidemenu-->
+        <div class="menu-wrap">
+          <div class="menu">
+            <li class="menu-item" style="list-style:none;">
+              <a href="#" style="margin-top:10px;font-weight: 600;">
+                <span class="below">
+                  Hello,User<svg
+                    width="4.7"
+                    height="8"
+                    viewBox="0 0 16 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="vel-down"
+                  >
+                    <path
+                      d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                      fill="#fff"
+                      class="_14jSvk"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+              <ul class="drop-menu">
+                <div class="pop-arrow"></div>
+                <li class="drop-menu-item">
+                  <a href=""> Your Account </a>
+                </li>
+                <li class="drop-menu-item">
+                  <a href=""> Your Orders </a>
+                </li>
+                <li class="drop-menu-item" style="display:flex;">
+                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                  <a href=""> Saved items </a>
+                </li>
+                <li class="drop-menu-item" style="display:flex;">
+                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                  <a href=""> Help Centre </a>
+                </li>
+
+                <li
+                  class="drop-menu-item"
+                  style=" margin-top: 10px;width:100%;margin-left:5px;"
+                >
+                  <button class="session" href="">Login</button>
+                </li>
+              </ul>
+            </li>
+          </div>
+
+          <!-- More -->
+
+          <div class="cart">
+            <a href="#" style="text-decoration:none;">
+              <span
+                class="m-right"
+                style="color:white;text-decoration:none;display:flex;"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill:white;"
+                >
+                  <path
+                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                  />
+                  <path d="M0 0h24v24H0z" fill="none" />
+                </svg>
+                <p
+                  style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;"
+                >
+                  Cart
+                </p>
+                <span class="counter">
+                  <p>2</p>
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dashboard-row">
+      <div class="dashboard-controls">
+        <div class="user-card">
+          <div class="avatar"></div>
+          <p style="margin: 0;">Hello User!....</p>
+        </div>
+
+        <div class="controls-menu">
+          <!-- <a class="control-item">Hello, User</a> -->
+          <div class="account-menu">
+            <div class="heading">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill:#232f3e;"
+              >
+                <path
+                  d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-5 3c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm4 8h-8v-1c0-1.33 2.67-2 4-2s4 .67 4 2v1z"
+                />
+                <path d="M0 0h24v24H0z" fill="none" />
+              </svg>
+              <a href="#" class="menu-text"
+                >MY ORDERS
+                <svg
+                  width="4.7"
+                  height="8"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="vel-down"
+                  style="transform: rotate(180deg);"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#232f3e"
+                    class="_14jSvk"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="account-menu">
+            <div class="heading">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: #232f3e;"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                ></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+              <p
+                class="menu-text"
+                style="margin-bottom: 15px;margin-left: 10px;margin-top: 5px;"
+              >
+                MY ACCOUNT
+              </p>
+            </div>
+            <div class="submenu">
+              <a href="#" class="submenu-text">Profile Details</a>
+              <a href="#" class="submenu-text">Manage Addresses</a>
+              <a href="#" class="submenu-text">Notification Preferences</a>
+            </div>
+          </div>
+
+          <div class="account-menu">
+            <div class="heading">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill:#232f3e;"
+              >
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"
+                />
+              </svg>
+              <p class="menu-text" style="margin-bottom:15px;">MY LISTS</p>
+            </div>
+            <div class="submenu">
+              <a href="#" class="submenu-text">My Revies</a>
+              <a href="#" class="submenu-text">My Wishlist</a>
+              <a href="#" class="submenu-text">My Notifications</a>
+            </div>
+          </div>
+          <div class="account-menu">
+            <a href="#" class="menu-text">HELP CENTER </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-view">
+        <div class="view-container">
+          <div class="product-view">
+            <div
+              class="order-header"
+              style="
+                padding: 10px;
+                background: #fbfbfb;
+                margin-bottom: 10px;
+                color: black;
+                border: 1px solid #ece8e878;
+                display: flex;
+            "
+            >
+              <p class="order-number" style="font-family: Roboto-Regular;">
+                Order #2019-2498219490
+              </p>
+              <a href="#" class="order-details">DETAILS</a>
+            </div>
+            <div class="order-text-wrap">
+              <div class="product-image">
+                <a href="#">
+                  <img src="stock/h2.jpg" alt="" class="order-image" />
+                </a>
+              </div>
+              <div class="right-content">
+                <p>Samsung Galaxy AKG Earphone - Black</p>
+                <p>Ordere</p>
+              </div>
+            </div>
+            <div
+              class="order-header"
+              style="padding: 10px;background: #fbfbfb;border-top: 1px solid #ece8e878;
+                            display: flex;"
+            >
+              <p style="font-family: Roboto-Regular;color:gray;">
+                Ordered on
+                <span
+                  style="margin-left:5px;font-family:Roboto-Medium;color:black;"
+                >
+                  27th January, 2019</span
+                >
+              </p>
+              <p style="float:right;margin-left:450px;">
+                Order Total: <strong>GHC 120.00</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--Footer-->
+    <footer class="foot-content">
+      <div class="footer-top">
+        <div class="col-1" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">About Us</div>
+          <a class="col-1-txt" href="#">About Us</a>
+          <a class="col-1-txt" href="#">Temrs & Conditions </a>
+          <a class="col-1-txt" href="#">Privacy Policy</a>
+          <a class="col-1-txt" href="#">Guidelines</a>
+        </div>
+
+        <div class="col-2" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            About
+          </div>
+          <a class="col-1-txt" href="#">Shipping </a>
+          <a class="col-1-txt" href="#">Payments</a>
+          <a class="col-1-txt" href="#">Security</a>
+          <a class="col-1-txt" href="#">Sitemap</a>
+        </div>
+
+        <div class="col-3" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            Help
+          </div>
+          <a class="col-1-txt" href="#">Payments</a>
+          <a class="col-1-txt" href="#"> Shipping</a>
+          <a class="col-1-txt" href="#">FAQ</a>
+          <a class="col-1-txt" href="#"></a>
+        </div>
+
+        <div class="col-4" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            Help
+          </div>
+          <a class="col-1-txt" href="#">Contact Us</a>
+          <a class="col-1-txt" href="#">Track Your Order</a>
+          <a class="col-1-txt" href="#">FAQ's</a>
+          <a class="col-1-txt" href="#">Return Policy</a>
+        </div>
+
+        <div class="col-5" style="display:grid;margin-right: 50px;">
+          <div class="col-heading">
+            Social
+          </div>
+          <a class="col-1-txt" href="#">Facebook</a>
+          <a class="col-1-txt" href="#">Instagram</a>
+          <a class="col-1-txt" href="#">Twitter</a>
+          <a class="col-1-txt" href="#">YouTube</a>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="footer-bottom">
+        <img  class="sprite" src="vel.png" style="max-width: 200px;max-height: 200px;"/>
+      </div>
+    </footer>
+  </div>
+    <!--Footer//-->
+
+
+
+
+    <!-- Mobile -->
+
+    <div class="mty-main">
+
+    <div class="mty-account-header">
+
+      <div class="account-header-card">
+
+          <span class="order-count">
+            <span class="number-lg"> 28 </br></span>
+            <p style="color: #9e9e9e;">Saved Items</p>
+          </span>
+
+          <span class="order-count">
+            <span class="number-lg"> 28 </br></span>
+            <p style="color: #9e9e9e;">Number of Orders</p>
+          </span>
+      </div>
+
+      <div class="mty-username">
+         <span class="mty-user">Desmond Nyamador</span>
+      </div>
+
+    </div>
+      
+
+
+      <!-- Grid -->
+    <div class="mty-dashboard-wrap">
+      <div class="mty-dashboard">
+        <div class="dashboard-col">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style="margin-right: 10px;">
+          <path fill="none" d="M0 0h24v24H0V0z"></path><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path>
+      </svg>
+          <span class="col-button">
+            My Wishlist
+          </span>
+          <span class="arrow">
+            <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="_14jSvk"></path></svg>            
+          </span>
+        </div>
+
+        <div class="dashboard-col">
+          <span class="col-button">
+            My Orders
+          </span>
+          <span class="arrow">
+            <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="_14jSvk"></path></svg>
+          </span>
+        </div>
+
+        <div class="dashboard-col">
+          <span class="col-button">
+            Notifications
+          </span>
+          <span class="arrow">
+            <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="_14jSvk"></path></svg>
+          </span>            
+          </span>
+        </div>
+
+        <div class="dashboard-col">
+          <span class="col-button">
+            Help
+          </span>          
+          <span class="arrow">
+            <svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_34Yjv1"><path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="black" class="_14jSvk"></path></svg>            
+          </span>
+        </div>
+      </div>
+    </div>
+
+      <!-- //grid -->
+
+      <!-- Nav bar -->
+        <div class="mty-nav-wrap">
+        <div class="mty-nav"> 
+
+
+         <span class="nav-icons">
+              <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3L2 12h3v8h6v-6h2v6h6v-8h3L12 3z"/></svg>
+            <a class="nav-title">Home</a>
+          </a>
+          </span> 
+
+          <span class="nav-icons">
+            <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.07 18.28c.43-.9 3.05-1.78 4.93-1.78s4.51.88 4.93 1.78C15.57 19.36 13.86 20 12 20s-3.57-.64-4.93-1.72zm11.29-1.45c-1.43-1.74-4.9-2.33-6.36-2.33s-4.93.59-6.36 2.33C4.62 15.49 4 13.82 4 12c0-4.41 3.59-8 8-8s8 3.59 8 8c0 1.82-.62 3.49-1.64 4.83zM12 6c-1.94 0-3.5 1.56-3.5 3.5S10.06 13 12 13s3.5-1.56 3.5-3.5S13.94 6 12 6zm0 5c-.83 0-1.5-.67-1.5-1.5S11.17 8 12 8s1.5.67 1.5 1.5S12.83 11 12 11z"/></svg>
+            <a class="nav-title">Account</a>
+          </a>
+          </span>
+
+          <span class="nav-icons">
+            <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"/></svg>
+            <a class="nav-title">Wishlist</a>
+          </a>
+          </span>
+
+          <span class="nav-icons">
+            <a href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z"/></svg>
+            <a class="nav-title">Help</a>
+          </a>
+          </span>
+
+        </div>
+    </div>
+      
+    </div>
+
+
+  </body>
+</html>

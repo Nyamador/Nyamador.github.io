@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Velocity Ghana | Electronics</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/regular.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css">
+
+
+
+    <style>
+
+        body{
+            font-size:14px;
+                background-color: #f1f3f6;
+    color: #212121;
+    line-height: 1.4;
+        }
+        .velp-header{
+            background-color: #222f3e;
+    box-shadow: 0 7px 7px 0 rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 56px;
+        }
+    .content{
+        display: flex;
+        flex-flow:row;
+    margin: 0 auto;
+    min-width: 978px;
+    max-width: 1680px;
+    padding: 8px;
+    }
+
+    .left-bar-wrap{
+        display:flex;
+        flex-flow:column;
+    flex: 0 0 280px;
+    max-width: 280px;
+    padding: 0px 10px 0px 0px;
+    }
+
+    .left-container{
+            position: relative;
+            max-width:280px;
+            min-height: 420px;
+    background: #fff;
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.06);
+    }
+
+    .left-header-wrap{
+        padding-bottom:12px;
+    }
+
+    .text{
+        text-transform: capitalize;
+        border-bottom: 1px solid #f0f0f0;
+        font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    display: inline-block
+
+    }
+
+    .text > span{
+        
+    }
+
+    h1{
+        margin:0;font-weight: 500;
+    font-size: 16px;
+    margin-top: 8px;
+    display: inline-block;
+    }
+    .crumbs{
+        font-size: 12px;
+    margin:0;
+    padding:0;
+    }
+
+    .crumbtxt{
+        text-decoration: none; 
+        
+    color: #878787; 
+          max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+    }
+
+    .products-flex{
+        display: block;
+        padding-top:8px;
+    }
+
+    .flex-grid{
+        display:flex;
+        align-items: stretch;
+    background: #fff;
+    background-color: #fff
+    }
+.product-single>img{
+    width: 210px;
+}
+    .product-single:hover{
+        background-color:white;
+        box-shadow:0 3px 16px 0 rgba(0,0,0,.11);
+    }
+
+    
+ 
+    </style>
+</head>
+<body>
+    <div class="velp-header">
+        <div class="head-wrapper">
+            <!-- Logo -->
+            <div class="logo" style="visibility:visible;">
+                <a href="#" style="font-size:0;"
+                    title="Velocity - Shop from the biggest selection for electronics , fashion more...">
+                    <i class="fas fa-bars"></i>
+                    <ul class="drop-menu">
+                        <div class="pop-arrow" style="left:15%;"></div>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <i class="fas fa-user-tie fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Men <i
+                                    class="fas fa-angle-right"></i></a>
+                        </li>
+                        <!-- <ul class="drop-menu-cat" style="display:none;">
+                  <li class="drop-menu-item-cat" style="padding-left:8px;height:29px;">
+                    <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;">plplplplplpl Men
+                     </a>
+                  </li>
+                  <li class="drop-menu-item-cat" style="padding-left:8px;height:29px;">
+                  <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;">plplplplplpl Men
+                  </a>
+                  </li>
+                </ul> -->
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <i class="fas fa-female fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Women <i
+                                    class="fas fa-angle-right"></i> </a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-baby fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;">Baby & Kids <i
+                                    class="fas fa-angle-right"></i> </a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-tv fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Electronics
+                                <i class="fas fa-angle-right"></i></a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-mobile-alt fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Phones &
+                                Tablets <i class="fas fa-angle-right"></i></a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-laptop fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Computing <i
+                                    class="fas fa-angle-right"></i></i></a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-couch fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Home &
+                                Furniture <i class="fas fa-angle-right"></i></i></a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-book fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Sports &
+                                Books <i class="fas fa-angle-right"></i></i></a>
+                        </li>
+                        <li class="drop-menu-item" style="padding-left:8px;height:29px;">
+                            <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                            <i class="fas fa-gamepad fa-lg"></i>
+                            <a href="" style="text-decoration:none;text-transform: uppercase;font-size:11px;"> Gaming <i
+                                    class="fas fa-angle-right"></i></i></a>
+                        </li>
+                    </ul>
+                    <img src="vel_logo.png" alt="Velocity Ghana" />
+                </a>
+            </div>
+            <!-- Search -->
+            <div class="vel-search">
+                <!-- <form method="POST"> -->
+                <input type="text" class="keywords" placeholder="Search Brands & Products" />
+                <button class="searchgo" type="submit">
+                    <svg width="20" height="20" viewBox="0 0 17 18" class="" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#222f3e" fill-rule="evenodd">
+                            <path class="search"
+                                d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                            </path>
+                            <path class="srch"
+                                d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+                <!-- </form> -->
+            </div>
+            <!--Sidemenu-->
+            <div class="menu-wrap">
+                <div class="menu">
+                    <li class="menu-item">
+                        <a href="" class=dropper>
+                            <span class="below" style="font-weight:300;font-size:13px;">Hello, User<i
+                                    class="fas fa-angle-down" id="mdrop"></i></span>
+                        </a>
+                        <ul class="drop-menu">
+                            <div class="pop-arrow"></div>
+                            <li class="drop-menu-item">
+                                <a href=""> Account </a>
+                            </li>
+                            <li class="drop-menu-item">
+                                <a href=""> Your Orders </a>
+                            </li>
+                            <li class="drop-menu-item" style="display:flex;">
+                                <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                                <a href=""> Your List </a>
+                            </li>
+                            <li class="drop-menu-item" style="display:flex;">
+                                <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                                <a href=""> Help Centre </a>
+                            </li>
+    
+                            <li class="drop-menu-item" style=" margin-top: 10px;width:100%;">
+                                <button class="session" href="">Login</button>
+                            </li>
+    
+                        </ul>
+    
+                    </li>
+                </div>
+                <div class="navcover"></div>
+                <!-- More -->
+                <div class="more">
+                    <a href="">
+                        <span class="m-center" style="font-weight:500;font-size:14px;">More<i class="fas fa-angle-down"
+                                id="mdrop"></i></span>
+                    </a>
+                </div>
+    
+                <div class="cart">
+                    <a href="">
+                        <span class="m-right" style="color:white;text-decoration:none;">
+                            <i class="fas fa-shopping-cart" id="mdcart" style="margin-top: 15px;text-decoration:none;"></i>
+                            Cart
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Main content-->
+<div class="content">
+<!-- Left bar -->
+<div class="left-bar-wrap">
+<div class="left-container">
+<section class="left-header-wrap">
+        <div class="text"><span>Filters</span></div>  
+</section>
+</div>
+</div>
+<!-- Left Bar -->
+
+
+
+
+<!--Right-->
+<div class="prduct-grid-wrap" style="background-color:white;min-height:200px;width:100%;display: block;">
+<div class="right-top" style="background-color:white;border-bottom: 1px solid #f0f0f0;padding:12px 16px 0;height:100%;max-height:95px;">
+    
+
+    <div class="crumbs" >
+        <div class="crumba">
+            <a class="crumbtxt" href="#" style="">Home</a>
+            <svg width="16" height="27" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="_2XP0B_">
+                <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_24NaUy"></path>
+            </svg>
+        </div>
+    </div>
+
+
+<h1 style="
+    margin-top: 8px;display: inline-block;">Mobile Phones</h1>
+    <span style="margin-left: 10px;color: #878787;"> ( 2,000 results found ) </span>
+
+<div class="sort" style="display:flex;">
+    <span style="border-bottom: 2px solid transparent;
+    display: inline-block;padding: 8px 10px 4px 0;"> Sort By </span>
+        <div class="sort-filter" style="display:flex;align-content:center;">
+       
+            <div class="sort1" style="    color: #2874f0;
+    cursor: default;padding:8px  0 4px;
+        margin: 0 10px;
+    border-bottom: 2px solid #2874f0;
+    font-weight: 500;">Price -- Low to High</div>
+    </div>
+
+    <div class="sort-filter" style="align-content:center;">
+       
+        <div class="sort1" style="padding:8px  0 4px;
+        margin: 0 10px;
+        cursor: pointer;">Price -- High to Low</div>
+    </div>
+
+    <div class="sort-filter" style="align-content:center;">
+       
+        <div class="sort1" style="padding:8px  0 4px;
+            margin: 0 10px;
+            cursor: pointer;">Best Rating</div>
+    </div>
+    </div>
+    </div>
+
+    <!--Products Flex-->
+    <div class="products-flex" style="display:flex;flex-flow: column;flex-grow: 1;overflow: auto;">
+<div class="flex-grid">
+<div class="product-single" style="width: 25%;height:100%;">
+<div class="image-container" style="max-width: 210px;max-height:210px;">
+    <img src="stock/1.jpg" >
+</div>
+    <div class="product-bottom" style="padding: 5px 16px 8px;">
+<div class="manufacturer" style="font-weight: 700;font-size:14px;color:#878787;">Xiaomi</div>
+<a class="product-id" href="#" style="display: inline-block;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;text-decoration: none;color:black;
+    padding: 0;">REDMI GO BLUE 32GB ININININI</a>
+    <div style="display: inline-block;">
+        <img class="promo-img" height="18" src="stock/as.png">
+    </div>
+<button class="buybtn" style="display: none;">BUY NOW</button>
+</div>
+</div>
+
+<div class="product-single" style="width: 25%;height:100%;">
+
+    <img src="stock/1.jpg">
+    <div class="product-bottom" style="padding: 5px 16px 8px;">
+        <div class="manufacturer" style="font-weight: 700;font-size:14px;color:#878787;">Xiaomi</div>
+        <a class="product-id" href="#" style="display: inline-block;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;text-decoration: none;color:black;
+    padding: 0;">REDMI GO BLUE 32GB ININININI</a>
+        <div style="display: inline-block;">
+            <img class="promo-img" height="18" src="stock/as.png">
+        </div>
+        <button class="buybtn" style="display: none;">BUY NOW</button>
+    </div>
+</div>
+
+<div class="product-single" style="width: 25%;height:100%;">
+
+    <img src="stock/1.jpg" >
+    <div class="product-bottom" style="padding: 5px 16px 8px;">
+        <div class="manufacturer" style="font-weight: 700;font-size:14px;color:#878787;">Xiaomi</div>
+        <a class="product-id" href="#" style="display: inline-block;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;text-decoration: none;color:black;
+    padding: 0;">REDMI GO BLUE 32GB ININININI</a>
+        <div style="display: inline-block;">
+            <img class="promo-img" height="18" src="stock/as.png">
+        </div>
+        <button class="buybtn" style="display: none;">BUY NOW</button>
+    </div>
+</div>
+
+<div class="product-single" style="width: 25%;height:100%;">
+
+    <img src="stock/1.jpg">
+    <div class="product-bottom" style="padding: 5px 16px 8px;">
+        <div class="manufacturer" style="font-weight: 700;font-size:14px;color:#878787;">Xiaomi</div>
+        <a class="product-id" href="#" style="display: inline-block;
+    width: calc(100% - 80px);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;text-decoration: none;color:black;
+    padding: 0;">REDMI GO BLUE 32GB ININININI</a>
+        <div style="display: inline-block;">
+            <img class="promo-img" height="18" src="stock/as.png">
+        </div>
+        <button class="buybtn" style="display: none;">BUY NOW</button>
+    </div>
+</div>
+</div>
+
+
+
+
+
+    </div>
+    <!--Products Flex-->
+
+</div>
+</div>
+    <!--Main content-->
+
+</body>
+</html>

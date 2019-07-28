@@ -1,0 +1,412 @@
+.searchgo{
+    padding:0;
+}
+.rate-bar{
+    height: 5px;
+    border-radius: 100px;
+    background-color: #f0f0f0;
+    position: relative;
+    width: 58%;
+    margin-top:8px;
+}
+
+.rev-container{
+    padding:16px;
+    border:1px solid #f0f0f0;
+    border-bottom: none;
+}
+
+.rev-container:last-child{
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.stars{
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+    width: 30%;    
+}
+
+.key-features{
+    padding: 24px 30px 24px 24px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.14;    
+}
+
+.spec-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.spec-td-wrap{
+    border-top: 1px solid #f0f0f0;
+    padding: 24px 24px 34px;
+    font-size: 14px;
+}
+
+.spec-td{
+    padding-bottom: 16px;   
+}
+
+.spec-t{
+    color: #878787;
+    padding-right: 8px;
+}
+
+.spec-d{
+
+}
+
+.rate-fill{
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+}
+
+.review-title{
+    font-weight: 600;
+    font-family: Arial;
+}
+
+.review-date{
+    color: gray;
+    margin-left: 10px;
+}
+
+.author{
+    margin-top:15px;
+    float:right;
+    font-size: 12px;
+}
+
+.thumb-item{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.thumb-item:last-child{
+    border-bottom: 1px solid;
+}
+
+
+.sku-flex{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    position: relative;
+}
+.sku-description{
+/*    margin-top: 24px;
+    border-radius: 2px 2px 0 0;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    padding: 24px;
+    color: #212121;*/
+    margin-top: 24px;
+    border-radius: 2px;
+    font-size: 12px;
+    border: 1px solid #f0f0f0;
+
+}
+
+.description-heading{
+    padding: 24px 30px 24px 24px;
+    font-size: 24px;
+    font-weight: 500;   
+    line-height: 1.14;
+    color: #212121;      
+}
+
+
+
+
+
+
+/*===================================*/
+/*Mobile*/
+/*===================================*/
+
+
+/*.mty-main{
+    background: white;
+}*/
+.-white{
+    background-color: white;
+}
+
+.mty-header-wrap{
+	position: unset;
+}
+
+.average-rating{
+    font-weight:600;
+    font-family: Arial;
+    font-size: 60px;
+}
+.mty-draggable-container{
+	border-bottom: 1px solid #e2e2e2;
+	clear: both;
+    /*margin: 0 auto 6px;*/
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: white;
+    padding: 20px;
+}
+
+
+.mty-draggable-wrap{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: -ms-flexbox;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+    transition-duration: 0ms;
+    transform: translate3d(0px, 0px, 0px);    
+}
+
+
+.pimage{
+	    min-height: 240px;
+}
+.mty-draggable-item{
+    width: 411px;
+        -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+/*        position: absolute;*/
+    top: 0;
+    float: left;
+}
+
+.drag-image{
+	    display: block!important;
+    margin: 0 auto;vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    transform: translate3d(0,0,0);
+}
+.mty-image-paginator{
+	position: absolute;
+    bottom: 8px;
+    width: auto;
+    right: 8px;
+    padding: 5px 9px;
+    border-radius: 2px;
+    background: #fff;
+}
+
+.mty-pag-on{
+	font-weight: 500;
+	color: #282828;
+}
+
+.mty-pag-total{
+	    color: #8d8d92;
+}
+
+
+.pricing-box{
+	padding: 16px;
+}
+
+.name-container{
+	position: relative;
+    margin-top: 10px;
+}
+
+.manufacturer{
+	    position: absolute;
+    top: -16px;
+    padding-right: 10px;
+}
+
+.mty-product-title{
+line-height: 20px;
+    font-size: 14px;
+    color: #212121;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.btn-primary{
+    background: #0cc568;
+    background: -moz-linear-gradient(top,rgb(255, 176, 0) 0%,rgb(248, 144, 41) 100%);
+    background: -webkit-linear-gradient(top,rgb(255, 176, 0) 0%,rgb(248, 144, 41) 100%);
+    background: linear-gradient(to bottom,rgb(255, 176, 0) 0%,rgb(248, 144, 41) 100%);
+    color: #FFFFFF!important;
+    border-radius: 5px;
+    padding:  10px;
+    -webkit-box-shadow: 0px 10px 25px 0px rgba(0,0,0,.25);
+    -moz-box-shadow: 0px 10px 25px 0px rgba(0,0,0,.25);
+    box-shadow: 0px 10px 25px 0px rgba(0,0,0,.25);
+    border: none;
+    outline: none;  
+}
+
+.mstar{
+    font-size: 16px;
+}
+
+.main-price{
+    font-size: 1.25rem;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.sale-price{
+    text-decoration: line-through;
+    /*font-family: Roboto, Arial, sans-serif;    */
+}
+
+
+.mty-promo{
+    padding: 12px;
+    padding-top: 0;
+}
+
+.promo-wrap{
+    background: #ededed;
+    padding: 8px;
+}
+.promo-img{
+    max-width: 70px;
+}
+
+.promo-description{
+    margin-top: 4px !important; 
+    font-size: 12px;    
+}
+
+.mty-card{
+    padding: 5px;
+    margin-top: 10px;
+    border-bottom: 1px solid gainsboro;    
+}
+
+
+.mty-cart-buy{
+    padding: 8px 8px 0 8px;
+}
+
+.cart-mty{
+    background-color: white;
+    color: #ff6500;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.mty-buy{
+    text-transform: uppercase;
+    padding: 16px 16px;
+    font: Roboto,Helvetica,Arial,sans-serif;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;    
+}
+
+.rra{
+    color: gray;
+    padding: 10px;
+}
+
+.rcontent{
+    padding:8px; 
+}
+
+.mty-review-card{
+    border-top: 1px solid gainsboro;
+}
+
+.mty-review-card-wrap{
+    padding:12px;
+}
+
+.mty-rev-user{
+    margin-bottom: 10px;
+}
+.mty-rev-user > p {
+    margin-right: 10px;
+}
+
+.mty-review-star{
+    margin-right: 10px;
+    color: green;
+}
+
+.mty-review-wrap{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.no-review{
+    display: grid;
+}
+
+.nosvg{
+    margin: auto;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

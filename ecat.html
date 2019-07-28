@@ -1,0 +1,1716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/fontawesome.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Electronics | Velocity Ghana</title>
+    <style>
+      .velp-header {
+        /* background: -webkit-linear-gradient(left, #ff5e00, #f9d423);
+        background: -o-linear-gradient(left, #ff5e00, #f9d423);
+        background: -moz-linear-gradient(left, #ff5e00, #f9d423);
+        background: linear-gradient(left, #ff5e00, #f9d423); */
+        background: #041e42;
+        box-shadow: 0 7px 7px 0 rgba(41, 41, 41, 0.26);
+        width: 100%;
+        height: 46px;
+        box-shadow: 0 2px 4px 0 rgba(168, 168, 168, 0.23);
+      }
+
+      .category-container {
+        max-width: 1680px;
+        margin: auto;
+      }
+
+      .sortation {
+        background-color: white;
+        display: flex;
+        padding: 10px;
+        border-bottom: 1px solid #f5f6f7;
+      }
+
+      .cat-counter {
+        margin-left: 10px;
+      }
+
+      .filter-tab {
+        background-color: white;
+        border-right: 1px solid #b0b1b147;
+        width: 20%;
+        /* margin-right: 20px; */
+      }
+
+      .category-flex {
+        display: flex;
+      }
+
+      .products-grid {
+        background-color: white; 
+        width: 100%;
+        margin-top:1px solid #e6e7e8;
+      }
+
+      .right-drop {
+        display: flex;
+        margin-left: 950px;
+      }
+
+      .department-title{
+          font-weight: 600;
+          font-size: 13px;
+          color: black;
+      }
+      .department-filter {
+        padding: 16px;
+        margin-bottom: 1px solid gray;
+      }
+      .department-list {
+        list-style: none;
+        text-decoration: none;
+        padding: 0;
+        font-size: 13px;
+      }
+
+      .quantity{
+          border: none;
+      }
+
+      .vel-subcategory > a {
+        text-decoration: none;
+        color: grey;
+        margin-left: 5px;
+        line-height: 1.5 !important;
+      }
+
+      .arrow {
+        transform: rotate(180deg);
+    
+      }
+      
+      .p-row{
+          display: flex;
+      }
+      .product-card{
+          text-align: left;
+          padding: 16px 10px;
+          width: 20%;
+      }
+
+
+      .product-image-view{
+        text-align: center;
+      }
+      
+      .product-image{
+          max-width: 200px;
+          max-height: 200px;
+      }
+      
+      .product-title{
+          color: #000;
+          font-size:13px;
+          text-decoration: none;
+          white-space: normal;
+          font-family: Poppins-Regular;
+          font-weight: 500;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          line-height: 17px;
+      }
+
+      .price-block{
+          display:flex;
+      }
+
+      .price-block > p{
+        white-space: nowrap;
+      }
+
+      .divider{
+          border-top:1px solid rgb(236, 236, 236);
+          padding:0;
+          margin: 4px 0;
+        padding: 4px;
+      }
+
+      .manufacturer{
+        margin:0;
+        line-height: 15px;
+        color: #666666;
+        font-size: 11px;
+        font-weight: 400;
+        
+      }
+
+      .promo-img{
+          height: 18px;
+      }
+
+      .product-grid{
+        width: 80%;
+      }
+
+      .product-card:hover {
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+      }
+      .rating{
+    margin-left: 30px;
+      }
+
+      .vel-down{
+        transform: rotate(270deg);
+    margin-left: 10px;
+      }
+
+
+.accordion {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 13px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Poppins-Regular;
+  transition: 0.4s;
+  border-top:1px solid #f0f0f0;
+}
+
+/* .active, .accordion:hover {
+  background-color: white; 
+  color: gray;
+} */
+
+.panel {
+  padding: 0 10px 10px 10px;
+  /* display: none; */
+  background-color: white;
+  overflow: hidden;
+}
+
+
+      .accordion:before{
+        content: '+';
+        font-size: 13px;
+        color: black;
+        float: right;
+        margin-left: 9px;
+      }
+
+     .active:after{
+  content:"-";
+}
+     
+
+      #brand-input {
+    border-width: 0 0 0.5px;
+    height: 20px;
+    font-size: 14px;
+    color: #878787;
+    outline: none;
+}
+
+#vel-Ul {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#vel-Ul li a {
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  padding: 2px;
+  overflow: hidden;
+}
+
+#vel-Ul li:hover{
+  background: #eee;
+}
+
+
+
+
+
+
+
+/* Customize the label (the container) */
+.check-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 5px;
+}
+
+/* Hide the browser's default checkbox */
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.check {
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+    border: 1.4px solid #a3a3a3;
+}
+
+
+ .check-brand{
+    color: #8e8e8e;
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* On mouse-over, add a grey background color */
+.check-container:hover input ~ .check {
+  background-color: white;
+}
+
+/* When the checkbox is checked, add a blue background */
+.check-container input:checked ~ .check {
+  background-color: #ff6a04;
+  border: 1px solid #ff6a04;
+}
+
+/* Create the check/indicator (hidden when not checked) */
+.check:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the check when checked */
+.check-container input:checked ~ .check:after {
+  display: block;
+}
+
+/* Style the check/indicator */
+.check-container .check:after {
+    left: 3px;
+    width: 4px;
+    height: 6px;
+    border: solid #ffffff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.pagination{
+  border-top:1px solid #e0e0e0;
+  margin-top: 10px;
+}
+
+.feedback{
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+
+.feedback>p{
+  margin-right:16px
+}
+.feedback-response{
+  border-radius: 2px;
+    border: 1px solid #d7d7d7;
+    padding: 6px 20px;
+    margin-right: 8px;
+    font-weight: 500;
+    background-color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination-item {
+  display: inline-block;
+  margin-top: -35px;
+}
+
+.pagination-item a {
+    color: black;
+    float: left;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+}
+
+.pagination-item a.activated {
+  background-color: #ff6a04;
+  color: white;
+  border: 1px solid #ff6a04;
+}
+
+
+
+.pagination-item a:hover:not(.activated) {background-color: #ddd;}
+
+.m-right{
+  margin-top: -2px;
+}
+
+.below{
+  color: white;
+}
+
+  .new>p{
+    margin: 0;
+    font-family: Roboto-Regular;
+    font-size: 10px;
+    position: absolute;
+    z-index: 9;
+    background: #c5c4c4;
+    padding: 2px;
+    width: 30px;
+    padding-left: 10px;
+    color: white;
+}
+
+.trending>p{
+    margin: 0;
+    font-family: Roboto-Regular;
+    font-size: 8px;
+    position: absolute;
+    z-index: 9;
+    background: green;
+    padding: 3px;
+    width: 50px;
+    font-weight: 100;
+    font-size: 10px;
+    padding-left: 5px;
+    color: white;
+}
+/* 
+.brands-search{
+  margin-bottom: 10px;
+} */
+    </style>
+  </head>
+
+  <body>
+    <div class="velp-header">
+      <div class="head-wrapper">
+        <!-- Logo -->
+        <div class="logo" style="visibility:visible;justify-content: flex-end;">
+          <a
+            style="font-size: 0;"
+            href="#"
+            title="Velocity - Shop from the biggest selection for electronics , fashion more..."
+          >
+            <i class="fas fa-align-justify"></i>
+            <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />
+          </a>
+        </div>
+        <!-- Search -->
+        <div class="vel-search">
+          <!-- <form method="POST"> -->
+         
+          <input
+            type="text"
+            class="keywords"
+            placeholder="Search Brands & Products"
+          />
+          <button class="searchgo" type="submit">
+         
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 17 18"
+              class=""
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="#232f3e" fill-rule="evenodd">
+                <path
+                  class="search"
+                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
+                ></path>
+                <path
+                  class="srch"
+                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <!-- </form> -->
+        </div>
+        <!--Sidemenu-->
+        <div class="menu-wrap">
+          <div class="menu">
+            <li class="menu-item" style="list-style:none;">
+              <a href="#" style="margin-top:10px;font-weight: 600;">
+                <span class="below">
+                  Hello,User<svg width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="vel-down">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#fff" class="_14jSvk"></path>
+                  </svg>
+                </span>
+              </a>
+              <ul class="drop-menu">
+                <div class="pop-arrow"></div>
+                <li class="drop-menu-item">
+                  <a href=""> Your Account </a>
+                </li>
+                <li class="drop-menu-item">
+                  <a href=""> Your Orders </a>
+                </li>
+                <li class="drop-menu-item" style="display:flex;">
+                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                  <a href=""> Saved items </a>
+                </li>
+                <li class="drop-menu-item" style="display:flex;">
+                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                  <a href=""> Help Centre </a>
+                </li>
+
+                <li
+                  class="drop-menu-item"
+                  style=" margin-top: 10px;width:100%;"
+                >
+                  <button class="session" href="">Login</button>
+                </li>
+              </ul>
+            </li>
+          </div>
+
+          <!-- More -->
+
+          <div class="cart" style="margin-top: 17px;margin-left:20px;">
+          <a href="#" style="text-decoration:none;">
+            <span class="m-right" style="color:white;text-decoration:none;display:flex;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:white;">
+                <path
+                  d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                <path d="M0 0h24v24H0z" fill="none" />
+              </svg>
+              <p style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;">
+                Cart
+              </p>
+              <span class="counter">
+                <p>2</p>
+              </span>
+            </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="category-container">
+      <div class="sortation">
+        <div class="cat-counter">
+          <p style="margin:0;">269 products found</p>
+        </div>
+        <div class="right-drop">
+          <p style="margin:0;margin-right:10px;">Sort by |</p>
+          <select class="quantity">
+            <option value="1">Price -- Low to High</option>
+            <option value="1">Price -- High to Low</option>
+            <option value="1">Best Rating</option>
+            <option value="1">Latest</option>
+          </select>
+        </div>
+        <div class="Sort-dropdown"></div>
+      </div>
+
+      <div class="category-flex">
+        <div class="filter-tab">
+          <!-- Departments -->
+          <div class="department-filter">
+            <div class="department-title">Electronics</div>
+            <ul class="department-list">
+              <li class="vel-subcategory" title="Accessories & Suplies">
+                <svg
+                  width="10"
+                  height="10"
+                  viewBox="0 0 16 27"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="arrow"
+                >
+                  <path
+                    d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                    fill="#878787"
+                    class="zTtNVt"
+                  ></path>
+                </svg>
+                <a href="">Accessories & Suplies</a>
+              </li>
+              <li class="vel-subcategory" title="Camera & Photo">
+                <svg width="10" height="10" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="zTtNVt">
+                    </svg>
+                <a href="">Camera & Photo</a>
+              </li>
+            <li class="vel-subcategory" title="Camera & Photo">
+                <svg width="10" height="10" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="zTtNVt">
+                </svg>
+                <a href="">Camera & Photo</a>
+            </li>
+            <li class="vel-subcategory" title="Home Audio">
+                <svg width="10" height="10" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="zTtNVt">
+                </svg>
+                <a href="">Home Audio</a>
+            </li>
+            <li class="vel-subcategory" title="Wearable Technology">
+                <svg width="10" height="10" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="zTtNVt">
+                </svg>
+                <a href="">Wearable Technology</a>
+            </li>
+            <li class="vel-subcategory" title="Audio">
+                <svg width="10" height="10" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="arrow">
+                    <path d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z" fill="#878787" class="zTtNVt">
+                </svg>
+                <a href="">Audio</a>
+            </li>
+              
+            </ul>
+          </div>
+          <button class="accordion">Brand</button>
+          <div class="panel">
+            <div class="brands-search">
+              <svg width="12" height="12" viewBox="0 0 17 18" class="_2oWmkA" xmlns="http://www.w3.org/2000/svg"><g fill="#878787" fill-rule="evenodd"><path class="_2Re8ik" d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path><path class="_2Re8ik" d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path></g></svg>
+            <input type="text" id="brand-input" onkeyup="filtersearch()" placeholder="Search Brands..">
+            </div>
+            <ul id="vel-Ul">
+
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Apple</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Samsung</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Xiaomi</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Huawei</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Honor</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                <input type="checkbox" class="brand_filter" >
+                <p class="check-brand">Infinix</p>
+              <span class="check"></span>
+              </label>
+              </a></li>
+
+             
+            </ul>
+          </div>
+             
+
+          <button class="accordion">Average Rating</button>
+          <div class="panel">
+            <ul id="vel-Ul" style="margin: 0;padding: 0; list-style: none;">
+                <!-- Manufacturer -->
+                <li><a><label class="check-container">
+                      <input type="checkbox" class="brand_filter">
+                      <p class="check-brand">5 ★ Rating & above </p>
+                      <span class="check"></span>
+                    </label>
+                  </a></li>
+
+
+                  <li><a><label class="check-container">
+                        <input type="checkbox" class="brand_filter">
+                        <p class="check-brand">4 ★ Rating & above</p>
+                        <span class="check"></span>
+                      </label>
+                    </a></li>
+
+                    <li><a><label class="check-container">
+                          <input type="checkbox" class="brand_filter">
+                          <p class="check-brand">3 ★ Rating & above</p>
+                          <span class="check"></span>
+                        </label>
+                      </a></li>
+
+
+                       <li><a><label class="check-container">
+                        <input type="checkbox" class="brand_filter">
+                        <p class="check-brand">2 ★ Rating & above</p>
+                        <span class="check"></span>
+                      </label>
+                    </a></li>
+
+
+                    <li><a><label class="check-container">
+                          <input type="checkbox" class="brand_filter">
+                          <p class="check-brand">1 ★ Rating & above</p>
+                          <span class="check"></span>
+                        </label>
+                      </a></li>
+            </ul>
+          </div>
+
+          <button class="accordion">Discount</button>
+          <div class="panel">
+            <ul id="vel-Ul" style="margin: 0;padding: 0; list-style: none;">
+              <!-- Manufacturer -->
+              <li><a><label class="check-container">
+                    <input type="checkbox" class="brand_filter">
+                    <p class="check-brand">80% Off or More</p>
+                    <span class="check"></span>
+                  </label>
+                </a></li>
+          
+          
+              <li><a><label class="check-container">
+                    <input type="checkbox" class="brand_filter">
+                    <p class="check-brand">70% Off or More</p>
+                    <span class="check"></span>
+                  </label>
+                </a></li>
+          
+              <li><a><label class="check-container">
+                    <input type="checkbox" class="brand_filter">
+                    <p class="check-brand">50% Off or More</p>
+                    <span class="check"></span>
+                  </label>
+                </a></li>
+          
+          
+              <li><a><label class="check-container">
+                    <input type="checkbox" class="brand_filter">
+                    <p class="check-brand">20% Off or More</p>
+                    <span class="check"></span>
+                  </label>
+                </a></li>
+          
+          
+              <li><a><label class="check-container">
+                    <input type="checkbox" class="brand_filter">
+                    <p class="check-brand">10% Off or More</p>
+                    <span class="check"></span>
+                  </label>
+                </a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        
+
+        
+       
+
+
+       
+        <div class="products-grid">
+            <div class="p-row">
+            <div class="product-card">
+              <div class="new">
+                <p>NEW</p>
+              </div>
+                <div class="product-image-view">
+                    <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>           
+                </div>
+                <a href="#" class="product-title">
+                    <p class="manufacturer">Apple</p>
+                    <div class="divider"></div>
+                    <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+                </a>
+                <div class="price-block"> 
+                 <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+                <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵ 290.00 </p>
+                <div class="rating">
+                    <p style="margin-top:0;">4.4</p> 
+                    <span>★</span>
+                </div>
+                </div>
+                <div class="promo-image">
+                    <image class="promo-img" src="stock/as.png">
+
+                        
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-view">
+                    <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+                </div>
+                <a href="#" class="product-title">
+                    <p class="manufacturer">Apple</p>
+                    <div class="divider"></div>
+                    <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+                </a>
+                <div class="price-block">
+                    <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+                    <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                        290.00 </p>
+                    <div class="rating">
+                        <p style="margin-top:0;">4.4</p> 
+                        <span>★</span>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <image class="promo-img" src="stock/as.png">
+            
+            
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-view">
+                    <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+                </div>
+                <a href="#" class="product-title">
+                    <p class="manufacturer">Apple</p>
+                    <div class="divider"></div>
+                    <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+                </a>
+                <div class="price-block">
+                    <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+                    <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                        290.00 </p>
+                    <div class="rating">
+                        <p style="margin-top:0;">4.4</p> 
+                        <span>★</span>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <image class="promo-img" src="stock/as.png">
+            
+            
+                </div>
+            </div>
+
+            <div class="product-card">
+              <div class="trending">
+                <p >TRENDING</p>
+              </div>
+                <div class="product-image-view">
+                    <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+                </div>
+                <a href="#" class="product-title">
+                    <p class="manufacturer">Apple</p>
+                    <div class="divider"></div>
+                    <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+                </a>
+                <div class="price-block">
+                    <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+                    <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                        290.00 </p>
+                    <div class="rating">
+                        <p style="margin-top:0;">4.4</p> 
+                        <span>★</span>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <image class="promo-img" src="stock/as.png">
+            
+            
+                </div>
+            </div>
+
+            <div class="product-card">
+              <div class="trending">
+                <p>TRENDING</p>
+              </div>
+                <div class="product-image-view">
+                    <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+                </div>
+                <a href="#" class="product-title">
+                    <p class="manufacturer">Apple</p>
+                    <div class="divider"></div>
+                    <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+                </a>
+                <div class="price-block">
+                    <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+                    <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                        290.00 </p>
+                    <div class="rating">
+                        <p style="margin-top:0;">4.4</p> 
+                        <span>★</span>
+                    </div>
+                </div>
+                <div class="promo-image">
+                    <image class="promo-img" src="stock/as.png">
+            
+            
+                </div>
+            </div>
+
+        
+        </div> 
+
+
+
+        <div class="p-row">
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="new">
+            <p>NEW</p></div>
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+        
+        </div>
+
+        <div class="p-row">
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+        
+        </div>
+
+        <div class="p-row">
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+        
+        </div>
+
+        <div class="p-row">
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;ont-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+        
+        </div>
+
+
+        <div class="p-row">
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad3.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipadd.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad3.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+          <div class="product-card">
+            <div class="product-image-view">
+              <a href="#"><img class="product-image" alt="Apple ipad (Latest Model)- 32GB" src="stock/ipad2.jpeg"></a>
+            </div>
+            <a href="#" class="product-title">
+              <p class="manufacturer">Apple</p>
+              <div class="divider"></div>
+              <span>Apple iPad (Latest Model) 32GB Wi-Fi - Space Gray</span>
+            </a>
+            <div class="price-block">
+              <p style="font-weight:600;font-size:14px;margin-right:5px;">GH₵ 200.00 </p>
+              <p style="text-decoration:line-through;color:gray;font-weight:400;font-size:10px;margin:0;margin-top:15px;">GH₵
+                290.00 </p>
+              <div class="rating">
+                <p style="margin-top:0;">4.4</p> 
+                <span>★</span>
+              </div>
+            </div>
+            <div class="promo-image">
+              <image class="promo-img" src="stock/as.png">
+        
+        
+            </div>
+          </div>
+        
+        
+        </div>
+<div class="pagination" style="background-color:white;padding:10px;">
+  <p style="margin:0;">Page 1 of 200 </p>
+  
+<div class="center">
+  <div class="pagination-item">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="activated">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+  </div>
+</div>
+</div>
+
+
+       </div>
+
+
+
+       
+      
+    </div>
+    <div class="feedback">
+      <p> Did you find what you were looking for?</p>
+      <button class="feedback-response">
+        YES
+      </button>
+    
+      <button class="feedback-response">
+        NO
+      </button>
+    </div>
+    <!-- Main content -->
+
+    <footer class="foot-content">
+      <div class="footer-top">
+        <div class="col-1" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">About Us</div>
+          <a class="col-1-txt" href="#">About Us</a>
+          <a class="col-1-txt" href="#">Temrs & Conditions </a>
+          <a class="col-1-txt" href="#">Privacy Policy</a>
+          <a class="col-1-txt" href="#">Guidelines</a>
+        </div>
+
+        <div class="col-2" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            About
+          </div>
+          <a class="col-1-txt" href="#">Shipping </a>
+          <a class="col-1-txt" href="#">Payments</a>
+          <a class="col-1-txt" href="#">Security</a>
+          <a class="col-1-txt" href="#">Sitemap</a>
+        </div>
+
+        <div class="col-3" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            Help
+          </div>
+          <a class="col-1-txt" href="#">Payments</a>
+          <a class="col-1-txt" href="#"> Shipping</a>
+          <a class="col-1-txt" href="#">FAQ</a>
+          <a class="col-1-txt" href="#"></a>
+        </div>
+
+        <div class="col-4" style="display:grid;margin-right: 150px;">
+          <div class="col-heading">
+            Help
+          </div>
+          <a class="col-1-txt" href="#">Contact Us</a>
+          <a class="col-1-txt" href="#">Track Your Order</a>
+          <a class="col-1-txt" href="#">FAQ's</a>
+          <a class="col-1-txt" href="#">Return Policy</a>
+        </div>
+
+        <div class="col-5" style="display:grid;margin-right: 50px;">
+          <div class="col-heading">
+            Social
+          </div>
+          <a class="col-1-txt" href="#">Facebook</a>
+          <a class="col-1-txt" href="#">Instagram</a>
+          <a class="col-1-txt" href="#">Twitter</a>
+          <a class="col-1-txt" href="#">YouTube</a>
+        </div>
+      </div>
+
+      <div
+        class="line"
+        style="
+        padding: 0;
+        border-top: 1px solid gray;
+        height: 0;
+    "
+      ></div>
+
+      <div
+        class="footer-bottom"
+        style="
+        margin: auto;
+    "
+      >
+        <img
+          class="sprite"
+          src="vel.png"
+          style="
+        max-width: 200px;
+        max-height: 200px;
+        /* margin: 0 auto; */
+    "
+        />
+      </div>
+    </footer>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("activated");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "none") {
+            panel.style.display = "block";
+          } else {
+            panel.style.display = "none";
+          }
+        });
+      }
+
+
+      //Search prediction
+    function filtersearch() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('brand-input');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("vel-Ul");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+          a = li[i].getElementsByTagName("a")[0];
+          txtValue = a.textContent || a.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+          } else {
+            li[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

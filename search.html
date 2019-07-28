@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/reset-min.css" integrity="sha256-t2ATOGCtAIZNnzER679jwcFcKYfLlw01gli6F6oszk8=" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+
+
+
+	<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.33.0/dist/algoliasearchLite.min.js" integrity="sha256-3Laj91VXexjTlFLgL8+vvIq27laXdRmFIcO2miulgEs=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.4.0/dist/instantsearch.production.min.js" integrity="sha256-pM0n88cBFRHpSn0N26ETsQdwpA7WAXJDvkHeCLh3ujI=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+	const searchClient = algoliasearch('6K3XZMP72U', '473819a80c16a7dd5c128eaaed1e71e2');
+
+const search = instantsearch({
+  indexName: 'demo_ecommerce',
+  searchClient,
+});
+
+search.addWidget(
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+  })
+);
+
+search.addWidget(
+  instantsearch.widgets.hits({
+    container: '#hits',
+  })
+);
+
+search.start();
+</script>
+</body>
+</html>

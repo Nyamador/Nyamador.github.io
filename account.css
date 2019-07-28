@@ -1,0 +1,79 @@
+@media only screen and (max-width: 590px){
+
+.mty-nav-wrap{
+	position: fixed;
+}
+
+.mty-account-header{
+	background-color: #041e42 ;
+	height: 150px;
+	display: flex;
+	flex-flow: column-reverse;
+}
+
+.account-header-card{
+	width: 90%;
+	background-color: white;
+	box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
+	margin: 0 auto;
+	margin-bottom: -40px;
+	border-radius: 2px;
+	display: flex;
+	padding: 10px;
+	border: 1px solid #ededed;;
+}
+
+.order-count{
+	width: 50%;
+	text-align: center;
+}
+
+
+.mty-username{
+	margin-bottom: 35px;
+    padding-left: 20px;
+}
+
+.mty-user{
+	font-weight: 700;
+    color: white;
+    font-size: 25px;
+}
+
+.number-lg{
+	font-size: 25px;
+}
+
+
+
+.mty-dashboard-wrap{
+	padding: 10px;
+	    position: relative;
+    top: 60px;
+}
+
+.mty-dashboard{
+	background-color: white;
+	box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
+	border-radius: 8px;
+	border: 1px solid #ededed;
+}
+
+.dashboard-col{
+	padding: 12px;
+	border-bottom: 1px solid #ededed;
+	display: flex;
+}
+
+.col-button{
+	width: 99%;
+}
+
+.arrow{
+	    float: right;
+    transform: rotate(180deg);
+}
+
+
+/**/
+}

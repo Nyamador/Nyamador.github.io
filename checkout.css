@@ -1,0 +1,228 @@
+@media only screen and (max-width: 590px){
+.mty-checkout-header{
+	background-color: #041e42;
+	height: 120px;
+/*	box-shadow: 0px 0px 6px rgba(32, 33, 36, 0.28);*/
+	padding:10px;
+}
+
+.mty-reverse{
+/*	padding: 10px;*/
+	font-size: 18px;
+}
+
+.mty-checkout-timeline{
+	margin-top: 20px;
+}
+
+.timeline-line{
+	background-color: #ffffff;
+	height: 4px;
+    width: 80%;
+    margin: auto;
+}
+
+.dot-contain{
+    width: 28%;
+   /* margin-left: 50px;*/
+}
+
+.timeline-shipping{
+	border-radius: 50%;
+	background-color: orange;
+	width: 15px;
+	height: 15px;
+	margin-top:-10px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 6px rgba(32, 33, 36, 0.28);
+}
+
+.timeline-fill{
+	width: 38%;
+    background: orange;
+    height: 4px;
+    position: fixed;
+}
+
+.timeline-payment{
+	border-radius: 50%;
+/*	background-color: green;*/
+	width: 15px;
+	height: 15px;
+	margin-top:-10px;
+	border: 2px solid white;
+/*	background-color: #ff9f00;*/
+	box-shadow: 0px 0px 6px rgb(0, 0, 0);
+}
+
+.timeline-confirmation{
+	border-radius: 50%;
+	background-color: green;
+	width: 15px;
+	height: 15px;
+	margin-top:-10px;
+	border: 2px solid white;
+	background-color: #ff9f00;	
+	box-shadow: 0px 0px 6px rgba(32, 33, 36, 0.28);
+}
+
+.address-confirmation{
+	margin-top: 15px;
+	padding: 15px;
+	background-color: white;
+}
+
+
+.mty-address-grid{
+	background-color: white;
+	border-top: 1px solid #f5f5f5;
+	box-shadow: 0px 10px 25px 0px rgba(154, 154, 154, 0.25)l
+}
+
+.address-header{
+	padding:12px;
+	border-bottom:1px solid #ededed;
+}
+
+.address-details{
+	border-top: 1px solid #f5f5f5;
+}
+
+.content{
+	padding:15px;
+	border-bottom:1px solid #ededed;
+}
+
+.change-address{
+	float: right;
+	text-decoration: none;
+	color: #ff6500;
+}
+
+.content-title{
+
+}
+
+.content{
+	background-color: white;
+}
+
+.content-detail{
+	color: #aaaaaa;
+	display: block;
+}
+
+.mty-cta{
+	background-color: white;
+	padding: 10px;
+	margin-top: 10px;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.mty-main-button{
+	margin-top: 10px; 	
+	padding: 12px;
+	border:none;
+	background-color: #ffb000;
+	color: white;
+	width: 99%;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15)
+	border-radius: 5px;
+}
+
+.summary{
+	display: flex;
+	padding: 10px;
+	width: 100%;
+}
+
+.summary-main{
+	margin:0;
+	width: 50%;
+	text-align:left;
+	margin-left: 10px;
+}
+
+.summary-price{
+	margin: 0;
+	text-align:right;
+	width: 50%;
+	margin-right: 10px;
+}
+
+/*toggle switch*/
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 22px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ffb000;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/**/
+}
+
+
+@media  only screen and (min-width: 600px){
+	.mty-main{
+		display: none;
+	}
+}
