@@ -6,7 +6,8 @@
     <title>
       Velocity Ghana | Shopping Cart
     </title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="stylesheet" type="text/css" href="cart.css">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -188,134 +189,139 @@
 
   <body>
     <!--Header Section Start-->
-       <div class="vel-header">
-      <div class="head-wrapper">
-        <!-- Logo -->
-        <div class="logo" style="visibility:visible;justify-content: flex-end;">
-          <a
-            style="font-size: 0;"
-            href="#"
-            title="Velocity - Shop from the biggest selection for electronics , fashion more..."
+    <div class="head">
+      <div class="vel-header">
+        <div class="head-wrapper">
+          <!-- Logo -->
+          <div
+            class="logo"
+            style="visibility:visible;justify-content: flex-end;"
           >
-            <i class="fas fa-align-justify"></i>
-            <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />
-          </a>
-        </div>
-        <!-- Search -->
-        <div class="vel-search">
-          <!-- <form method="POST"> -->
-          <input
-            type="text"
-            class="keywords"
-            placeholder="Search Brands & Products"
-          />
-          <button class="searchgo" type="submit">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 17 18"
-              class=""
-              xmlns="http://www.w3.org/2000/svg"
+            <a
+              style="font-size: 0;"
+              href="#"
+              title="Velocity - Shop from the biggest selection for electronics , fashion more..."
             >
-              <g fill="#f7c721" fill-rule="evenodd">
-                <path
-                  class="search"
-                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
-                ></path>
-                <path
-                  class="srch"
-                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"
-                ></path>
-              </g>
-            </svg>
-          </button>
-          <!-- </form> -->
-        </div>
-        <!--Sidemenu-->
-        <div class="menu-wrap">
-          <div class="menu">
-            <li class="menu-item" style="list-style:none;">
-              <a href="#" style="margin-top:10px;font-weight: 600;">
-                <span class="below">
-                  Hello,User<svg
-                    width="4.7"
-                    height="8"
-                    viewBox="0 0 16 27"
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="vel-down"
-                  >
-                    <path
-                      d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
-                      fill="#fff"
-                      class="_14jSvk"
-                    ></path>
-                  </svg>
-                </span>
-              </a>
-              <ul class="drop-menu">
-                <div class="pop-arrow"></div>
-                <li class="drop-menu-item">
-                  <a href=""> Your Account </a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href=""> Your Orders </a>
-                </li>
-                <li class="drop-menu-item" style="display:flex;">
-                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
-                  <a href=""> Saved items </a>
-                </li>
-                <li class="drop-menu-item" style="display:flex;">
-                  <!-- <i class="material-icons blue">playlist_add_check</i> -->
-                  <a href=""> Help Centre </a>
-                </li>
-
-                <li
-                  class="drop-menu-item"
-                  style=" margin-top: 10px;width:100%;margin-left:5px;"
-                >
-                  <button class="session" href="">Login</button>
-                </li>
-              </ul>
-            </li>
-          </div>
-
-          <!-- More -->
-
-          <div class="cart">
-            <a href="#" style="text-decoration:none;">
-              <span
-                class="m-right"
-                style="color:white;text-decoration:none;display:flex;"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill:white;"
-                >
-                  <path
-                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                  />
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
-                <p
-                  style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;"
-                >
-                  Cart
-                </p>
-                <span class="counter">
-                  <p>2</p>
-                </span>
-              </span>
+              <i class="fas fa-align-justify"></i>
+              <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />
             </a>
           </div>
+          <!-- Search -->
+          <div class="vel-search">
+            <!-- <form method="POST"> -->
+
+            <input
+              type="search"
+              class="keywords"
+              placeholder="Search Brands &amp; Products"
+            />
+            <button class="searchgo" type="submit">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 17 18"
+                class=""
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="#232f3e" fill-rule="evenodd">
+                  <path
+                    class="search"
+                    d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"
+                  ></path>
+                  <path
+                    class="srch"
+                    d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"
+                  ></path>
+                </g>
+              </svg>
+            </button>
+            <!-- </form> -->
+          </div>
+          <!--Sidemenu-->
+          <div class="menu-wrap">
+            <div class="menu">
+              <li class="menu-item" style="list-style:none;">
+                <a href="#" style="margin-top:10px;font-weight: 600;">
+                  <span class="below">
+                    Hello,User<svg
+                      width="4.7"
+                      height="8"
+                      viewBox="0 0 16 27"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="vel-down"
+                    >
+                      <path
+                        d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
+                        fill="#fff"
+                        class="_14jSvk"
+                      ></path>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="drop-menu">
+                  <div class="pop-arrow"></div>
+                  <li class="drop-menu-item">
+                    <a href=""> Your Account </a>
+                  </li>
+                  <li class="drop-menu-item">
+                    <a href=""> Your Orders </a>
+                  </li>
+                  <li class="drop-menu-item" style="display:flex;">
+                    <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                    <a href=""> Saved items </a>
+                  </li>
+                  <li class="drop-menu-item" style="display:flex;">
+                    <!-- <i class="material-icons blue">playlist_add_check</i> -->
+                    <a href=""> Help Centre </a>
+                  </li>
+
+                  <li
+                    class="drop-menu-item"
+                    style=" margin-top: 10px;width:100%;"
+                  >
+                    <button class="session" href="">Login</button>
+                  </li>
+                </ul>
+              </li>
+            </div>
+
+            <!-- More -->
+
+            <div class="cart" style="margin-top: 17px;margin-left:20px;">
+              <a href="#" style="text-decoration:none;">
+                <span
+                  class="m-right"
+                  style="color:white;text-decoration:none;display:flex;"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill:white;"
+                  >
+                    <path
+                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                    ></path>
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                  </svg>
+                  <p
+                    style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;"
+                  >
+                    Cart
+                  </p>
+                  <span class="counter">
+                    <p>2</p>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
+      </div>  
     </div>
-
     <!-- .Header Section End -->
-
+  <div class="main-content">
     <div class="cart-container">
        
       <div class="rtl-grid">
@@ -430,6 +436,26 @@
       </div>
 
     </div>
+  </div>
+</div>
+
+
+
+
+<!-- 
+==================
+Mobile
+===================
+ -->
+<div class="mty-main">
+
+  <header class="half-header">   
+    <div class="mty-nav-bar">
+      
+    </div>
+  </header>
+  
+</div>
 
 
   </body>

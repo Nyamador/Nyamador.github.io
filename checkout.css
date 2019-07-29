@@ -29,7 +29,7 @@
 
 .timeline-shipping{
 	border-radius: 50%;
-	background-color: orange;
+	background-color: #00d061;
 	width: 15px;
 	height: 15px;
 	margin-top:-10px;
@@ -39,7 +39,7 @@
 
 .timeline-fill{
 	width: 38%;
-    background: orange;
+    background: #00d061;
     height: 4px;
     position: fixed;
 }
@@ -96,7 +96,7 @@
 .change-address{
 	float: right;
 	text-decoration: none;
-	color: #ff6500;
+	color: #00d061;
 }
 
 .content-title{
@@ -125,7 +125,7 @@
 	margin-top: 10px; 	
 	padding: 12px;
 	border:none;
-	background-color: #ffb000;
+	background-color: #00d061;
 	color: white;
 	width: 99%;
 	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15)
@@ -194,7 +194,7 @@
 }
 
 input:checked + .slider {
-  background-color: #ffb000;
+  background-color: #00d061;
 }
 
 input:focus + .slider {
