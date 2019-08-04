@@ -1,13 +1,3 @@
-/*
-* slideshow.js v1.2.1
-* last updated: 12.02.2018
-* https://github.com/smohadjer/jquery.slideshow
-* Copyright Saeid Mohadjer
-* Released under the MIT license
-*/
-
-//https://gist.github.com/2375726
-//http://blog.safaribooksonline.com/2012/04/18/mapping-mouse-events-and-touch-events-onto-a-single-event/
 (function(){TouchMouseEvent={DOWN:"touchmousedown",UP:"touchmouseup",MOVE:"touchmousemove"};var e=function(e){var t;switch(e.type){case"mousedown":t=TouchMouseEvent.DOWN;break;case"mouseup":t=TouchMouseEvent.UP;break;case"mousemove":t=TouchMouseEvent.MOVE;break;default:return}var r=n(t,e,e.pageX,e.pageY);$(e.target).trigger(r)};var t=function(e){var t;switch(e.type){case"touchstart":t=TouchMouseEvent.DOWN;break;case"touchend":t=TouchMouseEvent.UP;break;case"touchmove":t=TouchMouseEvent.MOVE;break;default:return}var r=e.originalEvent.touches[0];var i;if(t==TouchMouseEvent.UP)i=n(t,e,null,null);else i=n(t,e,r.pageX,r.pageY);$(e.target).trigger(i)};var n=function(e,t,n,r){return $.Event(e,{pageX:n,pageY:r,originalEvent:t})};var r=$(document);if("ontouchstart"in window){r.on("touchstart",t);r.on("touchmove",t);r.on("touchend",t)}else{r.on("mousedown",e);r.on("mouseup",e);r.on("mousemove",e)}})()
 
 function Slideshow(slideshow_options) {
@@ -15,7 +5,7 @@ function Slideshow(slideshow_options) {
 	var settings = {
 		align: 'left',
 		mode: 'default', //thumb_nails
-		autoplay: false,
+		autoplay: true,
 		autoplay_start_delay : 0,
 		callback: null,
 		displayTime: 3000,
