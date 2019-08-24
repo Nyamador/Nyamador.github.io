@@ -842,7 +842,7 @@ max-width: 1480px;
 }
 .text-heading {
   border-radius: 4px 4px 0 0;
-  padding: 15px 20px;
+  padding: 8px;
 /*  display: flex;*/
   /*border-bottom: 1px solid rgba(0,0,0,.1);*/
   color: white;
