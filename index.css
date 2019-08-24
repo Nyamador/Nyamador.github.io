@@ -185,6 +185,10 @@ tbody{
   color: gray;
 }
 
+.primary-bg{
+  background: #00d061;
+}
+
 .row{
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -233,6 +237,19 @@ tbody{
     width: 110px; 
 }
 
+.is-not-auth{
+  padding: 6px;
+}
+
+.is-not-auth-btn{
+    padding: 6px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 90px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
 
 .cat-name:hover 
 .drop-menu{
@@ -599,9 +616,8 @@ max-width: 1480px;
 }
 /* Search */
 .vel-search {
-  min-width: 450px;
+  /*min-width: 450px;*/
   margin-top: 5px;
-  margin-right: 20px;
   display: flex;
 }
 
@@ -610,7 +626,7 @@ max-width: 1480px;
   height: 35px;
   max-width: 400px;
   border-right: none;
-  border-radius: 2px 0 0 2px;
+  border-radius: 5px 0 0 5px;
   outline: none;
   color: black;
   padding: 0 16px;
@@ -624,7 +640,7 @@ max-width: 1480px;
   height: 35px;
   border: none;
   background: white;
-  border-radius: 0 2px 2px 0;
+  border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
   box-shadow: 0 2px 0 rgba(50, 48, 48, 0.17);
@@ -641,10 +657,10 @@ max-width: 1480px;
 /* Menu items */
 .counter {
   line-height: 1.1em;
-  background: #ff6a04;
+  background: #00d061;
   border-radius: 50%;
   position: absolute;
-  top: 6px;
+  top: 2px;
   margin-left: 10px;
   color: #fff;
   min-width: 18px;
@@ -683,9 +699,6 @@ max-width: 1480px;
 .drop-menu-item > .session {
   border: none;
   background-color: gray;
-  /*  background: linear-gradient(to bottom,rgb(255, 176, 0) 0%,rgb(255, 127, 0) 100%);
-  background:-webkit-linear-gradient(top,rgb(255, 176, 0) 0%,rgb(255, 127, 0) 100%);*/
-  /* background: linear-gradient(to bottom, #f7dfa5, #ffa800); */
   padding: 8px;
   text-transform: uppercase;
   width: 100px;
@@ -742,9 +755,8 @@ max-width: 1480px;
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.74);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
   min-width: 140px;
-  padding-top: 7px;
   padding-bottom: 7px;
 }
 
@@ -754,9 +766,8 @@ max-width: 1480px;
 }
 
 .drop-menu-item:last-child{
-    margin-top: 10px;
     width: 100%;
-    border-top: 1px solid #cdcaca;
+    border-top: 2px solid #ededed;
     padding-top: 10px;
     text-align: center;  
 }
@@ -830,7 +841,6 @@ max-width: 1480px;
     padding: 20px 0 15px 0;
 }
 .text-heading {
-  background-color: white;
   border-radius: 4px 4px 0 0;
   padding: 15px 20px;
 /*  display: flex;*/
@@ -859,54 +869,26 @@ max-width: 1480px;
   margin-bottom: 20px;
 }
 
-.text-heading {
-  background: linear-gradient(to right,rgb(129, 88, 246) 0%,rgb(99, 205, 253) 100%);
-}
 
-.g1{
-  background:linear-gradient(to left,#f7971e 0%,#ffd200 100%);
-}
-.g2{
-  background:linear-gradient(to right,#41295a 0%,#2f0743 100%);
-}
-
-.g3{
-  background: linear-gradient(to right,rgb(255, 101, 0) 0%,rgb(255, 176, 0) 100%);
-}
-
-.g4{
-  background: linear-gradient(to right,#8e2de2 , #4a00e0 100%);
-}
-
-.g5{
-  background: linear-gradient(to right,#ff00cc , #333399 100%);
-}
-
-
-.static-button{
+.view-all{
   float: right;
   margin-top: -32px;
 }
 
-.static-cta{
+.vty-cta-text{
     display: inline-block;
-    border-radius: 2px;
-    color: #212121;
     padding: 10px 20px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     transition: box-shadow .2s ease;
     vertical-align: super;
-    background: #fff;
     cursor: pointer;
     outline: none;
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
     border: 1px solid #e0e0e0;
-    background: #ff6500;
     color: #fff;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
     border: none;
 }
+
 .static-grid-wrap2{
   display: flex;
   border-radius: 0 0 4px 4px;
@@ -985,8 +967,11 @@ max-width: 1480px;
 }
 
 .know_img > img {
-  max-width: 185px;
-  max-height: 185px;
+  /*max-width: 185px;*/
+  /*max-height: 185px;*/
+  height: auto;
+  max-width: 100%;
+
 }
 
 /* .Footer */
@@ -1498,170 +1483,6 @@ width: 100%;
 
 
 
-
-/*
-
-   <div class="vel-header">
-      <div class="head-wrapper">
-        <!-- Logo -->
-        <div class="logo" style="visibility:visible;justify-content: flex-end;">
-          <a
-            style="font-size: 0;"
-            href="#"
-            title="Velocity - Shop from the biggest selection for electronics , fashion more..."
-          >
-            <i class="fas fa-align-justify"></i>
-            <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />
-          </a>
-        </div>
-        <!-- Search -->
-        <div class="vel-search">
-          <!-- <form method="POST"> -->
-          <input
-            type="text"
-            class="keywords"
-            placeholder="Search Brands & Products"
-          />
-          <button class="searchgo" type="submit">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 17 18"
-              class=""
-              xmlns="http://www.w3.org/2000/svg">
-              <g fill="#232f3e" fill-rule="evenodd">
-                <path
-                  class="search"
-                  d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"></path>
-                <path
-                  class="srch"
-                  d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"></path>
-              </g>
-            </svg>
-          </button>
-          <!-- </form> -->
-        </div>
-        <!--Sidemenu-->
-        <!-- <div class="menu-wrap"> -->
-         <!--  <div class="menu">
-            <li class="menu-item" style="list-style:none;">
-              <a href="#" style="margin-top:5px;font-weight: 600;">
-                <span class="below">
-                  Hello,User
-                  <svg   width="4.7" height="8" viewBox="0 0 16 27" xmlns="http://www.w3.org/2000/svg" class="vel-down">
-                    <path
-                      d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"
-                      fill="#fff"
-                      class="_14jSvk"
-                    ></path>
-                  </svg>
-                </span>
-              </a>
-              <ul class="drop-menu">
-                <div class="pop-arrow"></div>
-                <li class="drop-menu-item">
-                  <a href=""> Your Account </a>
-                </li>
-                <li class="drop-menu-item">
-                  <a href=""> Your Orders </a>
-                </li>
-                <li class="drop-menu-item" style="display:flex;">
-                  <a href=""> Saved items </a>
-                </li>
-                <li class="drop-menu-item" style="display:flex;">
-                  <a href=""> Help Centre </a>
-                </li>
-
-                <li
-                  class="drop-menu-item"
-                  style=" margin-top: 10px;width:100%;margin-left:5px;"
-                >
-                  <button class="session" href="">Login</button>
-                </li>
-              </ul>
-            </li>
-          </div> -->
-
-          <!-- More -->
-
-       <!--    <div class="cart">
-            <a href="#" style="text-decoration:none;">
-              <span
-                class="m-right"
-                style="color:white;text-decoration:none;display:flex;"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill:white;"
-                >
-                  <path
-                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
-                  />
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
-                <p
-                  style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;"
-                >
-                  Cart
-                </p>
-                <span class="counter">
-                  <p>2</p>
-                </span>
-              </span>
-            </a>
-          </div> -->
-        <!-- </div> -->
-        <div class="belt">
-          <a href="">
-            <img src="strip.jpg">
-          </a>
-        </div>
-
-
-
-      </div>
-
-      <div class="vel-bottom">
-        <div class="vb-wrap">
-          <div class="left-belt">
-                      <span class="below">Today's deals</span>
-          </div>
-          <div class="middle-belt">
-          </div>
-      <div class="right-belt">
-        <div class="rb-wrap">
-               <span>Orders</span>
-          <!-- <div class="cart"> -->
-            <a href="#" style="text-decoration:none;">
-              <span class="m-right" style="color:white;text-decoration:none;display:flex;">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  style="fill:white;">
-                  <path
-                    d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                  <path d="M0 0h24v24H0z" fill="none" />
-                </svg>
-                <p style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;">
-                  Cart
-                </p>
-                <span class="counter">
-                  <p>2</p>
-                </span>
-              </span>
-            </a>
-          <!-- </div> -->
-        
-           </div>
-      </div>
-      </div>
-    </div>
-    </div>*/
 
     /* Dropdown Button */
 .dropbtn {

@@ -1,0 +1,861 @@
+[1mdiff --git a/detail.css b/detail.css[m
+[1mindex 42a2f65..67aef6f 100644[m
+[1m--- a/detail.css[m
+[1m+++ b/detail.css[m
+[36m@@ -1,148 +1,60 @@[m
+[31m-.searchgo{[m
+[31m-    padding:0;[m
+[31m-}[m
+[31m-.rate-bar{[m
+[31m-    height: 5px;[m
+[31m-    border-radius: 100px;[m
+[31m-    background-color: #f0f0f0;[m
+[31m-    position: relative;[m
+[31m-    width: 58%;[m
+[31m-    margin-top:8px;[m
+[32m+[m[32m.detail{[m
+[32m+[m[32m    color:rgba(0,0,0,.87);[m
+[32m+[m[32m    background-color: #fafafa;[m
+ }[m
+ [m
+[31m-.rev-container{[m
+[31m-    padding:16px;[m
+[31m-    border:1px solid #f0f0f0;[m
+[31m-    border-bottom: none;[m
+[32m+[m[32m.main-detail{[m
+[32m+[m[32m    max-width: 1280px;[m
+[32m+[m[32m    display: block;[m
+[32m+[m[32m    margin-left: auto;[m
+[32m+[m[32m    margin-right: auto;[m
+[32m+[m[32m    padding-top: 64px;[m[41m      [m
+ }[m
+ [m
+[31m-.rev-container:last-child{[m
+[31m-    border-bottom: 1px solid #f0f0f0;[m
+[32m+[m[32m@media screen and (min-width: 1280px){[m
+[32m+[m[32m    .main-detail{[m
+[32m+[m[32m        margin-left: auto;[m
+[32m+[m[32m        margin-right: auto;[m
+[32m+[m[32m    }[m
+ }[m
+ [m
+[31m-.stars{[m
+[31m-    width: 30%;[m
+[31m-    text-align: right;[m
+[31m-    margin-right: 10px;[m
+[31m-    width: 30%;    [m
+[31m-}[m
+ [m
+[31m-.key-features{[m
+[31m-    padding: 24px 30px 24px 24px;[m
+[31m-    font-size: 24px;[m
+[31m-    font-weight: 500;[m
+[31m-    line-height: 1.14;    [m
+[32m+[m[32m.breadcrumbs{[m
+[32m+[m[32m    padding: 8px 16px;[m
+ }[m
+ [m
+[31m-.spec-table{[m
+[31m-    width: 100%;[m
+[31m-    border-collapse: collapse;[m
+[32m+[m[32m.breadcrumbs-wrap{[m
+[32m+[m[32m    color:rgba(0,0,0,.87);[m
+[32m+[m[32m    background-color: #fafafa;[m
+ }[m
+ [m
+[31m-.spec-td-wrap{[m
+[31m-    border-top: 1px solid #f0f0f0;[m
+[31m-    padding: 24px 24px 34px;[m
+[31m-    font-size: 14px;[m
+[31m-}[m
+[31m-[m
+[31m-.spec-td{[m
+[31m-    padding-bottom: 16px;   [m
+[31m-}[m
+[31m-[m
+[31m-.spec-t{[m
+[31m-    color: #878787;[m
+[31m-    padding-right: 8px;[m
+[31m-}[m
+[31m-[m
+[31m-.spec-d{[m
+[31m-[m
+[31m-}[m
+[31m-[m
+[31m-.rate-fill{[m
+[31m-    left: 0;[m
+[31m-    position: absolute;[m
+[31m-    width: 0;[m
+[31m-    height: 5px;[m
+[31m-    border-radius: 100px;[m
+[31m-    position: absolute;[m
+[31m-    left: 0;[m
+[31m-}[m
+[31m-[m
+[31m-.review-title{[m
+[31m-    font-weight: 600;[m
+[31m-    font-family: Arial;[m
+[31m-}[m
+[31m-[m
+[31m-.review-date{[m
+[31m-    color: gray;[m
+[31m-    margin-left: 10px;[m
+[31m-}[m
+[31m-[m
+[31m-.author{[m
+[31m-    margin-top:15px;[m
+[31m-    float:right;[m
+[31m-    font-size: 12px;[m
+[32m+[m[32m.breadcrumbs-list{[m
+[32m+[m[32m    max-width: 100%;[m
+[32m+[m[32m    -webkit-box-sizing: border-box;[m
+[32m+[m[32m    box-sizing: border-box;[m
+ }[m
+ [m
+[31m-.thumb-item{[m
+[31m-    display: -webkit-flex;[m
+[31m-    display: -ms-flexbox;[m
+[31m-    display: flex;[m
+[31m-    -webkit-justify-content: center;[m
+[31m-    -ms-flex-pack: center;[m
+[31m-    justify-content: center;[m
+[31m-    -webkit-align-items: center;[m
+[31m-    -ms-flex-align: center;[m
+[31m-    align-items: center;[m
+[31m-    border: 1px solid #e0e0e0;[m
+[31m-    border-bottom: none;[m
+[31m-    cursor: pointer;[m
+[32m+[m[32m.breadcrumb{[m
+[32m+[m[32m    color: #616161;[m
+[32m+[m[32m    display: inline-block;[m
+[32m+[m[32m    font-weight: 400;[m
+[32m+[m[32m    height: 32px;[m
+[32m+[m[32m    /*line-height: 32px;*/[m
+[32m+[m[32m    min-width: 0;[m
+[32m+[m[32m    text-decoration: none;[m
+ }[m
+ [m
+[31m-.thumb-item:last-child{[m
+[31m-    border-bottom: 1px solid;[m
+[32m+[m[32ma.breadcrumb::after{[m
+[32m+[m[32m    content: " > ";[m
+[32m+[m[32m    color: #616161;[m
+[32m+[m[32m    margin: 0 8px;[m
+ }[m
+ [m
+[31m-[m
+[31m-.sku-flex{[m
+[31m-    display: -webkit-flex;[m
+[31m-    display: -ms-flexbox;[m
+[31m-    display: flex;[m
+[31m-    -webkit-align-items: stretch;[m
+[31m-    -ms-flex-align: stretch;[m
+[31m-    align-items: stretch;[m
+[31m-    -webkit-align-content: stretch;[m
+[31m-    -ms-flex-line-pack: stretch;[m
+[31m-    align-content: stretch;[m
+[31m-    position: relative;[m
+[31m-}[m
+[31m-.sku-description{[m
+[31m-/*    margin-top: 24px;[m
+[31m-    border-radius: 2px 2px 0 0;[m
+[32m+[m[32m.product-detail{[m
+[32m+[m[32m    padding: 7px 0;[m
+     background-color: #fff;[m
+[31m-    border: 1px solid #f0f0f0;[m
+[31m-    padding: 24px;[m
+[31m-    color: #212121;*/[m
+[31m-    margin-top: 24px;[m
+[31m-    border-radius: 2px;[m
+[31m-    font-size: 12px;[m
+[31m-    border: 1px solid #f0f0f0;[m
+[31m-[m
+[32m+[m[32m    border-bottom: 1px solid #eee;[m
+ }[m
+[31m-[m
+[31m-.description-heading{[m
+[31m-    padding: 24px 30px 24px 24px;[m
+[31m-    font-size: 24px;[m
+[31m-    font-weight: 500;   [m
+[31m-    line-height: 1.14;[m
+[31m-    color: #212121;      [m
+[31m-}[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+[31m-[m
+ /*===================================*/[m
+ /*Mobile*/[m
+ /*===================================*/[m
+[1mdiff --git a/detail.html b/detail.html[m
+[1mindex 68b2cbf..065678e 100644[m
+[1m--- a/detail.html[m
+[1m+++ b/detail.html[m
+[36m@@ -6,580 +6,82 @@[m
+     </title>[m
+     <meta charset="utf-8" />[m
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">[m
+[32m+[m[32m  <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:300,400,500,700" rel="stylesheet" type="text/css">[m[41m   [m
+     <link rel="stylesheet" type="text/css" href="detail.css">[m
+[31m-        <link rel="stylesheet" type="text/css" href="index.css">[m
+[32m+[m[32m    <link rel="stylesheet" type="text/css" href="index.css">[m
+[32m+[m[32m    <link rel="stylesheet" type="text/css" href="home.css">[m
+[32m+[m[32m    <link rel="stylesheet" type="text/css" href="velocity.css">[m
+   </head>[m
+   <style>[m
+[31m-    .vel-header {[m
+[31m-      z-index: 10;[m
+[31m-    }[m
+[31m-[m
+[31m-    .main-content{[m
+[31m-          margin: 0 auto;[m
+[31m-    max-width: 1366px;[m
+[31m-    min-width: 1128px;[m
+[31m-    padding: 0;[m
+[31m-    }[m
+[31m-    .head {[m
+[31m-      padding-bottom: 48px;[m
+[31m-    }[m
+[31m-    .sku-wrap {[m
+[31m-      background-color: #ffffff;[m
+[31m-      padding: 16px;[m
+[31m-      display: flex;[m
+[31m-      flex-flow: row;[m
+[31m-    }[m
+[31m-[m
+[31m-    .sku-gallery {[m
+[31m-    display: -webkit-flex;[m
+[31m-    display: -ms-flexbox;[m
+[31m-    display: flex;[m
+[31m-    -webkit-flex-flow: column;[m
+[31m-    -ms-flex-flow: column;[m
+[31m-    flex-flow: column;[m
+[31m-    position: -webkit-sticky;[m
+[31m-    position: sticky;[m
+[31m-    top: 64px;[m
+[31m-    bottom: 0;[m
+[31m-    z-index: 2;[m
+[31m-    -webkit-align-self: flex-start;[m
+[31m-    -ms-flex-item-align: start;[m
+[31m-    align-self: flex-start;[m
+[31m-    }[m
+[31m-[m
+[31m-    .sku-main {[m
+[31m-      display: -webkit-flex;[m
+[31m-      display: -ms-flexbox;[m
+[31m-      display: flex;[m
+[31m-      -webkit-flex: 1;[m
+[31m-      -ms-flex: 1;[m
+[31m-      flex: 1;[m
+[31m-      -webkit-align-items: center;[m
+[31m-      -ms-flex-align: center;[m
+[31m-      align-items: center;[m
+[31m-      -webkit-justify-content: center;[m
+[31m-      -ms-flex-pack: center;[m
+[31m-      justify-content: center;[m
+[31m-      position: relative;[m
+[31m-      border: 1px solid #f0f0f0;[m
+[31m-    }[m
+[31m-    .thumbs {[m
+[31m-      height: 450px;[m
+[31m-      overflow: hidden;[m
+[31m-      /* position: relative; */[m
+[31m-    }[m
+[31m-[m
+[31m-    .thumbs-main {[m
+[31m-      height: 950px;[m
+[31m-    }[m
+[31m-[m
+[31m-    .imagesku {[m
+[31m-      display: inline-block;[m
+[31m-      max-height: 416px;[m
+[31m-      max-width: 416px;[m
+[31m-      vertical-align: top;[m
+[31m-      position: inherit;[m
+[31m-    }[m
+[31m-    .sku-details {[m
+[31m-      padding: 0px 0px 0px 24px;[m
+[31m-      -webkit-flex-flow: column;[m
+[31m-      -ms-flex-flow: column;[m
+[31m-      flex-flow: column;[m
+[31m-      display: -webkit-flex;[m
+[31m-      display: -ms-flexbox;[m
+[31m-      display: flex;[m
+[31m-      width: 66.66%;[m
+[31m-    }[m
+[31m-[m
+[31m-    .img-item {[m
+[31m-      transform: translateY(0px);[m
+[31m-      padding: 0;[m
+[31m-      margin: 0;[m
+[31m-    }[m
+[31m-[m
+[31m-    .thumb-item {[m
+[31m-      width: 64px;[m
+[31m-      border-color: #f0f0f0 !important;[m
+[31m-      border-right: none !important;[m
+[31m-      height: 64px;[m
+[31m-    }[m
+[31m-[m
+[31m-    .sku-image {[m
+[31m-/*      border: 2px solid #f0f0f0;s*/[m
+[31m-      width: 100%;[m
+[31m-      height: 100%;[m
+[31m-      position: relative;[m
+[31m-    }[m
+[31m-[m
+[31m-    .sku-image:hover {[m
+[31m-      border: 1px solid gray;[m
+[31m-    }[m
+[31m-    .img-selector {[m
+[31m-      width: 100%;[m
+[31m-      height: 100%;[m
+[31m-      background-repeat: no-repeat;[m
+[31m-      background-position: 50%;[m
+[31m-      background-size: contain;[m
+[31m-    }[m
+[31m-[m
+[31m-    .inner {[m
+[31m-      padding: 5px;[m
+[31m-    }[m
+[31m-[m
+[31m-    .title {[m
+[31m-      font-size: 21px !important;[m
+[31m-      line-height: 1.3 !important;[m
+[31m-    }[m
+[31m-[m
+[31m-    .review-bar {[m
+[31m-      display: flex;[m
+[31m-    }[m
+[31m-[m
+[31m-    .rating {[m
+[31m-      float: left;[m
+[31m-      margin-right: 10px;[m
+[31m-    }[m
+[31m-[m
+[31m-    .manufacturer {[m
+[31m-      color: #909090;[m
+[31m-      margin-bottom: 5px;[m
+[31m-    }[m
+[32m+[m[41m  [m
+   </style>[m
+ [m
+   <body>[m
+ [m
+[31m-    <div class="head">[m
+[31m-      <div class="vel-header">[m
+[31m-        <div class="head-wrapper">[m
+[31m-          <!-- Logo -->[m
+[31m-          <div[m
+[31m-            class="logo"[m
+[31m-            style="visibility:visible;justify-content: flex-end;"[m
+[31m-          >[m
+[31m-            <a[m
+[31m-              style="font-size: 0;"[m
+[31m-              href="#"[m
+[31m-              title="Velocity - Shop from the biggest selection for electronics , fashion more..."[m
+[31m-            >[m
+[31m-              <i class="fas fa-align-justify"></i>[m
+[31m-              <img class="logo-img" src="vel-logo.png" alt="Velocity Ghana" />[m
+[31m-            </a>[m
+[31m-          </div>[m
+[31m-          <!-- Search -->[m
+[31m-          <div class="vel-search">[m
+[31m-            <!-- <form method="POST"> -->[m
+[31m-[m
+[31m-            <input[m
+[31m-              type="search"[m
+[31m-              class="keywords"[m
+[31m-              placeholder="Search Brands &amp; Products"[m
+[31m-            />[m
+[31m-            <button class="searchgo" type="submit">[m
+[31m-              <svg[m
+[31m-                width="20"[m
+[31m-                height="20"[m
+[31m-                viewBox="0 0 17 18"[m
+[31m-                class=""[m
+[31m-                xmlns="http://www.w3.org/2000/svg"[m
+[31m-              >[m
+[31m-                <g fill="#232f3e" fill-rule="evenodd">[m
+[31m-                  <path[m
+[31m-                    class="search"[m
+[31m-                    d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203"[m
+[31m-                  ></path>[m
+[31m-                  <path[m
+[31m-                    class="srch"[m
+[31m-                    d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467"[m
+[31m-                  ></path>[m
+[31m-                </g>[m
+[31m-              </svg>[m
+[31m-            </button>[m
+[31m-            <!-- </form> -->[m
+[31m-          </div>[m
+[31m-          <!--Sidemenu-->[m
+[31m-          <div class="menu-wrap">[m
+[31m-            <div class="menu">[m
+[31m-              <li class="menu-item" style="list-style:none;">[m
+[31m-                <a href="#" style="margin-top:10px;font-weight: 600;">[m
+[31m-                  <span class="below">[m
+[31m-                    Hello,User<svg[m
+[31m-                      width="4.7"[m
+[31m-                      height="8"[m
+[31m-                      viewBox="0 0 16 27"[m
+[31m-                      xmlns="http://www.w3.org/2000/svg"[m
+[31m-                      class="vel-down"[m
+[31m-                    >[m
+[31m-                      <path[m
+[31m-                        d="M16 23.207L6.11 13.161 16 3.093 12.955 0 0 13.161l12.955 13.161z"[m
+[31m-                        fill="#fff"[m
+[31m-                        class="_14jSvk"[m
+[31m-                      ></path>[m
+[31m-                    </svg>[m
+[31m-                  </span>[m
+[31m-                </a>[m
+[31m-                <ul class="drop-menu">[m
+[31m-                  <div class="pop-arrow"></div>[m
+[31m-                  <li class="drop-menu-item">[m
+[31m-                    <a href=""> Your Account </a>[m
+[31m-                  </li>[m
+[31m-                  <li class="drop-menu-item">[m
+[31m-                    <a href=""> Your Orders </a>[m
+[31m-                  </li>[m
+[31m-                  <li class="drop-menu-item" style="display:flex;">[m
+[31m-                    <!-- <i class="material-icons blue">playlist_add_check</i> -->[m
+[31m-                    <a href=""> Saved items </a>[m
+[31m-                  </li>[m
+[31m-                  <li class="drop-menu-item" style="display:flex;">[m
+[31m-                    <!-- <i class="material-icons blue">playlist_add_check</i> -->[m
+[31m-                    <a href=""> Help Centre </a>[m
+[31m-                  </li>[m
+[31m-[m
+[31m-                  <li[m
+[31m-                    class="drop-menu-item"[m
+[31m-                    style=" margin-top: 10px;width:100%;"[m
+[31m-                  >[m
+[31m-                    <button class="session" href="">Login</button>[m
+[31m-                  </li>[m
+[31m-                </ul>[m
+[31m-              </li>[m
+[31m-            </div>[m
+[31m-[m
+[31m-            <!-- More -->[m
+[31m-[m
+[31m-            <div class="cart" style="margin-top: 17px;margin-left:20px;">[m
+[31m-              <a href="#" style="text-decoration:none;">[m
+[31m-                <span[m
+[31m-                  class="m-right"[m
+[31m-                  style="color:white;text-decoration:none;display:flex;"[m
+[31m-                >[m
+[31m-                  <svg[m
+[31m-                    xmlns="http://www.w3.org/2000/svg"[m
+[31m-                    width="24"[m
+[31m-                    height="24"[m
+[31m-                    viewBox="0 0 24 24"[m
+[31m-                    style="fill:white;"[m
+[31m-                  >[m
+[31m-                    <path[m
+[31m-                      d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"[m
+[31m-                    ></path>[m
+[31m-                    <path d="M0 0h24v24H0z" fill="none"></path>[m
+[31m-                  </svg>[m
+[31m-                  <p[m
+[31m-                    style="margin:0;margin-left:10px;font-weight:600;margin-top:5px;"[m
+[31m-                  >[m
+[31m-                    Cart[m
+[31m-                  </p>[m
+[31m-                  <span class="counter">[m
+[31m-                    <p>2</p>[m
+[31m-                  </span>[m
+[31m-                </span>[m
+[31m-              </a>[m
+[31m-            </div>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-      </div>  [m
+[32m+[m[32m    <!-- Desktop -->[m
+[32m+[m[32m  <header class="home-header">[m
+[32m+[m[32m  <div class="header-liner -vt-row -vt-center">[m
+[32m+[m[41m  [m
+[32m+[m[32m    <div class="vt-logo" class="col-3-12">[m
+[32m+[m[32m    <a href="#" >[m
+[32m+[m[32m    <img src="vel.png" class="vt-logo-img" alt="Velocity Ghana">[m
+[32m+[m[32m    </a>[m
+     </div>[m
+[31m-        <div class="main-content">[m
+[31m-    <div class="sku-wrap">[m
+[31m-      <div class="col-7-12 sku-gallery">[m
+[31m-        <div class="col-12-12 block" style="position:relative;">[m
+[31m-          <div class="sku-flex">[m
+[31m-        <div class="thumbs">[m
+[31m-          <div class="thumbs-main">[m
+[31m-            <ul class="img-item">[m
+[31m-              <li class="thumb-item">[m
+[31m-                <a href="stock/iphone2.jpg" target="sku-main">                   [m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">                 [m
+[31m-                    <img class="img-selector" src="stock/iphone2.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                  </a>[m
+[31m-              </li>[m
+[31m-              <li class="thumb-item">[m
+[31m-              <a href="stock/iphone3.jpg">   [m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">[m
+[31m-                    <a href="stock/iphone3.jpg" target="sku-main">                    [m
+[31m-                    <img class="img-selector" src="stock/iphone3.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                  </a>[m
+[31m-              </li>[m
+[31m-              <li class="thumb-item">[m
+[31m-                    <a href="stock/iphone4.jpg" target="sku-main">                    [m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">[m
+[31m-                    <img class="img-selector" src="stock/iphone4.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                  </a>[m
+[31m-              </li>[m
+[31m-              <li class="thumb-item">[m
+[31m-                    <a href="stock/iphone.jpg" target="sku-main">                    [m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">[m
+[31m-                    <img class="img-selector" src="stock/iphone.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                    </a>                    [m
+[31m-              </li>[m
+[31m-              <li class="thumb-item">[m
+[31m-                    <a href="stock/iphone2.jpg" target="sku-main">                    [m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">[m
+[31m-                    <img class="img-selector" src="stock/iphone2.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                  </a>[m
+[31m-              </li>[m
+[31m-              <li class="thumb-item">[m
+[31m-                    <a href="stock/iphone3.jpg"  target="sku-main">[m
+[31m-                <div class="sku-image">[m
+[31m-                  <div class="inner">[m
+[31m-                    <img class="img-selector" src="stock/iphone3.jpg"/>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-                    </a>[m
+[31m-              </li>                                                        [m
+[31m-            </ul>[m
+[31m-          </div>[m
+[31m-        </div>[m
+[31m-[m
+[31m-        <div class="sku-main">[m
+[31m-          <img class="imagesku" src="stock/iphone.jpg" />[m
+[31m-        </div>[m
+[31m-[m
+[31m-      </div>[m
+[31m-[m
+[32m+[m[41m    [m
+[32m+[m[32m    <div class="col-6-12 vt-search-wrap">[m
+[32m+[m[32m    <div class="vt-search">[m
+[32m+[m[32m    <input type="text" placeholder="Search for products, brands and categories" class="vt-search-bar">[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <div class="col-3-12">[m
+[32m+[m[32m    <div class="col-menu-wrap">[m
+[32m+[m[32m    <a href="" class="cart-link">[m
+[32m+[m[32m    <span class="">[m
+[32m+[m[32m    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"/><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>[m
+[32m+[m[32m    <div class="cart-count">2</div>[m
+[32m+[m[32m    </span>[m
+[32m+[m[32m    </a>[m
+[32m+[m[41m    [m
+[32m+[m[41m    [m
+[32m+[m[32m    <button class="not-auth">[m
+[32m+[m[32m      Login[m
+[32m+[m[32m    </button>[m
+     </div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[41m    [m
+[32m+[m[32m    <div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[41m  [m
+   </div>[m
+[31m-[m
+[31m-      <div class="sku-details col-5-12">[m
+[31m-        <p class="title">Apple iPhone XS Max 512GB HDD - 4GB RAM - Grey</p>[m
+[31m-        <span class="manufacturer">[m
+[31m-          by<a[m
+[31m-            href="#"[m
+[31m-            style="margin-left:5px;text-decoration:none;color:#909090;"[m
+[31m-            >Apple</a[m
+[31m-          >[m
+[31m-        </span>[m
+[31m-        <div class="review-bar">[m
+[31m-<!--           <div class="rating">[m
+[31m-            <p style="margin:0;">4.4</p>[m
+[31m-            <span>[m
+[31m-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12">[m
+[31m-                <path[m
+[31m-                  style="fill: #ff6c04;"[m
+[31m-                  fill="#FFF"[m
+[31m-                  d="M6.5 9.439l-3.674 2.23.94-4.26-3.21-2.883 4.254-.404L6.5.112l1.69 4.01 4.254.404-3.21 2.882.94 4.26z"[m
+[31m-                />[m
+[31m-              </svg>[m
+[31m-            </span>[m
+[31m-          </div> -->[m
+[31m-[m
+[31m-          <div id ="rt" style="margin-right:10px;color:#ff9f00;">★★★★</div>[m
+[31m-          <p style="font-family:Arial;color:#909090;">[m
+[31m-            432 reviews and 3,902 ratings[m
+[31m-          </p>[m
+[31m-          <span style="margin-left:10px;    ">[m
+[31m-            <img height="21" src="stock/as.png" />[m
+[31m-          </span>[m
+[31m-        </div>[m
+[31m-[m
+[31m-        <div class="key-features sku-description">[m
+[31m-          <div style="">KEY FEATURES</div>[m
+[31m-        </div>[m
+[31m-[m
+[31m-        <div class="sku-description">[m
+[31m-          <div class="description-heading">Product Description</div>[m
+[31m-        </div>[m
+[31m-[m
+[31m-[m
+[31m-          <div class="sku-description">[m
+[31m-            <div class="description-heading">Specifications</div>[m
+[31m-[m
+[31m-            <div class="spec-td-wrap">[m
+[31m-              <table class="spec-table">[m
+[31m-                <tbody>[m
+[31m-                  <tr class="row spec-td">[m
+[31m-                    <td class="col col-4-12 spec-t">Model Number</td>[m
+[31m-                    <td class="col col-8-12 spec-d">MT552HN/A</td>[m
+[31m-                  </tr>[m
+[31m-                </tbody>[m
+[31m-              </table>[m
+[31m-            </div>[m
+[31m-        </div>[m
+[32m+[m[32m  </header>[m
+ [m
+ [m
+[31m-        <div class="sku-description" style="border-bottom:none;">[m
+[31m-          <div class="description-heading">Reviews</div>[m
+ [m
+[31m-          <div class="row spec-td-wrap">[m
+[31m-            <div class="col-3-12 ct">[m
+[31m-              <p class="average-rating">3.6</p>[m
+[31m-              <span>Out of 5 </span>[m
+[31m-            </div>  [m
+[31m-[m
+[31m-            <div class=" col col-6-12">[m
+[31m-              <div class="col-9-12 row">[m
+[31m-                <span class="stars">★★★★★</span>[m
+[31m-                <div class="rate-bar">[m
+[31m-                  <div class="rate-fill" style=" background-color:#388e3c;width: 90%;">[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-              </div>[m
+[31m-[m
+[31m-              <div class=" col">[m
+[31m-                <div class="col-9-12 row">[m
+[31m-                  <span class="stars">★★★★</span>[m
+[31m-                  <div class="rate-bar">[m
+[31m-                    <div class="rate-fill" style=" background-color:#388e3c;width: 90%;">[m
+[31m-                    </div>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-              </div>[m
+[31m-[m
+[31m-              <div class=" col">[m
+[31m-                <div class="col-9-12 row">[m
+[31m-                  <span class="stars">★★★</span>[m
+[31m-                  <div class="rate-bar">[m
+[31m-                    <div class="rate-fill" style=" background-color:#388e3c;width: 90%;">[m
+[31m-                    </div>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-              </div>[m
+[31m-[m
+[31m-              <div class=" col">[m
+[31m-                <div class="col-9-12 row">[m
+[31m-                  <span class="stars">★★</span>[m
+[31m-                  <div class="rate-bar">[m
+[31m-                    <div class="rate-fill" style=" background-color:#ff9f00;width: 50%;">[m
+[31m-                    </div>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-              </div>[m
+[31m-[m
+[31m-              <div class=" col">[m
+[31m-                <div class="col-9-12 row">[m
+[31m-                  <span class="stars">★</span>[m
+[31m-                  <div class="rate-bar">[m
+[31m-                    <div class="rate-fill" style=" background-color:#ff3434;width: 90%;">[m
+[31m-                    </div>[m
+[31m-                  </div>[m
+[31m-                </div>[m
+[31m-              </div>                                                [m
+[31m-            </div>[m
+[31m-[m
+[31m-[m
+[31m-            <div class="col-3-12 ma-td">[m
+[31m-              <button class="btn-small-mg">[m
+[31m-                Rate Product[m
+[31m-              </button>[m
+[31m-            </div>[m
+[31m-        </div>  [m
+[32m+[m[32m    <main class="detail">[m
+[32m+[m[32m    <div class="main-detail">[m[41m    [m
+ [m
+[32m+[m[32m    <div class="breadcrumbs">[m
+[32m+[m[32m      <div class="breadcrumbs-wrap">[m
+[32m+[m[32m        <ul class="breadcrumbs-ul -vt-row -vt-center">[m
+[32m+[m[32m          <li class="breadcrumbs-list">[m
+[32m+[m[32m            <a href="#" class="breadcrumb">Home</a>[m
+[32m+[m[32m          </li>[m
+[32m+[m[32m        </ul>[m
+       </div>[m
+[31m-[m
+[31m-        <div class="rev-container">[m
+[31m-          <div class="row" style="margin-bottom:10px;">[m
+[31m-            <span style="margin-right: 10px;color:#ff3434;">★★</span> [m
+[31m-            <span class="review-title">Recommended</span>[m
+[31m-          </div>[m
+[31m-          <p>[m
+[31m-            On 23rd jan ordered product xs max 512gb gold colour .. recieved product on 31st 2clock .. when i opened it was imported product xs max 512gb global US model no MT6P2LL/A which is easily available in market for 90000-100000 .[m
+[31m-          </p>[m
+[31m-          <div class="row author" >[m
+[31m-            <span>Desmond Nyamador</span>[m
+[31m-            <span class="review-date">July 12th 2019.</span>[m
+[31m-          </div>[m
+[31m-        </div> [m
+[31m-[m
+[31m-        <!-- Trigger/Open The Modal -->[m
+[31m-<button id="myBtn">Open Modal</button>[m
+[31m-[m
+[31m-<!-- The Modal -->[m
+[31m-<div id="myModal" class="modal">[m
+[31m-[m
+[31m-  <!-- Modal content -->[m
+[31m-  <div class="modal-content">[m
+[31m-    <span class="close">&times;</span>[m
+[31m-    <p>Some text in the Modal..</p>[m
+[31m-  </div>[m
+[31m-[m
+[31m-</div>[m
+[31m-[m
+[32m+[m[32m    </div>[m
+ [m
+ [m
+[31m-    </div>[m
+[31m-      </div>[m
+[32m+[m[32m    <div class="product-detail">[m
+[32m+[m[41m      [m
+     </div>[m
+ [m
+[31m-        <!-- Footer -->[m
+[31m-    <footer class="foot-content">[m
+[31m-      <div class="footer-top">[m
+[31m-        <div class="col-1" style="display:grid;margin-right: 150px;">[m
+[31m-          <div class="col-heading">About Us</div>[m
+[31m-          <a class="col-1-txt" href="#">About Us</a>[m
+[31m-          <a class="col-1-txt" href="#">Terms & Conditions </a>[m
+[31m-          <a class="col-1-txt" href="#">Privacy Policy</a>[m
+[31m-          <a class="col-1-txt" href="#">Guidelines</a>[m
+[31m-        </div>[m
+[32m+[m[32m    </div>[m[41m  [m
+[32m+[m[32m    </main>[m
+ [m
+[31m-        <div class="col-2" style="display:grid;margin-right: 150px;">[m
+[31m-          <div class="col-heading">[m
+[31m-            About[m
+[31m-          </div>[m
+[31m-          <a class="col-1-txt" href="#">Shipping </a>[m
+[31m-          <a class="col-1-txt" href="#">Payments</a>[m
+[31m-          <a class="col-1-txt" href="#">Security</a>[m
+[31m-          <a class="col-1-txt" href="#">Sitemap</a>[m
+[31m-        </div>[m
+ [m
+[31m-        <div class="col-3" style="display:grid;margin-right: 150px;">[m
+[31m-          <div class="col-heading">[m
+[31m-            Help[m
+[31m-          </div>[m
+[31m-          <a class="col-1-txt" href="#">Payments</a>[m
+[31m-          <a class="col-1-txt" href="#"> Shipping</a>[m
+[31m-          <a class="col-1-txt" href="#">FAQ</a>[m
+[31m-          <a class="col-1-txt" href="#"></a>[m
+[31m-        </div>[m
+ [m
+[31m-        <div class="col-4" style="display:grid;margin-right: 150px;">[m
+[31m-          <div class="col-heading">[m
+[31m-            Help[m
+[31m-          </div>[m
+[31m-          <a class="col-1-txt" href="#">Contact Us</a>[m
+[31m-          <a class="col-1-txt" href="#">Track Your Order</a>[m
+[31m-          <a class="col-1-txt" href="#">FAQ's</a>[m
+[31m-          <a class="col-1-txt" href="#">Return Policy</a>[m
+[31m-        </div>[m
+ [m
+[31m-        <div class="col-5" style="display:grid;margin-right: 50px;">[m
+[31m-          <div class="col-heading">[m
+[31m-            Social[m
+[31m-          </div>[m
+[31m-          <a class="col-1-txt" href="#">Facebook</a>[m
+[31m-          <a class="col-1-txt" href="#">Instagram</a>[m
+[31m-          <a class="col-1-txt" href="#">Twitter</a>[m
+[31m-          <a class="col-1-txt" href="#">YouTube</a>[m
+[31m-        </div>[m
+[31m-      </div>[m
+[31m-[m
+[31m-      <div[m
+[31m-        class="line"[m
+[31m-        style="[m
+[31m-                padding: 0;[m
+[31m-                border-top: 1px solid gray;[m
+[31m-                height: 0;[m
+[31m-            "[m
+[31m-      ></div>[m
+[31m-[m
+[31m-      <div class="footer-bottom" style="margin: auto;">[m
+[31m-        <img class="sprite" src="vel.png" style="max-width: 200px;max-height: 200px;"/>[m
+[31m-      </div>[m
+[31m-    </footer>[m
+ [m
+ [m
+     <!-- Mobile -->[m
+[1mdiff --git a/home.css b/home.css[m
+[1mindex 5b72ad9..344aec2 100644[m
+[1m--- a/home.css[m
+[1m+++ b/home.css[m
+[36m@@ -106,6 +106,7 @@[m [mdisplay: block;[m
+     font-weight: 700;[m
+     border-radius: 8px;[m
+     box-shadow: 0 3px 5px rgba(0,0,0,.15);[m
+[32m+[m[32m    cursor: pointer;[m
+ }[m
+ .main-content{[m
+ [m
+[36m@@ -342,4 +343,16 @@[m [mfooter{[m
+   position: relative;[m
+   float: left;[m
+   box-sizing: border-box; [m
+[31m-  }[m
+\ No newline at end of file[m
+[32m+[m[32m  }[m
+[32m+[m[41m  [m
+[32m+[m[41m  [m
+[32m+[m[41m  [m
+[32m+[m[32m  Michaeldadze420@gmail.com[m
+[32m+[m[32m  nakwamoah07@gmail.com[m
+[32m+[m[32m  Sunnybae.eb@gmail.com - Elvis[m
+[32m+[m[32m  Otoo.leslie@yahoo.com[m
+[32m+[m[32m  mgincreation@gmail.com[m
+[32m+[m[32m  hehetrorwerner@yahoo.com[m
+[41m+  [m
+[41m+  [m
+[41m+ [m
+\ No newline at end of file[m
