@@ -187,6 +187,8 @@ textarea {
   tr,
   img {
     page-break-inside: avoid;
+    height: auto;
+    width: 100%;
   }
   p,
   h2,
@@ -202,6 +204,11 @@ textarea {
 
   p,h1,h2,h3,h4,h5,h6{
   margin: 0;
+}
+
+.-vty-mlr-auto{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col{
