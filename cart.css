@@ -82,6 +82,25 @@
 	align-items: baseline;
 }
 
+.product-subtotal{
+	font-size: 1.14em;
+    text-align: right;
+    margin-left: 16px;
+}
+
+option{
+	background-color:  #dcdcdc78;
+	font-family: arial, sans-serif;
+	border: none;
+	padding: 2px;
+	font-size: 14px;
+}
+.product-quantity{
+	padding: 0 32px;
+	padding-bottom: 5px;
+	border: none;
+	border-bottom: 1px solid gainsboro;
+}
 .cart-sale-price{
 	padding-bottom: 8px;
 	padding-right: 8px;
