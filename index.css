@@ -521,6 +521,10 @@ tbody{
   font-weight: bold;
 }
 
+a.session:hover{
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.15);
+}
+
 .drop-menu:a{
   padding: 3px 20px;
   line-height: 24px;
