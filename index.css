@@ -259,7 +259,8 @@ tbody{
 #vty-slider{
     margin: 0 auto;
     min-width: 978px;
-    max-width: 1680px;
+    max-width: 1320px;
+    padding-top:8px;
     padding-bottom:10px;
 }
 
