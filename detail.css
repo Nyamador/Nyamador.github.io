@@ -149,6 +149,12 @@ a.breadcrumb::after{
     height: 56px;
     cursor: pointer;
     border-bottom: 4px solid transparent;
+    -webkit-justify-content: center;
+    justify-content: center;    
+}
+
+.sku-picker:hover{
+    border: 0.2px solid #00d061;
 }
 
 .thumbnail-wrap{
@@ -281,6 +287,24 @@ a.breadcrumb::after{
     line-height: 1.72em;
 }
 
+.vt-rate-wrap{
+    justify-content: flex-start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+
+.rate-wrap{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
 .specs-table{
     display: block;
 }
@@ -311,6 +335,84 @@ a.breadcrumb::after{
 
 }
 
+.average-rate{
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.total-rate{
+    color: rgba(0,0,0,.87);
+    font-size: 50px     ;
+    margin-bottom: 8px;
+    height: 48px;
+    font-weight: 600;
+}
+
+.rating-visuals{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.rate-visual{
+    height: 20px;
+    max-width: 190px;
+    padding-left: 8px;
+    height: 20px;
+    max-width: 190px;
+    padding-left: 8px;
+}
+
+.rate-bar{
+    height: 5px;
+    border-radius: 100px;
+    background-color: #f0f0f0;
+    position: relative;
+    width: 30%;
+}
+
+.rate-fluid{
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 5px;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #00d061;
+}
+
+.rating-bar{
+    align-items: baseline;
+}
+
+.star-visual{
+    margin-right: 10px;
+    color: #a3a3a3;
+}
+
+
+.pl-10{
+    padding-left: 10px;
+}
+
+.pl-20{
+    padding-left: 20px;
+}
+
+.pl-30{
+    padding-left: 30px;
+}
+
+.pl-40{
+    padding-left: 40px;
+}
+.rate-bar-wrap{
+    margin-right: 10px;
+}
+
 .rich-list{
     list-style-type: initial;
     padding-left: 16px;
@@ -327,6 +429,17 @@ a.breadcrumb::after{
     .buy-now-container{
         background-color: #fff;
         padding: 0 16px;
+    }
+    .rate-wrap{
+        margin-left: 20px;
+    }
+
+    .average-rate{
+        margin-right: 20px;
+    }
+
+    .rate-visual{
+        max-width: 456px;
     }
 }
 /*===================================*/
@@ -596,4 +709,108 @@ line-height: 20px;
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+
+/*//zoom*/
+/* Compatibility styles for frameworks like bootstrap, foundation e.t.c */
+.xzoom-source img, .xzoom-preview img, .xzoom-lens img {
+  display: block;
+  max-width: none;
+  max-height: none;
+}
+/* --------------- */
+
+/* xZoom Styles below */
+.xzoom-container { 
+  display: inline-block; 
+}
+
+.xzoom-thumbs {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.xzoom { 
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);  
+  margin-bottom: 15px; 
+}
+.xzoom2, .xzoom3, .xzoom4, .xzoom5 {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);  
+  margin-bottom: 15px;  
+}
+
+/* Thumbs */
+.xzoom-gallery, .xzoom-gallery2, .xzoom-gallery3, .xzoom-gallery4, .xzoom-gallery5 { 
+  border: 1px solid #cecece; 
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.xzoom-source, .xzoom-hidden {
+  display: block;
+  position: static;
+  float: none;
+  clear: both;
+}
+
+/* Everything out of border is hidden */
+.xzoom-hidden {
+  overflow: hidden;
+}
+
+/* Preview */
+.xzoom-preview {
+  border: 1px solid #888;
+  background: #2f4f4f;
+  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+}
+
+/* Lens */
+.xzoom-lens {
+  border: 1px solid #555;
+  box-shadow: -0px -0px 10px rgba(0,0,0,0.50);
+  cursor: crosshair;
+}
+
+/* Loading */
+.xzoom-loading {
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  opacity: .7;
+  background: url(../images/xloading.gif);
+  width: 48px;
+  height: 48px;
+}
+
+/* Additional class that applied to thumb when it is active */
+.xactive {  
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(74,169,210,1);
+  box-shadow: 0px 0px 3px 0px rgba(74,169,210,1); 
+  border: 1px solid #4aaad2;
+}
+
+/* Caption */
+.xzoom-caption {
+  position: absolute;
+  bottom: -43px;
+  left: 0;
+  background: #000;
+  width: 100%;
+  text-align: left;
+}
+
+.xzoom-caption span {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: block;
+  font-size: 0.75em;
+  font-weight: bold;
+  padding: 10px;
 }

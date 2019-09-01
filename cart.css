@@ -187,8 +187,24 @@ option{
 	text-align: right;
 }
 
+@media only screen and (min-width:591px){
+.mty-main{
+	display: none;
+}
+
+}
 
 
+@media only screen and (max-width:590px){
+.vel-header{
+  display:none;
+}
+
+main.trolley-container{
+	display: none;
+}
+
+}
 
 
 
