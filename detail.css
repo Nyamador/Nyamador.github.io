@@ -418,6 +418,33 @@ a.breadcrumb::after{
     padding-left: 16px;
     margin: 8px 0;
 }
+
+.customer-review{
+    border-bottom: 1px solid #dadce0;
+    margin-bottom: 24px;
+    padding-bottom: 24px
+}
+
+.customer-review-title{
+    color: #202124;
+    font-size: 16px;
+}
+
+.customer-rating{
+        margin-top: 8px;
+}
+
+.customer-stars-wrap{
+    margin-right : 10px;
+}
+
+.review-detail{
+    margin-top:8px;
+}
+
+.review-content{
+    line-height: 1.72em;
+}
 @media screen and (min-width: 960px){
     .image-sku{
         margin-right: 20px;
@@ -432,6 +459,9 @@ a.breadcrumb::after{
     }
     .rate-wrap{
         margin-left: 20px;
+        border-bottom: 1px solid #dadce0;
+        margin-bottom: 24px;
+        padding-bottom: 24px;
     }
 
     .average-rate{
