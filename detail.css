@@ -400,7 +400,16 @@ a.breadcrumb::after {
   font-weight: 600;
 }
 
-.spec-value {
+.sku-detail{
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -moz-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-flex-direction: row;
+    flex-direction: row;
 }
 
 .average-rate {
@@ -582,17 +591,6 @@ a.breadcrumb::after {
     -webkit-align-content: center;
     align-content: center;
     max-width: 100%;
-  }
-
-  .sku-detail{
-    -webkit-box-sizing: border-box !important;
-    box-sizing: border-box !important;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-flex-direction: column;
-    flex-direction: column;
   }
 }
 /*===================================*/
