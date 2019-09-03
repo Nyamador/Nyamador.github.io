@@ -574,9 +574,10 @@
               </div>
             </div>
 
-            <div class="review-detail">
+            <div class="about-detail-wrap">
+            <div class="about-detail">
               Out of the box, I found a machine that feels solidly built (including the hinges, which are particularly important on a 2-in-1 device), has a bright, clear screen, comfortable keyboard, and responsive touch pad. The touch-screen is responsive as well, and while a pen is supported, there's not one included. As an added creature comfort, the keyboard lighting is adjustable (off/low/high). The power button doubles as a fingerprint reader, which makes for an easy way to login to Windows with one touch.
-
+            </div>
             </div>
 
           </div>
@@ -798,7 +799,7 @@
         
         $.ajax({
           url: 'data-url',
-          type: 'POST',
+          type: "POST",
           contentType: 'application/json; charset=utf-8',
           data: $.toJSON(data),
           dataType: 'text',
