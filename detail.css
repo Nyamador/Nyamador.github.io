@@ -527,6 +527,12 @@ a.breadcrumb::after {
 .review-content {
   line-height: 1.72em;
 }
+
+@media screen and (max-width:1125px){
+    .-vt-key-features {
+    display: none;
+  }
+}
 @media screen and (min-width: 960px) {
   .image-sku {
     margin-right: 20px;
@@ -557,9 +563,6 @@ a.breadcrumb::after {
 }
 
 @media screen and (max-width: 750px) {
-  .-vt-key-features {
-    display: none;
-  }
   .sku-detail {
     -webkit-box-sizing: border-box !important;
     box-sizing: border-box !important;

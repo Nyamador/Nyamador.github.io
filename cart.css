@@ -99,7 +99,6 @@ option{
 	padding: 0 32px;
 	padding-bottom: 5px;
 	border: none;
-	border-bottom: 1px solid gainsboro;
 }
 .cart-sale-price{
 	padding-bottom: 8px;
@@ -205,6 +204,4 @@ main.trolley-container{
 }
 
 }
-
-
 
