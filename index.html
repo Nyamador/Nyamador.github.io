@@ -59,8 +59,6 @@
         margin: 0 0 10px 0;
       }
 
-      body {
-      }
       .cart {
         margin-left: 15px;
       }
@@ -1154,17 +1152,19 @@
       </header>
 
 
-        <div class="mty-slider swiper-container">
-          <div class="swipper-wrapper">
-          <a href="#" class="slide-card">
+        <div class="slideshow" id="mty-slider">
+          <div class="wrapper ">
+            <div class="slides">
+          <a href="#" class="slide-card slide">
             <img src="http://via.placeholder.com/150" data-src="stock/camera-Mobile.jpg" class="lazy slide-item">
           </a>
-          <a href="#" class="slide-card">
+          <a href="#" class="slide-card slide">
             <img src="http://via.placeholder.com/150" data-src="stock/camera-Mobile.jpg" class="lazy slide-item">
           </a>
-          <a href="#" class="slide-card">
+          <a href="#" class="slide-card slide">
             <img src="http://via.placeholder.com/150" data-src="stock/camera-Mobile.jpg" class="lazy slide-item">
           </a>                    
+        </div>
         </div>
         </div>
 
@@ -1538,16 +1538,14 @@
           $(document).ready(function() {
         var slideshow = new Slideshow({
           id : 'vty-slider',     
+          autoplay: true,
         });
 
-
+        var mtyslideshow = new Slideshow({
+          id : 'mty-slider',     
+          autoplay: true,
+        });
         
-        
-      var mySwiper = new Swiper ('.swiper-container', {
-      // Optional parameters
-      // direction: 'vertical',
-      loop: true
-    })
       });
           //Timer
        setInterval(function time(){
