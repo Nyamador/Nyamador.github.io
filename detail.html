@@ -621,12 +621,30 @@
 
       <div class="mty-draggable-container">
 
-        <div class="mty-draggable-wrap">
-          <a class="mty-draggable-item">
-            <div class="pimage">
-            <img width="240" height="240" src="stock/iphone2.jpg" class="drag-image">
+        <div class="mty-draggable-wrap slideshow" id="mty-slider">
+          <div class="wrapper">
+            <div class="slides">
+                <a class="mty-draggable-item slide">
+                  <div class="pimage">
+                  <img width="240" height="240" src="stock/iphone2.jpg" class="drag-image">
+                </div>
+                </a>
+
+                <a class="mty-draggable-item slide">
+                  <div class="pimage">
+                  <img width="240" height="240" src="stock/iphone3.jpg" class="drag-image">
+                </div>
+                </a>
+                
+
+                <a class="mty-draggable-item slide">
+                  <div class="pimage">
+                  <img width="240" height="240" src="stock/iphone.jpg" class="drag-image">
+                </div>
+                </a>
+          
           </div>
-          </a>
+         </div>
          </div>
         <div class="mty-image-paginator">
             <span class="mty-pag-on">
@@ -785,6 +803,14 @@
           e.preventDefault();
         $('.image-wrap img').attr("src", $(this).attr("href"));
         });
+
+
+        //product-image-gallery
+                var mtyslideshow = new Slideshow({
+          id : 'mty-slider',     
+          autoplay: true,
+        });
+
 
         //Magnific popup
         $('.vt-mfp').magnificPopup({
