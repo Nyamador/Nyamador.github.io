@@ -1,80 +1,298 @@
-@media only screen and (max-width: 590px){
-
-.mty-nav-wrap{
-	position: fixed;
+body {
+  background-color: #ffffff;
 }
 
-.mty-account-header{
-	background-color: #041e42 ;
-	height: 150px;
-	display: flex;
-	flex-flow: column-reverse;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
 }
 
-.account-header-card{
-	width: 90%;
-	background-color: white;
-	box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
-	margin: 0 auto;
-	margin-bottom: -40px;
-	border-radius: 2px;
-	display: flex;
-	padding: 10px;
-	border: 1px solid #ededed;;
+.dashboard-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  max-width: 1232px;
 }
 
-.order-count{
-	width: 50%;
-	text-align: center;
+.dashboard-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  box-pack: justify;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
+.dashboard-description {
+  -webkit-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  max-width: 60%;
+  min-width: 0;
+}
 
-.mty-username{
-	margin-bottom: 35px;
+.dashboard-paragraph {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+.account-title {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.dashboard-art {
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  margin-left: 60px;
+  max-width: 40%;
+}
+
+.dashboard-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.dashboard-items {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.a-heading {
+  margin-bottom: 14px !important;
+  margin-top: 14px !important;
+}
+
+.account-row {
+  display: table;
+  height: 100%;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.account-box {
+  display: table-cell;
+  height: 100%;
+  padding-left: 20px;
+  width: 340px;
+}
+
+.account-box:first-child {
+  padding-left: 0;
+  width: 320px;
+}
+
+.account-card-link {
+  height: 100%;
+  display: block;
+}
+
+.card-heading {
+  color: #000;
+}
+.card-inner {
+  display: block;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: #fff;
+}
+
+.card-inner:hover {
+  background: rgba(241, 241, 241, 0.671);
+  border: 1px solid #041e42;
+}
+
+.inner-card-wrap {
+  border-radius: 4px;
+  position: relative;
+  padding: 14px 18px;
+}
+
+.acc-l {
+  margin-right: 2%;
+  float: left;
+  min-height: 1px;
+  overflow: visible;
+}
+
+.acc-r {
+  margin-right: 0;
+  float: right;
+}
+
+.acc-card-span {
+  color: #555 !important;
+  font-size: 13px;
+}
+
+.acc-row:after,
+.acc-row:before {
+  display: table;
+  content: "";
+  line-height: 0;
+  font-size: 0;
+}
+
+.acc-img {
+  max-width: 100%;
+  border: 0;
+}
+
+/*============================= Orders =========================*/
+.list-display {
+  margin: 0 auto;
+  max-width: 800px;
+  padding-top: 8px;
+}
+
+.orders-wrap {
+  display: block;
+  border-radius: 4px;
+  border: 1px #ddd solid;
+  background-color: #fff;
+}
+
+.orders-title {
+  margin-bottom: 10px !important;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.order-container {
+  padding: 8px;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.order-item {
+  border-bottom: 1px solid #ededed;
+  padding: 8px;
+}
+
+.order-item:last-child {
+  border-bottom: 0;
+}
+
+.order-summary-box {
+  display: flex;
+}
+
+.order-image {
+  flex-shrink: 0;
+  margin: 8px;
+  border-radius: 4px;
+}
+
+.order-product {
+  font-size: 0.875rem;
+  margin-right: 30px;
+  padding: 8px;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+}
+
+.order-detail-btn {
+  margin-left: auto;
+  color: #ffb000;
+  padding: 8px;
+  align-self: baseline;
+  text-transform: uppercase;
+  transform: translate3d(0, 0, 0);
+  flex-shrink: 0;
+}
+
+.order-date {
+  padding: 8px 0;
+}
+.order-status {
+  align-items: center;
+  margin-top: auto;
+  display: flex;
+  color: #3ac600;
+}
+/*====//=========================== Orders ======================//====*/
+@media only screen and (max-width: 590px) {
+  .mty-nav-wrap {
+    position: fixed;
+  }
+
+  .mty-account-header {
+    background-color: #041e42;
+    height: 150px;
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .account-header-card {
+    width: 90%;
+    background-color: white;
+    box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
+    margin: 0 auto;
+    margin-bottom: -40px;
+    border-radius: 2px;
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ededed;
+  }
+
+  .order-count {
+    width: 50%;
+    text-align: center;
+  }
+
+  .mty-username {
+    margin-bottom: 35px;
     padding-left: 20px;
-}
+  }
 
-.mty-user{
-	font-weight: 700;
+  .mty-user {
+    font-weight: 700;
     color: white;
     font-size: 25px;
-}
+  }
 
-.number-lg{
-	font-size: 25px;
-}
+  .number-lg {
+    font-size: 25px;
+  }
 
-
-
-.mty-dashboard-wrap{
-	padding: 10px;
-	    position: relative;
+  .mty-dashboard-wrap {
+    padding: 10px;
+    position: relative;
     top: 60px;
-}
+  }
 
-.mty-dashboard{
-	background-color: white;
-	box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
-	border-radius: 8px;
-	border: 1px solid #ededed;
-}
+  .mty-dashboard {
+    background-color: white;
+    box-shadow: 0px 0px 18px 0px rgba(130, 130, 130, 0.2);
+    border-radius: 8px;
+    border: 1px solid #ededed;
+  }
 
-.dashboard-col{
-	padding: 12px;
-	border-bottom: 1px solid #ededed;
-	display: flex;
-	align-items:center;
-}
+  .dashboard-col {
+    padding: 12px;
+    border-bottom: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+  }
 
-.col-button{
-	width: 99%;
-}
+  .col-button {
+    width: 99%;
+  }
 
-.arrow{
-	    float: right;
+  .arrow {
+    float: right;
     transform: rotate(180deg);
-}
+  }
 
-
-/**/
+  /**/
 }
