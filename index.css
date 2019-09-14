@@ -1,10 +1,12 @@
 
 body {
   font-size: 14px;
-  font-family: Roboto-Regular;
+  font-family: Roboto,Helvetica,Arial,sans-serif;
   margin: 0;
   padding: 0;
   background-color: #eaeded;
+  font-weight: 400;
+  line-height: 24px;
 }
 
   *{
@@ -73,7 +75,7 @@ body {
 } */
    
 ::selection{
-    background: #ffa353;
+    background: #bcd4f5;
     text-shadow: none;
 }
 
@@ -122,7 +124,7 @@ tbody{
       .sprice {
       font-family: Arial;
       font-size: 16px;
-      margin: 0;
+      margin-right: 10px;
       font-weight: 600;
       }
 
@@ -353,6 +355,92 @@ tbody{
   vertical-align: middle;
 }
 
+.category-title{
+  font-size: 14px;
+  color: #5b5b5b;
+  font-family: Roboto-Regular;
+  font-weight: 100;
+  margin-top:10px;
+}
+
+.category-title:hover{
+  text-decoration: underline;
+}
+
+.category-module{
+  margin: 30px auto;
+  max-width: 1320px;
+}
+
+.category-mo-heading{
+  margin-bottom: 20px;
+  color: rgb(51, 51, 51);
+  font-family: Roboto-Medium;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.mo-heading-wrap{
+  display:flex;
+  padding: 12px;
+  background: white;
+  border-bottom: 1px solid #ededed;
+}
+
+.mo-heading{
+  font-weight: 100;
+  font-family: Roboto-Regular;
+}
+
+.mo-heading-container{
+  padding-right: 20px;
+  flex: 0 1 auto;
+}
+
+.module-heading{
+  font-size: 1.5rem;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.popular-categories{
+  margin-left: calc(24px - 0.915%);
+  margin-right: calc(24px - 0.915%);
+  max-width: 100%;
+  margin: 24px auto 0;
+  padding: 0;
+  text-align: center;
+}
+
+.popular-category{
+    width: 14.28571429%;
+    box-sizing: border-box;
+    display: inline-block;
+    list-style: none;
+    vertical-align: text-top;
+    /* border: 1px solid gainsboro; */
+    /* border-right: none; */
+    background: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* .popular-category:last-child{
+  border-right:1px solid gainsboro;
+} */
+
+.popular-category-link{
+  color: #111820;
+  text-decoration: none;
+}
+
+.popular-category-name{
+  overflow-wrap: break-word;
+  margin-bottom: 0;
+  margin-top: 10px;
+  text-align: center;
+}
 
 .cat-name:hover 
 .drop-menu{
@@ -856,6 +944,18 @@ a.session:hover{
   display: flex;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.static-grid:first-child{
+  padding: 8px 10px 8px 10px;
+  background: white;
+  display: flex;
+  border-radius: 0 0 4px 4px;
+}
+
+.static-grid:nth-child(2){
+  box-shadow:none;
+  margin-top:0;
 }
 
 .rating {
