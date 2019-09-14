@@ -570,20 +570,20 @@ h6 {
   flex: 1 1 0%;
 }
 
-.add-address{
+.add-address {
   font-weight: 500;
-    margin-top: 10px;
-    position: relative;
-    cursor: pointer;
-    background: #00d061;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #00d061;
-    border-image: initial;
-    padding: 10px 20px;
-    border-radius: 2px;
-    visibility: visible;
-    color: white;
+  margin-top: 10px;
+  position: relative;
+  cursor: pointer;
+  background: #00d061;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #00d061;
+  border-image: initial;
+  padding: 10px 20px;
+  border-radius: 2px;
+  visibility: visible;
+  color: white;
 }
 /* =====//====================Wishlist=============================// */
 @media only screen and (max-width: 590px) {
@@ -650,9 +650,8 @@ h6 {
     align-items: center;
   }
 
-
-  .dashboard-col:active{
-    background-color:#c7fce0;
+  .dashboard-col:active {
+    background-color: #c7fce0;
   }
 
   .col-button {
@@ -665,4 +664,35 @@ h6 {
   }
 
   /**/
+}
+
+/*================= Mobile========================= */
+.vty-reverse{
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 42px;
+  line-height: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+#url-reverse {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+} /*Back button*/
+
+.sub-header-title{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 0;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  font-size: 16px;
+    padding-left: 12px;
 }

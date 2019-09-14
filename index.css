@@ -1413,14 +1413,14 @@ width: 100%;
     border-bottom-right-radius: 0;
 }
 .mty-nav{
-  padding:10px 10px 0px 10px;
+  padding:5px 5px 0px 5px;
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;  
 }
 
 .mty-sub-header{
-  background-color: #2874f0;
+  background-color: #041e42;
     color: #fff;
     position: fixed;
     top: 0;
