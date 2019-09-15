@@ -667,7 +667,10 @@ h6 {
 }
 
 /*================= Mobile========================= */
-.vty-reverse{
+
+.mty-main {
+}
+.vty-reverse {
   color: #fff;
   display: table-cell;
   vertical-align: middle;
@@ -684,7 +687,7 @@ h6 {
   margin-right: 10px;
 } /*Back button*/
 
-.sub-header-title{
+.sub-header-title {
   display: table-cell;
   vertical-align: middle;
   padding: 5px 0;
@@ -694,5 +697,118 @@ h6 {
   width: 100%;
   white-space: nowrap;
   font-size: 16px;
-    padding-left: 12px;
+  padding-left: 12px;
+}
+
+.mty-list-view {
+  padding: 4px 0 4px 0;
+}
+
+.order-list-item {
+  margin: 4px 0 4px 0;
+  padding: 8px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.spacer {
+  /* height: 79px; */
+  height: 53px;
+  z-index: 0;
+  width: 100%;
+}
+
+.mty-order-summary {
+  padding-left: 8px;
+}
+
+.mty-order-item {
+  white-space: initial;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.mty-order-status {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #000b8c;
+}
+
+.mty-pagination {
+  padding: 8px 0 8px 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mty-prev {
+  padding: 4px 8px 4px 8px;
+  background: rgba(0, 0, 0, 0);
+  color: #c7c7cd;
+}
+
+.vel-down {
+  transform: rotate(0deg);
+}
+
+.rt180 {
+  transform: rotate(180deg);
+}
+
+.active:active {
+  background-color: #c7fce0;
+}
+
+.mty-body {
+  font-size: 0.75rem;
+  padding: 8px 0 8px 0;
+}
+
+.mty-order-detail {
+  flex: 0 1 auto;
+  flex-wrap: wrap;
+  padding: 8px;
+  width: 100%;
+}
+.mty-order-header {
+  padding: 8px 16px 8px 16px;
+  border-bottom: 1px solid #ededed;
+}
+
+.mty-order-detail-item {
+  margin-bottom: 8px;
+  border: 1px solid #ededed;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.mty-h3 {
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100%;
+  padding: 16px;
+}
+
+.mty-item-heading{
+  padding:8px;
+  border-bottom: 1px solid #ededed;
+}
+
+.fl-r{
+  float:right;
+  color:blue;
+}
+
+.no-shad{
+  box-shadow: none;
+}
+
+.black{
+  color:black;  
 }
