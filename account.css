@@ -795,20 +795,169 @@ h6 {
   padding: 16px;
 }
 
-.mty-item-heading{
-  padding:8px;
+.mty-item-heading {
+  padding: 8px;
   border-bottom: 1px solid #ededed;
 }
 
-.fl-r{
-  float:right;
-  color:blue;
+.fl-r {
+  float: right;
+  color: blue;
 }
 
-.no-shad{
+.no-shad {
   box-shadow: none;
 }
 
-.black{
-  color:black;  
+.black {
+  color: black;
+}
+
+/*=================Dashboard =================== */
+@media (min-width: 48.1875rem) {
+  .help-navbar {
+    box-sizing: border-box;
+    display: flex;
+    max-width: 75.125rem;
+    min-height: 3rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
+.vty-article {
+  position: relative;
+}
+
+.article-wrap {
+  background: transparent;
+  padding: 0;
+}
+
+@media (min-width: 48.1875rem) {
+  .article-wrap {
+    display: flex;
+    justify-content: center;
+    max-width: 89.125rem;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 48.1875rem) {
+  .article-content {
+    box-sizing: border-box;
+    margin: 0;
+    max-width: 75.125rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 61rem) {
+  .article-content {
+    display: flex;
+  }
+}
+
+.vty-readable {
+  align-self: flex-start;
+  flex: 1;
+  max-width: 52rem;
+}
+
+.vty-readable {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+
+.sheet {
+  border: 1px solid #ededed;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+}
+
+.sheet {
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem;
+  text-align: left;
+  width: 100%;
+}
+
+@media (min-width: 48.1875rem) {
+  .sheet {
+    margin: 2.625rem 0 0;
+  }
+}
+
+@media (min-width: 48.1875rem) {
+  .sheet {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 48.1875rem) {
+  .sheet-container {
+    padding: 0;
+  }
+}
+
+@media (min-width: 6.9375rem) {
+  .sheet-container {
+    min-height: 14.5rem;
+  }
+}
+
+@media (min-width: 48.1875rem) {
+  .sheet-container h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 0 0 0.5rem;
+  }
+}
+
+.sheet-container h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    margin: 0 0 .5rem;
+}
+
+.bw h1, .bw h2, .bw h3,
+.bw h4,.bw h5,.bw h6  { 
+  font-family: "Google Sans", Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.bw{
+  word-wrap: break-word;
+}
+
+.bw ul {
+    margin: .25rem 0 .75rem;
+}
+
+
+.bw ol, .bw ul {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.bw ul li {
+    margin: .25rem 0 .25rem 1.625rem;
+}
+
+@media (min-width: 61rem){
+.article-aside {
+    width: 21.125rem;
+}
+}
+
+@media (min-width: 48.1875rem){
+.sheet-container p {
+    margin: .8125rem 0;
+}
 }
