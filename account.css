@@ -705,9 +705,9 @@ h6 {
 }
 
 .order-list-item {
-  margin: 4px 0 4px 0;
+  margin: 4px 0 0 0;
   padding: 8px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid #ededed;
   background-color: #fff;
 }
 
@@ -744,6 +744,10 @@ h6 {
   padding: 8px 0 8px 0;
   align-items: center;
   justify-content: space-between;
+}
+
+.mty-pagination:last-child {
+  margin-bottom: 70px;
 }
 
 .mty-prev {
@@ -811,6 +815,14 @@ h6 {
 
 .black {
   color: black;
+}
+
+.gray {
+  color: gainsboro;
+}
+
+.pl-8 {
+  padding-left: 8px;
 }
 
 /*=================Dashboard =================== */
@@ -919,45 +931,84 @@ h6 {
 }
 
 .sheet-container h1 {
-    font-size: 1.75rem;
-    line-height: 2rem;
-    margin: 0 0 .5rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin: 0 0 0.5rem;
 }
 
-.bw h1, .bw h2, .bw h3,
-.bw h4,.bw h5,.bw h6  { 
+.bw h1,
+.bw h2,
+.bw h3,
+.bw h4,
+.bw h5,
+.bw h6 {
   font-family: "Google Sans", Roboto, sans-serif;
   font-weight: 400;
 }
 
-.bw{
+.bw {
   word-wrap: break-word;
 }
 
 .bw ul {
-    margin: .25rem 0 .75rem;
+  margin: 0.25rem 0 0.75rem;
 }
 
-
-.bw ol, .bw ul {
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    vertical-align: baseline;
+.bw ol,
+.bw ul {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
 }
 
 .bw ul li {
-    margin: .25rem 0 .25rem 1.625rem;
+  margin: 0.25rem 0 0.25rem 1.625rem;
 }
 
-@media (min-width: 61rem){
-.article-aside {
+@media (min-width: 61rem) {
+  .article-aside {
     width: 21.125rem;
-}
+  }
 }
 
-@media (min-width: 48.1875rem){
-.sheet-container p {
-    margin: .8125rem 0;
+@media (min-width: 48.1875rem) {
+  .sheet-container p {
+    margin: 0.8125rem 0;
+  }
 }
+
+.mty-wishlist-footer {
+  padding: 8px;
+  background-color: white;
+}
+
+.mty-wishlist-remove {
+  margin-right: auto;
+  margin-top: 5px;
+}
+
+.green {
+  color: #00d061;
+}
+
+.wish-buy {
+  background: #00d061;
+  color: white;
+  padding: 12px;
+}
+
+.wish-out-of-stock {
+  background: #75757a;
+  color: white;
+  pointer-events: none;
+}
+
+.wish-buy:active {
+  background: #00d061 !important;
+}
+
+.p12 {
+  padding: 12px;
+  font-size: 16px;
 }
