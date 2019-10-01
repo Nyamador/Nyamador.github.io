@@ -194,7 +194,7 @@
                 </header>
 
                 <div class="feed-flex">
-                  <div class="feed-flex img-grid">
+                  <div class="feed-flex img-grid" tabindex="0">
                     <div class="gallery-wrap feed-flex">
                       <div class="gallery-contain feed-flex">
                         <img src="stock/feed1.jpg" alt="" sizes="614px" class="imgga">
@@ -283,6 +283,15 @@
                       <time class="vel-time" datetime="2019-09-30T09:57:21.000Z" title="Sep 30, 2019">2 hours ago</time>
                     </a>
                   </div>
+
+                  <section class="compose-comment feed-flex">
+                    <div class="feed-flex">
+                      <form class="composer">
+                        <textarea aria-label="Add a comment…" placeholder="Add a comment…" class="composer-content center" autocomplete="off" autocorrect="off"></textarea>
+                        <button class="compose-send" disabled="" type="submit">Post</button>
+                      </form>
+                    </div>
+                  </section>
                 </div>
               </article>
             </div>
@@ -300,7 +309,13 @@
                 <header class="pop-header feed-flex">
                 <div class="feed-flex pop-h-w center pop-sp-l"></div>
                 <div class="pop-h1 center">Share</div>
-                <div class="pop-exit feed-flex center"></div>
+                <div class="pop-exit feed-flex center">
+                  <button type="button" class="center ex-btn" name="button">
+                    <span class="ex-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="&#10;"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+                  </span>
+                  </button>
+                </div>
                 </header>
               </div>
 
