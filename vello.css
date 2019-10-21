@@ -14,6 +14,7 @@
 
 html {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 * {
@@ -302,6 +303,18 @@ p, h1, h2, h3, h4, h5, h6 {
 .flex {
   display: -ms-flexbox !important;
   display: flex !important;
+}
+
+.flex-row{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .color-textBlackMild {
@@ -903,7 +916,7 @@ input:checked + .slider:before {
   margin-top : 70px;
 }
 
-.vel-feed-card:first-child {
+.vel-feed-card:nth-child(1) {
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
 }
@@ -1062,6 +1075,68 @@ input:checked + .slider:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+/*----------------- Navbar------------------- */
+.vel-mobile--nav{
+  margin-bottom: env(safe-area-inset-bottom);
+}
+
+.mobile-nav--container{
+  height: 52px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.95);
+  transition: bottom 0.2s linear 0s;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid var(--gray);
+  width: 100vw;
+}
+
+.link--title{
+  font-size: 10px;
+}
+
+.mr-auto{
+  margin-right: auto;  
+}
+
+.ml-auto{
+  margin-left: auto;
+}
+
+.al-ctr {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.js-ctr {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-1{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 0;
+  min-width: 0;
+}
+
+.nav-link--mobile{
+  position: relative;
+}
+
+.text-ctr{
+  text-align: center;
+}
+/*----------------- Nabar------------------- */
 
 /* Popup */
 
