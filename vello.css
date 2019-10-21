@@ -712,6 +712,7 @@ body:not([data-focus-source="keyboard"]) :focus {
   min-width: 0;
   padding-left: 16px;
   padding-right: 16px;
+  width: 95vw
 }
 
 .flex-row {
@@ -912,6 +913,9 @@ input:checked + .slider:before {
 
 
 /* Feed.css */
+.stories.facesnap .story > .item-link>.item-preview{
+  background: #e60023 !important;
+}
 .feed-container {
   margin-top : 70px;
 }
@@ -941,6 +945,9 @@ input:checked + .slider:before {
   border-bottom: 1px solid var(--gray);
 }
 
+.feed-card--header:first-child{
+  border-top:1px solid var(--gray);
+}
 .vel-profile--photo {
   background-color: #fafafa;
   border-radius: 50%;
@@ -1377,8 +1384,12 @@ input:checked + .slider:before {
 }
 
 @media only screen and (min-width: 590px) {
-  .feed-container {
-    /* margin: 0 auto; */
+  .feed-container{
+    margin: 0 auto;
+  }
+  .vel-feed-card {    
+    box-shadow: 0 0 10px 0 rgba(209, 213, 233, 0.50);
+    max-width: 600px;
   }
 }
 
