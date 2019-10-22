@@ -268,7 +268,7 @@
 
         <div class="flex-1 js-ctr flex-row nav-link--mobile">
           <a href="#" class="text-ctr">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><style>.a{fill:rgba(0,0,0,0);}.b{fill:#4E586E;}</style></defs><rect class="a" width="28" height="28"></rect><path class="b" d="M6,22a6.007,6.007,0,0,1-6-6V6A6.007,6.007,0,0,1,6,0h8a6.007,6.007,0,0,1,6,6V16a6.006,6.006,0,0,1-6,6ZM1.715,6.11v9.78a4.505,4.505,0,0,0,4.5,4.5h7.571a4.505,4.505,0,0,0,4.5-4.5V6.11a4.505,4.505,0,0,0-4.5-4.5H6.214A4.505,4.505,0,0,0,1.715,6.11ZM7.22,10.2a3.22,3.22,0,1,1,0-6.439h5.561a3.22,3.22,0,0,1,0,6.439Z" transform="translate(4 3)"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><style>.a{fill:rgba(0,0,0,0);}.b{fill: #e60023;}</style></defs><rect class="a" width="28" height="28"></rect><path class="b" d="M6,22a6.007,6.007,0,0,1-6-6V6A6.007,6.007,0,0,1,6,0h8a6.007,6.007,0,0,1,6,6V16a6.006,6.006,0,0,1-6,6ZM1.715,6.11v9.78a4.505,4.505,0,0,0,4.5,4.5h7.571a4.505,4.505,0,0,0,4.5-4.5V6.11a4.505,4.505,0,0,0-4.5-4.5H6.214A4.505,4.505,0,0,0,1.715,6.11ZM7.22,10.2a3.22,3.22,0,1,1,0-6.439h5.561a3.22,3.22,0,0,1,0,6.439Z" transform="translate(4 3)"></path></svg>
             <!-- <div title="home" class="link--title">Home</div> -->
           </a>
         </div>
@@ -501,12 +501,18 @@
       $(document).ready(function(){
 
       
-      //opening modal 
-
-      document.getElementById('modal-toggler').onclick = function modalOpener() {
-      document.getElementById('m-modal').style = "display:block";
-      document.getElementById("main").classList.add( "blur" );
-      }  
+       
+      const toggleButton = document.querySelectorAll('#modal-toggler');
+      const mobileModal = document.getElementById('m-modal');
+      const mainContent = document.getElementById('main');
+      
+      //opening modal
+      toggleButton.forEach(function modalOpener(toggleButton) {
+        toggleButton.addEventListener('click', function(){
+            mobileModal.style = "display:block";
+            mainContent.classList.add( "blur" );
+        });
+      });
       //Closing mobile modal 
       document.getElementById('close').onclick = function modalCloser() {
       document.getElementById('m-modal').style = "display:none";
