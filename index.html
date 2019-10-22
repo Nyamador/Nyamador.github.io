@@ -33,23 +33,45 @@
         </div>
       </div>
 
-      <div class="p-4">
+      <div class="p-4 desktop-account--bar">
         <a href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" style="fill:#4e586e;" viewBox="0 0 24 24"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M15.55 13c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.37-.66-.11-1.48-.87-1.48H5.21l-.94-2H1v2h2l3.6 7.59-1.35 2.44C4.52 15.37 5.48 17 7 17h12v-2H7l1.1-2h7.45zM6.16 6h12.15l-2.76 5H8.53L6.16 6zM7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path></svg>
         </a>
       </div>
   </header>
 
-  <main class="feed-container mt-10" id="main">
-      <div id="stories" class="storiesWrapper ">
 
+  <div class="jumbotron">
+
+  </div>
+
+  <main class="feed-container mt-10" id="main">
+      <div class="stories-container">
+              <div class="pt-10 pb-10 pl-10">
+                  <p style="color: #858997;">Stories &amp; Moments</p>
+              </div>        
+
+      <div id="stories" class="storiesWrapper ">
+      </div>
       </div>
 
 
+      <div>
 
+        <h1 class="authenticated-greeting">Welcome, Desmond.</h1>
 
-
-
+        <div class="desktop-search vel-search--wrapper flex-row" style="height:40px;background: white;box-shadow: 0 0 10px 0 rgba(209, 213, 233, 50%);max-width: 614px;margin-top: 20px;margin-right: 28px;">
+          <div class="vel-search--container flex-row" style="height:100%;">
+              <!-- svg -->
+              <div class="search-icon">
+                <svg class="searchsvg" height="20" width="20" viewBox="0 0 24 24" aria-label="Search icon" role="img"><path d="M10 16c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6m13.12 2.88l-4.26-4.26A9.842 9.842 0 0 0 20 10c0-5.52-4.48-10-10-10S0 4.48 0 10s4.48 10 10 10c1.67 0 3.24-.41 4.62-1.14l4.26 4.26a3 3 0 0 0 4.24 0 3 3 0 0 0 0-4.24"></path></svg>
+              </div>
+              <!-- input -->
+              <div class="vel-search--input" style="height:100%;">
+                  <input type="text" autocapitalize="off" autocorrect="off" autocomplete="off" aria-autocomplete="list" aria-describedby="SearchInputAccessibleText" aria-controls="SuggestionsMenu" aria-activedescendant="" class="SearchBoxInputExperimental" data-test-id="search-box-input" name="searchBoxInput" placeholder="Search" style="background-color:transparent;border:none;color:#333;font-size:16px;font-weight:600;height:100%;outline:none;padding:0;width:100%" value="">
+              </div>
+          </div>
+        </div>
 
       <article class="vel-feed-card">
         <header class="feed-card--header flex mt-10">
@@ -85,7 +107,9 @@
                 <img src="assets/feed1.jpg" alt="Desmond pitcure wuth Richard Branson" class="feed-image">
                 <img src="assets/prop.jpg" alt="Desmond pitcure wuth Richard Branson" class="feed-image">
         </div>
-        <div class="p-8 pb-0">
+
+        <div class="feed-bottom-container">
+                  <div class="p-8 pb-0">
           <div class="p-8 pb-0 flex-row">
 
            <a class="vel-like--button mr-8 flex-row" href="#">
@@ -121,8 +145,10 @@
         <div class="p-8 pt-0 text-vello" style="font-size: 14px;">
             <p>Airport Hotels The Right Way To Start A Short Break Holiday</p>
         </div>
+        </div>
 
       </article>
+      </div>
   </main>
   
   <nav class="vel-mobile--nav">
@@ -189,7 +215,7 @@
                       
                       <div class="quantity-nav flex-row">
                         <div class="quantity-button quantity-up mr-4 ml-8">+</div>
-                        <input type="number" min="1" max="9" step="1" value="1" readonly>
+                        <input type="number" min="1" max="10" step="1" value="1" readonly>
                         <div class="quantity-button quantity-down">-</div>
                       </div>
                   </div>
