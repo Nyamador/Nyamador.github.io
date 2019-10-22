@@ -181,10 +181,15 @@
 
                   <div class="quantity flex-row"> 
                     <!-- <small class="mr-4">Quantity : </small> -->
-                      <input type="number" min="1" max="9" step="1" value="1" readonly>
+                      
+                      <div class="quantity-nav flex-row">
+                        <div class="quantity-button quantity-up mr-4 ml-8">+</div>
+                        <input type="number" min="1" max="9" step="1" value="1" readonly>
+                        <div class="quantity-button quantity-down">-</div>
+                      </div>
                   </div>
                   <div class="mt-8 pb-0 p-4 flex-row text-black">  
-                      <p class="p-8">GHC 200</p>
+                      <p class="p-8" id="feed-product-price" data-unit-cost="200">GHC 200</p>
 
                       <div class="ml-auto">
                         <button class="vel-button vel-button--default vel-button--text p-8" type="button">
@@ -390,7 +395,7 @@
     });
 
 
-$('<div class="quantity-nav flex-row"><div class="quantity-button quantity-up mr-4 ml-8">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+    //Product price increment for product list
     $('.quantity').each(function() {
       var spinner = jQuery(this),
         input = spinner.find('input[type="number"]'),
@@ -408,6 +413,8 @@ $('<div class="quantity-nav flex-row"><div class="quantity-button quantity-up mr
         }
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
+        const unitCost = $('#feed-product-price').data('unitCost');
+        $('#feed-product-price').text("GHC " + unitCost * newVal);
       });
 
       btnDown.click(function() {
@@ -419,6 +426,8 @@ $('<div class="quantity-nav flex-row"><div class="quantity-button quantity-up mr
         }
         spinner.find("input").val(newVal);
         spinner.find("input").trigger("change");
+        const unitCost = $('#feed-product-price').data('unitCost');
+        $('#feed-product-price').text("GHC " + unitCost * newVal);
       });
 
     });
