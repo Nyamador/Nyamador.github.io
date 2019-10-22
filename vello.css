@@ -955,10 +955,28 @@ input:checked + .slider:before {
   margin-top : 70px;
 }
 
+.slick-arrow{
+  display: none !important;
+}
+
 .vel-feed-card{
+  margin-bottom: 60px;
+}
+
+article.vel-feed-card:first-child{
   border-bottom: 1px solid var(--gray);
 }
 
+article.vel-feed-card:last-child{
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 70px;
+}
+
+@media (max-width: 735px){
+article.vel-feed-card {
+    margin-bottom: 15px;
+}
+}
 
 .vel-feed-card {
   margin: 0 auto;
