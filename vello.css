@@ -943,6 +943,79 @@ input:checked + .slider:before {
 
 
 /* Feed.css */
+
+
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity{
+  height: 20px;
+  padding: 8px;
+
+}
+.quantity input {
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid var(--gray);
+  outline: none;
+  text-align: center;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  cursor: pointer;
+  border: 1px solid var(--gray);
+  width: 40px;
+  text-align: center;
+  font-weight: bold;
+  height: 20px;
+}
+
+/*.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}*/
+
+
+
+
+
+
+
+
+
+
+
 .stories{
   padding: 10px;
   margin-top: 60px;
