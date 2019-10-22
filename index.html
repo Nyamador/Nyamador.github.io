@@ -179,7 +179,8 @@
                   <p>Blue jeans winter new pattern office</p>
 
 
-                  <div class="quantity flex-row">
+                  <div class="quantity flex-row"> 
+                    <!-- <small class="mr-4">Quantity : </small> -->
                       <input type="number" min="1" max="9" step="1" value="1" readonly>
                   </div>
                   <div class="mt-8 pb-0 p-4 flex-row text-black">  
@@ -389,7 +390,7 @@
     });
 
 
-$('<div class="quantity-nav flex-row"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
+$('<div class="quantity-nav flex-row"><div class="quantity-button quantity-up mr-4 ml-8">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
     $('.quantity').each(function() {
       var spinner = jQuery(this),
         input = spinner.find('input[type="number"]'),
