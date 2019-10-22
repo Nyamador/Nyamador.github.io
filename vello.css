@@ -1623,6 +1623,10 @@ article.vel-feed-card:last-child {
   .authenticated-greeting {
     display: none;
   }
+
+  .desktop-search{
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 640px) {
