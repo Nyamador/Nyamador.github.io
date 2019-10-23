@@ -193,6 +193,7 @@
     </div>
   </nav>
 
+
   <div class="vel-modal--mobile" id="m-modal">
     <div class="modal-mobile--container">
       <header class="modal-mobile--header  flex-row">
@@ -226,9 +227,11 @@
                           Add Cart 
                         </button>
 
-                        <button class="vel-button vel-button--default vel-button--text p-8" type="button">
+                      <form>
+                        <button class="vel-button vel-button--default vel-button--text p-8" type="button" onClick="payWithRave()">
                           Buy Now
-                        </button>                        
+                        </button>
+                      </form>                                                
                       </div>
                   </div>
               </div>
@@ -477,5 +480,39 @@
 
     });
   </script>
+  <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+  <script>
+    const API_publicKey = "FLWPUBK_TEST-748392a5bb000134182a75d3bcffa41e-X";
+
+    function payWithRave() {
+        var x = getpaidSetup({
+            PBFPubKey: API_publicKey,
+            customer_email: "dselasi4u@gmail.com",
+            amount: 2000,
+            customer_phone: "233206335155",
+            currency: "GHS",
+            txref: "rave-123456",
+            meta: [{
+                metaname: "flightID",
+                metavalue: "AP1234"
+            }],
+            onclose: function() {},
+            callback: function(response) {
+                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+                console.log("This is the response returned after a charge", response);
+                if (
+                    response.tx.chargeResponseCode == "00" ||
+                    response.tx.chargeResponseCode == "0"
+                ) {
+                    // redirect to a success page
+                } else {
+                    // redirect to a failure page.
+                }
+
+                x.close(); // use this to close the modal immediately after payment.
+            }
+        });
+    }
+</script>
 </body>
 </html>
