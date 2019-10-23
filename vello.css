@@ -1640,6 +1640,10 @@ article.vel-feed-card:last-child {
     margin: 0 auto;
   }
 
+  .desktop-feed-container{
+    margin-left: auto !important;
+  }
+
   .authenticated-greeting {
     font-weight: 100;
     font-size: 36px;
@@ -1711,6 +1715,7 @@ article.vel-feed-card:last-child {
     height: 12vw;
     max-width: 450px;
     margin-top: 60px;
+    margin-right: auto !important;
   }
 
   .stories.carousel .story {
