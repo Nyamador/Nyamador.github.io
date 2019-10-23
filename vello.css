@@ -1279,6 +1279,23 @@ article.vel-feed-card:last-child {
   margin-bottom: env(safe-area-inset-bottom);
 }
 
+.cart-counter{
+  line-height: 1.1em;
+  background: #e60023;
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  margin-left: 10px;
+  color: #fff;
+  min-width: 18px;
+  min-height: 18px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  text-indent: -1px;
+  top: 6px;
+  text-align: center;
+}
+
 .mobile-nav--container {
   height: 52px;
   z-index: 1;
@@ -1636,7 +1653,7 @@ article.vel-feed-card:last-child {
     z-index: 0;
     background: none;
     border-bottom: none;
-    max-width: 1200px !important;
+    max-width: 1000px !important;
     margin: 0 auto;
   }
 
@@ -1712,7 +1729,7 @@ article.vel-feed-card:last-child {
     padding: 12px;
     order: 2;
     white-space: nowrap;
-    height: 12vw;
+    max-height: 18vh;
     max-width: 450px;
     margin-top: 60px;
     margin-right: auto !important;
