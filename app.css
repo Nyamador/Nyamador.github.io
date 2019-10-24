@@ -4,6 +4,11 @@
 	}
 }
 
+@media(min-width: 640px){
+	.vel-app-header{
+		display: none !important;
+	}
+}
 
 .vel-app-header{
 	height: 56px;
