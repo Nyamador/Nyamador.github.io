@@ -1793,6 +1793,7 @@ article.vel-feed-card:last-child {
   display: -ms-flexbox !important;
   flex-flow: column;
   justify-content: center;  
+  height: 100vh;
 }
 
 .empty-state-svg--wrap{
@@ -1801,7 +1802,6 @@ article.vel-feed-card:last-child {
   flex-flow: column;
   justify-content: center;
   margin-right: auto;
-  height: 100vh;
   width: 100vw;
 }
 
