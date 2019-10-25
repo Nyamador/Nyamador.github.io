@@ -182,6 +182,7 @@ h6 {
   text-align: center;
 }
 
+
 /* ===============[padding] ============*/
 .p-2 {
   padding: 2px !important;
@@ -292,6 +293,10 @@ h6 {
 /* ============== [Padding]  =====================*/
 
 /* ===============[Margin] ============*/
+.m-auto{
+  margin :auto !important;
+}
+
 .m-2 {
   margin: 2px !important;
 }
@@ -312,6 +317,10 @@ h6 {
 }
 
 /* Margin-bottom */
+.mb-0{
+   margin-bottom: 0 !important;
+}
+
 .mb-2 {
   margin-bottom: 2px !important;
 }
@@ -332,6 +341,10 @@ h6 {
 }
 
 /* Margin-top */
+.mt-0{
+   margin-top: 0 !important;
+}
+
 .mt-2 {
   margin-top: 2px !important;
 }
@@ -409,6 +422,10 @@ h6 {
   color: rgba(145, 149, 161, 1);
 }
 /* ============[text-color]================== */
+
+.no-shadow{
+  box-shadow: none !important;
+}
 
 .flex {
   display: -ms-flexbox !important;
@@ -1269,9 +1286,13 @@ article.vel-feed-card:last-child {
 }
 
 .feed-btn {
-  flex-basis: 50%;
+  flex-basis: 48%;
   /*color: var(--vel-gray);*/
   border-radius: 10px;
+}
+
+.feed-btn-wrap{
+  justify-content: space-around;
 }
 
 /*----------------- Navbar------------------- */
@@ -1636,6 +1657,8 @@ article.vel-feed-card:last-child {
   font-weight: 600;
 }
 
+
+
 @media only screen and (max-width: 640px) {
   .authenticated-greeting {
     display: none;
@@ -1762,6 +1785,52 @@ article.vel-feed-card:last-child {
     transition: transform 0.2s;
     height: 60px;
     width: 60px;
+  }
+}
+
+
+/*==============================EMPTY STATE PAGES =========================================*/
+.empty-state-svg--container{
+  display: flex;
+  display: -ms-flexbox !important;
+  flex-flow: column;
+  justify-content: center;  
+  height: 100vh;
+}
+
+.empty-state-svg--wrap{
+  display: flex;
+  display: -ms-flexbox !important;
+  flex-flow: column;
+  justify-content: center;
+  margin-right: auto;
+  width: 100vw;
+}
+
+
+
+.empty-state--svg{
+  margin: auto;
+}
+
+.empty-state--text{
+  line-height: 1.3;
+}
+
+@media(max-width: 640px){
+  .empty-state-link{
+  display: none !important;
+}
+
+}
+@media (min-width: 640px){
+  .empty-state-link{
+    width: 20vw;
+    margin: 0 auto;
+  }  
+
+  .empty-state-link-large{
+    display: none !important;
   }
 }
 
