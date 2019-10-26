@@ -423,6 +423,9 @@ h6 {
 }
 /* ============[text-color]================== */
 
+.bold{
+  font-weight: 600 !important;
+}
 .no-shadow{
   box-shadow: none !important;
 }
