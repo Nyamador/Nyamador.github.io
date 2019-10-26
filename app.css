@@ -106,10 +106,31 @@ body{
     overflow: hidden;
 }
 
-.rating-block{
+.mobile-block{
 	position: relative;
     padding: 12px 0;
     margin: 0 16px;
+}
+
+.outlined{
+	border-bottom:1px solid #f2f2f2;
+}
+
+.link{
+	display: block;
+  padding-top: 6px;
+  font-size: 13px;
+  color: #199bc7;
+}
+
+.sub-title{
+	line-height: 18px;
+  font-size: 12px;
+}
+
+.mobile-block h3{
+	line-height: 22px;
+	font-size: 16px;
 }
 
 .cell{
@@ -118,6 +139,22 @@ body{
     -ms-flex: 1;
     flex: 1;
     list-style: none;
+}
+
+.star-summary{
+	margin-right: 5px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.average-rating--mobile{
+	margin-right: 5px;
+	line-height: 24px;
+	font-size: 13px;
+}
+
+.light-gray{
+	color: #ddd;
 }
 
 .product-cta-wrap{
