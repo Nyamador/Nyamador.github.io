@@ -1794,7 +1794,7 @@ article.vel-feed-card:last-child {
   display: flex;
   display: -ms-flexbox !important;
   flex-flow: column;
-  justify-content: center;  
+  justify-content: center;
   height: 100vh;
 }
 
@@ -1827,7 +1827,7 @@ article.vel-feed-card:last-child {
   .empty-state-link{
     width: 20vw;
     margin: 0 auto;
-  }  
+  }
 
   .empty-state-link-large{
     display: none !important;
