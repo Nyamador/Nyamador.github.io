@@ -3857,3 +3857,33 @@ table.focus-on tbody tr.focused td {
   padding-left: 20px;
 }
 /*# sourceMappingURL=style.css.map */
+
+
+/*===========
+Custom=======*/
+.imagePreview {
+  width: 100%;
+  height: 180px;
+  background:url(../images/small/img-8.jpg);
+  background-position: center center;
+  background-color:#191c2a;
+  background-size: cover;
+  background-repeat:no-repeat;
+  display: inline-block;
+  box-shadow:0px -3px 6px 2px rgba(0,0,0,0.2);
+}
+
+.imgUp
+{
+  margin-bottom:15px;
+}
+
+.b-primary
+{
+    display: block;
+    border-radius: 0px;
+    box-shadow: 0px 4px 6px 2px rgba(0,0,0,0.2);
+    margin-top: -5px;
+    color: white;
+    background: #31419b;
+}

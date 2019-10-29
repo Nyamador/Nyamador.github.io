@@ -1393,7 +1393,32 @@ article.vel-feed-card:last-child {
   width: 100vw;
 }
 
+.cart-modal {
+  bottom: 0;
+  position: fixed;
+  /*  filter: blur(8px);
+  -webkit-filter: blur(8px);*/
+  z-index: 100;
+  transition: height 3s ease-out;
+  width: 100vw; 
+  height: 30vh;
+  background: white;
+  border-radius: 16px 16px 0px 0px;
+  border: 1px solid rgb(239, 239, 239);
+  touch-action: none; 
+  transition-property: transform, opacity; 
+  transition-timing-function: ease-out;
+}
+ 
+.cart-close{
+  padding: 20px;
+}
+
 #m-modal {
+  display: none;
+}
+
+#cart-modal {
   display: none;
 }
 
