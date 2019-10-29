@@ -22,6 +22,9 @@
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
+        <!-- Sweet Alert -->
+        <link rel="stylesheet" href="../plugins/sweet-alert2/sweetalert2.min.css">
+
 
     </head>
 
@@ -47,7 +50,7 @@
 
                 <nav class="navbar-custom">
                     <ul class="navbar-right list-inline float-right mb-0">
-                        
+
                         <!-- language-->
                         <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
                             <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
@@ -173,7 +176,7 @@
                                     <i class="icon-accelerator"></i><span class="badge badge-success badge-pill float-right">9+</span> <span> Dashboard </span>
                                 </a>
                             </li>
-                            
+
                             <li>
                                 <a href="javascript:void(0);" class="waves-effect"><i class="icon-mail-open"></i><span> Email <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                                 <ul class="submenu">
@@ -296,7 +299,7 @@
                                     <li><a href="maps-vector.html"> Vector Map</a></li>
                                 </ul>
                             </li>
-                            
+
                             <li>
                                 <a href="javascript:void(0);" class="waves-effect"><i class="icon-share"></i><span> Multi Level <span class="float-right menu-arrow"><i class="mdi mdi-chevron-right"></i></span> </span></a>
                                 <ul class="submenu">
@@ -350,9 +353,9 @@
                             <div class="col-12">
                                 <div class="card m-b-30">
                                     <div class="card-body">
-        
+
                                         <h4 class="mt-0 header-title">Products Overview</h4>
-        
+
                                         <table id="datatable-buttons" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                             <thead>
                                             <tr>
@@ -366,8 +369,8 @@
                                                 <th>Delete</th>
                                             </tr>
                                             </thead>
-        
-        
+
+
                                             <tbody>
                                             <tr>
                                                 <td>Tiger Nixon</td>
@@ -378,9 +381,9 @@
                                                 <td>$320,800</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
-                                                    <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
+                                                    <a class="btn btn-outline-danger waves-effect waves-light" id="sa-title" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -392,7 +395,7 @@
                                                 <td>$170,750</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -406,7 +409,7 @@
                                                 <td>$86,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -420,7 +423,7 @@
                                                 <td>$433,060</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -434,7 +437,7 @@
                                                 <td>$162,700</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -448,7 +451,7 @@
                                                 <td>$372,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -462,7 +465,7 @@
                                                 <td>$137,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -476,7 +479,7 @@
                                                 <td>$327,900</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -490,7 +493,7 @@
                                                 <td>$205,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -504,7 +507,7 @@
                                                 <td>$103,600</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -518,7 +521,7 @@
                                                 <td>$90,560</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -532,7 +535,7 @@
                                                 <td>$342,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -546,7 +549,7 @@
                                                 <td>$470,600</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -560,7 +563,7 @@
                                                 <td>$313,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -574,7 +577,7 @@
                                                 <td>$385,750</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -588,7 +591,7 @@
                                                 <td>$198,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -602,7 +605,7 @@
                                                 <td>$725,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -616,7 +619,7 @@
                                                 <td>$237,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -630,7 +633,7 @@
                                                 <td>$132,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -644,7 +647,7 @@
                                                 <td>$217,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -658,7 +661,7 @@
                                                 <td>$345,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -672,7 +675,7 @@
                                                 <td>$675,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -686,7 +689,7 @@
                                                 <td>$106,450</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -700,7 +703,7 @@
                                                 <td>$85,600</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -714,7 +717,7 @@
                                                 <td>$1,200,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -728,7 +731,7 @@
                                                 <td>$92,575</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -742,7 +745,7 @@
                                                 <td>$357,650</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -756,7 +759,7 @@
                                                 <td>$206,850</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -770,7 +773,7 @@
                                                 <td>$850,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -784,7 +787,7 @@
                                                 <td>$163,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -798,7 +801,7 @@
                                                 <td>$95,400</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -812,7 +815,7 @@
                                                 <td>$114,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -826,7 +829,7 @@
                                                 <td>$145,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -840,7 +843,7 @@
                                                 <td>$235,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -854,7 +857,7 @@
                                                 <td>$324,050</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -868,7 +871,7 @@
                                                 <td>$85,675</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -882,7 +885,7 @@
                                                 <td>$164,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -896,7 +899,7 @@
                                                 <td>$109,850</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -910,7 +913,7 @@
                                                 <td>$452,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -924,7 +927,7 @@
                                                 <td>$136,200</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -938,7 +941,7 @@
                                                 <td>$645,750</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -952,7 +955,7 @@
                                                 <td>$234,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -966,7 +969,7 @@
                                                 <td>$163,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -980,7 +983,7 @@
                                                 <td>$139,575</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -994,7 +997,7 @@
                                                 <td>$98,540</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1008,7 +1011,7 @@
                                                 <td>$87,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1022,7 +1025,7 @@
                                                 <td>$138,575</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1036,7 +1039,7 @@
                                                 <td>$125,250</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1050,7 +1053,7 @@
                                                 <td>$115,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1064,7 +1067,7 @@
                                                 <td>$75,650</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1078,7 +1081,7 @@
                                                 <td>$145,600</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1092,7 +1095,7 @@
                                                 <td>$356,250</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1106,7 +1109,7 @@
                                                 <td>$103,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1120,7 +1123,7 @@
                                                 <td>$86,500</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1134,7 +1137,7 @@
                                                 <td>$183,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1148,7 +1151,7 @@
                                                 <td>$183,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
@@ -1162,18 +1165,18 @@
                                                 <td>$112,000</td>
                                                 <td class="text-center">
                                                     <a class="btn btn-success" href="#" role="button"><i class="mdi mdi-pencil-outline"></i></a>
-                                                </td>                                                
+                                                </td>
                                                 <td class="text-center">
                                                     <a class="btn btn-outline-danger waves-effect waves-light" href="#" role="button"><i class="mdi mdi mdi-delete"></i></a>
                                                 </td>
                                             </tr>
                                             </tbody>
                                         </table>
-        
+
                                     </div>
                                 </div>
                             </div> <!-- end col -->
-                        </div> <!-- end row -->    
+                        </div> <!-- end row -->
                     </div>
                     <!-- container-fluid -->
 
@@ -1213,11 +1216,13 @@
         <!-- App js -->
         <script src="assets/js/app.js"></script>
         <!-- Datatable init js -->
-        <script src="assets/pages/datatables.init.js"></script>          
+        <script src="assets/pages/datatables.init.js"></script>
         <!-- Responsive examples -->
         <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
         <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
-        
+        <!-- Sweet Alert -->
+        <script src="../plugins/sweet-alert2/sweetalert2.min.js"></script>
+
     </body>
 
 </html>
