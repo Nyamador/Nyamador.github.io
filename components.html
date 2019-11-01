@@ -6,6 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="vello.css">
   <title>Document</title>
+  <style>
+    .bordered-input:focus{
+      border:1px solid #e60023!important;
+      -webkit-transition: all 0.4s!important;
+        -o-transition: all 0.4s!important;
+      -moz-transition: all 0.4s!important;
+      transition: all 0.4s!important;
+    }
+  </style>
 </head>
 <body>
   <div class="contain">
@@ -22,21 +31,21 @@
 
   <button class="vel-button vel-button--positive vel-button--large block mb-10" type="button">
     Create Account
-  </button>  
+  </button>
 
   <!-- Filled gray -->
-  
+
   <button class="vel-button vel-button--grayscale vel-button--large block mb-10" type="button">
     Buy Now
-  </button> 
+  </button>
 
     <button class="vel-button vel-button--grayscale--transparent vel-button--large block mb-10" type="button">
     Buy Now
-  </button> 
+  </button>
 
   <button class="vel-button vel-button--positive vel-button--large block col-12-12 mb-10" type="button">
     Create Account
-  </button>  
+  </button>
 
   <button class="vel-button vel-button--default mb-10" type="button">
     Create Account
@@ -49,7 +58,7 @@
   <button class="vel-button vel-button--default vel-button--text mb-10" type="button">
     Create Account
   </button>
-  
+
     <button class="vel-button vel-button--text mb-10 vel-button--disabled" type="button" disabled>
     Create Account
   </button>
@@ -58,26 +67,38 @@
   <div class="vel-material--round --loading">
   <div class="vel-loader--circle"></div>
   </div>
-  
+
   <p>Button Text</p>
-  <button class="vel-textLink " type="button">Make this card your primary card</button>  
+  <button class="vel-textLink " type="button">Make this card your primary card</button>
 
   <h2>Input Elements</h2>
 
   <!-- Form -->
-  <form class="validate-form"> 
+  <form class="validate-form">
   <div class="vel-input--wrap validate-input" data-validate="Invalid Email address">
-						<input class="fieldInput" type="text" name="email" required>
+						<input class="fieldInput" type="email" name="email">
 						<span class="focus-fieldInput" data-placeholder="Email"></span>
-  </div>  
+  </div>
 
-  <span class="btn-show-pass">
-							<i class="zmdi zmdi-eye"></i>
+  <!-- <div class="vel-input--wrap validate-input" data-validate="Invalid Email address" style="border-bottom:none;">
+            <input class="fieldInput p-8 bordered-input" type="email" name="email" placeholder="Email" required style="border:1px solid;border-radius:4px;">
+  </div> -->
+
+  <div class="vel-input--wrap validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye-off">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="zmdi zmdi-eye"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 6.5c3.79 0 7.17 2.13 8.82 5.5-1.65 3.37-5.02 5.5-8.82 5.5S4.83 15.37 3.18 12C4.83 8.63 8.21 6.5 12 6.5m0-2C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zm0 5c1.38 0 2.5 1.12 2.5 2.5s-1.12 2.5-2.5 2.5-2.5-1.12-2.5-2.5 1.12-2.5 2.5-2.5m0-2c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5z" style="fill: #c7c7c7;"></path></svg>
+              </i>
 						</span>
-  
+						</span>
+						<input class="fieldInput" type="password" name="pass">
+						<span class="focus-fieldInput" data-placeholder="Password"></span>
+					</div>
+
+
     <button class="vel-button vel-button--default mb-10" type="submit">
     Create Account
-  </button>    
+  </button>
   </form>
 
 
@@ -161,7 +182,7 @@
     <input type="checkbox" checked="checked">
     <span class="checkmark"></span>
   </label>
-     
+
 
   <nav class="vel-nav--mobile" style="background-color: rgba(243, 243, 243, 0.281);">
     <section class="p-8">
@@ -182,7 +203,7 @@
 
   <script src="jquery.js"></script>
   <script>
-  
+
 (function ($) {
     "use strict";
 
@@ -197,10 +218,10 @@
             else {
                 $(this).removeClass('has-val');
             }
-        })    
+        })
     })
-  
-  
+
+
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .fieldInput');
@@ -249,7 +270,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
+
     /*==================================================================
     [ Show pass ]*/
     var showPass = 0;
@@ -266,7 +287,7 @@
             $(this).find('i').removeClass('zmdi-eye-off');
             showPass = 0;
         }
-        
+
     });
 
 

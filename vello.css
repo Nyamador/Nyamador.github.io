@@ -593,7 +593,7 @@ body:not([data-focus-source="keyboard"]) :focus {
 .vel-input--wrap {
   width: 100%;
   position: relative;
-  border-bottom: 2px solid #333;
+  border-bottom:2px solid #c7c7c7;
   margin-bottom: 37px;
 }
 /*------------------------------------------------------------------
@@ -1383,7 +1383,7 @@ article.vel-feed-card:last-child {
   -ms-filter: blur(8px);
 }
 
-.vel-modal--mobile {
+.vel-modal--mobile{
   bottom: 0;
   position: fixed;
   /*  filter: blur(8px);
@@ -1393,32 +1393,37 @@ article.vel-feed-card:last-child {
   width: 100vw;
 }
 
-.cart-modal {
-  bottom: 0;
-  position: fixed;
-  /*  filter: blur(8px);
-  -webkit-filter: blur(8px);*/
-  z-index: 100;
-  transition: height 3s ease-out;
-  width: 100vw; 
-  height: 30vh;
-  background: white;
-  border-radius: 16px 16px 0px 0px;
+.cart-modal{
   border: 1px solid rgb(239, 239, 239);
-  touch-action: none; 
-  transition-property: transform, opacity; 
+  background-color: white;
+  touch-action: none;
+  transition-property: transform, opacity;
   transition-timing-function: ease-out;
+  width: 100vw;
+  z-index: 100;
+  bottom: 0px;
+  position: fixed;
+  border-radius: 16px 16px 0px 0px;
 }
- 
+
+.share-modal{
+  border: 1px solid rgb(239, 239, 239);
+  background-color: white;
+  touch-action: none;
+  transition-property: transform, opacity;
+  transition-timing-function: ease-out;
+  width: 100vw;
+  z-index: 120;
+  bottom: 0px;
+  position: fixed;
+  border-radius: 16px 16px 0px 0px;
+}
+
 .cart-close{
   padding: 20px;
 }
 
-#m-modal {
-  display: none;
-}
-
-#cart-modal {
+#m-modal,#cart-modal,#bottom-modal,#share-modal {
   display: none;
 }
 

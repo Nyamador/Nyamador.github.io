@@ -6,3 +6,30 @@
   min-height: 0;
   min-width: 0;
 }
+
+.mb-lg{
+  margin-bottom: 40px;
+}
+
+.auth--container{
+padding: 0 20px !important;
+}
+
+.form-title{
+  padding-bottom: 26px;
+  margin: 0 auto;
+}
+
+.facebook-button--positive {
+    background-color: #17338F;
+    border-color: #17338F;
+    color: #fff;
+    /* box-shadow: 0px 6px 8px 2px rgba(196, 74, 74, 0.3); */
+}
+
+.google-button--positive {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000;
+    box-shadow: 0px 0px 8px 2px rgba(214, 214, 214, 0.73);
+}

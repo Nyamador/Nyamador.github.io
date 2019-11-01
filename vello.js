@@ -73,7 +73,7 @@ $(document).ready(function(){
 
     	//Modal for mobile devices
       const toggleButton = document.querySelectorAll('#modal-toggler'); //Button to trigger event
-      const mobileModal = document.getElementById('m-modal'); // Modal 
+      const mobileModal = document.getElementById('m-modal'); // Modal
       const mainContent = document.getElementById('main'); // Body
 
       //opening modal
@@ -83,7 +83,7 @@ $(document).ready(function(){
             mainContent.classList.add( "blur" );
         });
       });
-      //Closing mobile modal 
+      //Closing mobile modal
       document.getElementById('close').onclick = function modalCloser() {
       document.getElementById('m-modal').style = "display:none";
       document.getElementById("main").classList.remove( "blur" );
@@ -131,9 +131,9 @@ $(document).ready(function(){
       // reactive: true,        // set true if you use frameworks like React to control the timeline (see react.sample.html)
 
   stories: [
-    
+
           Zuck.buildTimelineItem(
-            "ramon", 
+            "ramon",
             "https://raw.githubusercontent.com/ramon82/assets/master/zuck.js/users/1.jpg",
             "Ramon",
             "https://ramon.codes",

@@ -123,8 +123,15 @@
               <p class="text-vello">234</p>
             </a>
 
+            <div id="share-toggler">
+              <svg  class="ml-8" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 12 12"><defs><clipPath id="a"><rect width="12" height="12" fill="none"/></clipPath></defs><g clip-path="url(#a)"><path d="M9.857,7.715a2.134,2.134,0,0,0-1.486.6l-4.1-2.051c0-.086.017-.174.017-.263a1.341,1.341,0,0,0-.017-.263l4.1-2.051a2.143,2.143,0,1,0-.657-1.543,1.341,1.341,0,0,0,.017.263l-4.1,2.051a2.143,2.143,0,1,0,0,3.085l4.1,2.051c0,.086-.017.174-.017.263A2.143,2.143,0,1,0,9.857,7.715Z" fill="#c1c1c1"/></g></svg>
+            </div>
+
           </div>
         </div>
+
+          <!--  -->
+
 
 
         <div class="flex-row p-8 feed-btn-wrap">
@@ -196,9 +203,9 @@
 
   <div class="cart-modal" id="cart-modal">
     <header class="flex">
-      <button class="mr-8 cart-close" id="cart-close">
+      <div class="mr-8 cart-close" id="cart-close">
             <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M.2,9.8a.691.691,0,0,0,.976,0L5,5.976,8.822,9.8A.69.69,0,0,0,9.8,8.822L5.976,5,9.8,1.178A.69.69,0,1,0,8.822.2L5,4.024,1.178.2A.69.69,0,0,0,.2,1.178L4.024,5,.2,8.822A.691.691,0,0,0,.2,9.8Z"></path></svg>
-          </button>
+          </div>
 
           <div class="flex-row al-ctr js-ctr cart-modal-heading" style="margin-left: -10px; margin-right: 50px;"><div class="bold" style="font-size:21px;">Cart</div></div>
     </header>
@@ -422,7 +429,51 @@
 
 
 
+  <div class="share-modal" id="share-modal">
+    <header class="flex">
+      <div class="mr-8" id="share-close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><path d="M.2,9.8a.691.691,0,0,0,.976,0L5,5.976,8.822,9.8A.69.69,0,0,0,9.8,8.822L5.976,5,9.8,1.178A.69.69,0,1,0,8.822.2L5,4.024,1.178.2A.69.69,0,0,0,.2,1.178L4.024,5,.2,8.822A.691.691,0,0,0,.2,9.8Z"></path></svg>
+          </div>
 
+          <div class="flex-row al-ctr js-ctr cart-modal-heading" style="margin-left: -10px; margin-right: 50px;"><div class="bold" style="font-size:21px;">Share this post</div></div>
+    </header>
+
+    <section class="pt-10 pb-10" style="height: 90%;overflow: scroll;">
+      <div class="flex-row p-8 feed-product">
+                          <img src="assets/Image@2x.png" title="Samsung Products for post 1" height="70">
+                          <div class="ml-8 break-word">
+                              <p>Blue jeans winter new pattern office</p>
+
+
+                              <div class="quantity flex-row">
+                                <!-- <small class="mr-4">Quantity : </small> -->
+
+                                  <div class="quantity-nav flex-row">
+                                    <div class="quantity-button quantity-down">-</div>
+                                    <input type="number" min="1" max="10" step="1" value="1" readonly="">
+                                    <div class="quantity-button quantity-up mr-4 ml-8">+</div>
+                                  </div>
+                              </div>
+                              <div class="mt-8 pb-0 p-4 flex-row text-black">
+                                  <p class="p-8" id="feed-product-price" data-unit-cost="200">GHC 200</p>
+
+                                  <div class="ml-auto flex-row">
+                                    <button class="vel-button vel-button--default vel-button--text p-8" type="button">
+                                      Add Cart
+                                    </button>
+
+                                  <form>
+                                    <button class="vel-button vel-button--default vel-button--text p-8" type="button" onclick="payWithRave()">
+                                      Buy Now
+                                    </button>
+                                  </form>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+    </section>
+
+  </div>
 
   <!-- <div class="pop-notification ">
       <div class="pop-container">
@@ -508,10 +559,9 @@
 
 
       const toggleButton = document.querySelectorAll('#modal-toggler');// button to toggle mobile modal
-      const cartToggler = document.querySelectorAll('#cart-toggler');
       const mobileModal = document.getElementById('m-modal'); // mobile modal
-      const cartModal = document.getElementById('cart-modal'); // mobile modal
       const mainContent = document.getElementById('main'); //maincontent
+      const close = document.getElementById('close');
 
       function openModal(toggler, modal, closer){
             //opening modal
@@ -522,19 +572,27 @@
         });
       });
       //Closing mobile modal
-      document.getElementById('close').onclick = function modalCloser() {
+      closer.onclick = function modalCloser() {
       modal.style = "display:none";
       document.getElementById("main").classList.remove( "blur" );
     }
-
-    document.getElementById('cart-close').onclick = function modalCloser() {
-    cartModal.style = "display:none";
-    document.getElementById("main").classList.remove( "blur" );
-  }
     }
 
-    openModal(cartToggler, cartModal); // for cart
-    openModal(toggleButton, mobileModal);
+    // for feed product list
+    openModal(toggleButton, mobileModal, close);
+    //
+    const cartToggler = document.querySelectorAll('#cart-toggler'); // button that opens cart modal
+    const cartModal = document.getElementById('cart-modal'); // cart modal
+    const cartClose  = document.querySelector('#cart-close');
+    openModal(cartToggler, cartModal, cartClose); // for cart
+
+
+
+    const shareToggler = document.querySelectorAll('#share-toggler'); // button that opens cart modal
+    const shareModal = document.getElementById('share-modal'); // cart modal
+    const shareClose  = document.querySelector('#share-close');
+    openModal(shareToggler, shareModal, shareClose); // for cart
+
     //   //opening modal
     //   toggleButton.forEach(function modalOpener(toggleButton) {
     //     toggleButton.addEventListener('click', function(){
