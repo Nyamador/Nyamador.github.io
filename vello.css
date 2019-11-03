@@ -1876,3 +1876,14 @@ article.vel-feed-card:last-child {
     margin-left: -1px;
     margin-right: -1px;
 } */
+
+
+.mobile-category--nav{
+  height: 48px;
+  border-bottom: 1px solid var(--vel-gray);
+  margin-top: 50px;
+}
+
+.mobile-category-nav--filter{
+  width: 50%;
+}
