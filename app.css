@@ -2,20 +2,88 @@ body{
 	background: #f2f2f2;
 }
 
+body::focus{
+    box-shadow: 0 0 0 4px rgba(0,132,255,.5) !important;
+    outline: 0!important;
+  }
+
+.detail-container {
+    margin-top: 0!important;
+}
+
 @media(max-width: 640px){
 	.vel-mobile--header{
 		display: none !important;
 	}
-}
 
-.feed-container{
-	margin-top: 0!important;
+  .header-buttons{
+    display: none;
+  }
 }
 
 @media(min-width: 640px){
+
+
+  body{
+    background-color: white;
+  }
+
 	.vel-app-header{
 		display: none !important;
 	}
+
+  .vel-search--wrap{
+    display: block !important;
+  }
+
+  .header-buttons:hover{
+    background: rgba(0,0,0,0.06);
+    border-radius: 8px;
+  }
+
+  .desktop-shadow-container{
+    /*padding: 50px;*/
+    display: flex;
+    margin-top: 68  px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 20px 0px;
+    border-radius: 30px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .details{
+    padding: 20px 20px 20px 0;
+  }
+
+  .image-carousel{
+    padding: 20px;
+  }
+
+  .slick-list{
+    max-width: 468px;
+    min-width: 508px;
+    border-radius: 20px;
+  }
+
+  .product-cta-wrap{
+    display:none !important;
+  }
+
+  .detail-container{
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-top: 70px !important;
+  }
+
+  .vel-mobile--header{
+      position: fixed;
+      max-width: 100% !important;
+      border-bottom: 1px solid var(--gray)!important;
+      background-color: #fff !important;
+      z-index: 2;
+      background: white;
+  }
 }
 
 .vel-app-header{
@@ -200,6 +268,7 @@ body{
 	color: white;
     background: #e60023;
 }
+
 .add-cart-button, .buy-button{
 	display: -webkit-box;
     display: -webkit-flex;
