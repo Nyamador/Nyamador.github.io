@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algolia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+
+    <style>
+      body { font-family: sans-serif; padding: 1em; }
+      .ais-ClearRefinements { margin: 1em 0; }
+      .ais-SearchBox { margin: 1em 0; }
+      .ais-Pagination { margin-top: 1em; }
+      .left-panel { float: left; width: 250px; }
+      .right-panel { margin-left: 260px; }
+      .ais-InstantSearch { max-width: 960px; overflow: hidden; margin: 0 auto; }
+      .ais-Hits-item { margin-bottom: 1em; width: calc(50% - 1rem); }
+      .ais-Hits-item img { margin-right: 1em; }
+      .hit-name { margin-bottom: 0.5em; }
+      .hit-description { color: #888; font-size: 14px; margin-bottom: 0.5em; }
+    </style>
+  </head>
+  <body>
+
+
+    <div class="ais-InstantSearch">
+      <h1>InstantSearch.js e-commerce demo</h1>
+
+      <div class="left-panel">
+        <div id="current-refinements"></div>
+
+        <h2>Brands</h2>
+        <div id="brand-list"></div>
+      </div>
+
+      <div class="right-panel">
+        <div id="searchbox"></div>
+        <div id="hits"></div>
+        <div id="pagination"></div>
+      </div>
+    </div>
+
+
+<script src="a.js" charset="utf-8"></script>
+<script src="prod.js" charset="utf-8"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
+<script type="text/javascript">
+  const searchClient = algoliasearch('B1G2GM9NG0', 'aadef574be1f9252bb48d4ea09b5cfe5');
+
+const search = instantsearch({
+  indexName: 'demo_ecommerce',
+  searchClient,
+});
+
+search.addWidgets([
+  instantsearch.widgets.searchBox({
+    container: '#searchbox',
+  }),
+
+  instantsearch.widgets.hits({
+    container: '#hits',
+  })
+]);
+
+search.addWidgets([
+  instantsearch.widgets.hits({
+    container: '#hits',
+    templates: {
+      item: `
+        <div>
+          <img src="{{image}}" align="left" alt="{{name}}" />
+          <div class="hit-name">
+            {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+          </div>
+          <div class="hit-description">
+            {{#helpers.highlight}}{ "attribute": "description" }{{/helpers.highlight}}
+          </div>
+          <div class="hit-price">\${{price}}</div>
+        </div>
+      `,
+    },
+  })
+]);
+
+search.start();
+
+</script>
+  </body>
+</html>
