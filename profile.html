@@ -75,17 +75,47 @@
         Visita nuestra página web y descubre todo lo que tenemos para ti.
       </span>
     </div>
+
+    <section class="tabs">
+      <a href="#" class="tab-svg">
+        Posts
+      </a>
+
+      <a href="#" class="tab-svg">
+        Products
+      </a> 
+      
+      <a href="#" class="tab-svg">
+        Streams
+      </a>      
+    </section>
+
+    <div id="screens">
+      <section class="screen" id="screen">
+        Lorem ipsum dolor sit amet
+      </section>
+
+            <section class="screen" id="screen">
+        Lorem ipsum dolor sit amet
+      </section>
+
+            <section class="screen" id="screen">
+        Lorem ipsum dolor sit amet
+      </section>
+
+    </div>
     
   <!-- Posts -->
   <main>
 
-      <nav class="vel-mobile--nav">
+  <nav class="vel-mobile--nav">
     <div class="mobile-nav--container pt-4">
       <div class="flex-row pl-8 pr-8 mr-auto ml-auto al-ctr">
 
         <div class="flex-1 js-ctr flex-row nav-link--mobile">
           <a href="#" class="text-ctr">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><style>.a{fill:rgba(0,0,0,0);}.b{fill: #e60023;}</style></defs><rect class="a" width="28" height="28"></rect><path class="b" d="M6,22a6.007,6.007,0,0,1-6-6V6A6.007,6.007,0,0,1,6,0h8a6.007,6.007,0,0,1,6,6V16a6.006,6.006,0,0,1-6,6ZM1.715,6.11v9.78a4.505,4.505,0,0,0,4.5,4.5h7.571a4.505,4.505,0,0,0,4.5-4.5V6.11a4.505,4.505,0,0,0-4.5-4.5H6.214A4.505,4.505,0,0,0,1.715,6.11ZM7.22,10.2a3.22,3.22,0,1,1,0-6.439h5.561a3.22,3.22,0,0,1,0,6.439Z" transform="translate(4 3)"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"><defs><style>.a{fill:rgba(0,0,0,0);}.b{fill: #
+              ;}</style></defs><rect class="a" width="28" height="28"></rect><path class="b" d="M6,22a6.007,6.007,0,0,1-6-6V6A6.007,6.007,0,0,1,6,0h8a6.007,6.007,0,0,1,6,6V16a6.006,6.006,0,0,1-6,6ZM1.715,6.11v9.78a4.505,4.505,0,0,0,4.5,4.5h7.571a4.505,4.505,0,0,0,4.5-4.5V6.11a4.505,4.505,0,0,0-4.5-4.5H6.214A4.505,4.505,0,0,0,1.715,6.11ZM7.22,10.2a3.22,3.22,0,1,1,0-6.439h5.561a3.22,3.22,0,0,1,0,6.439Z" transform="translate(4 3)"></path></svg>
             <!-- <div title="home" class="link--title">Home</div> -->
           </a>
         </div>
@@ -123,5 +153,32 @@
   </nav>
     <article></article>
   </main>
+
+  <script>
+        const debounce = (func, wait, immediate ) => {
+        var timeout;
+        return (...args) => {
+          const later = () =>{
+            timeout = null;
+            if(!immediate) func.apply(this ,args);
+          };
+          const callNow = immediate && !timeout;
+          clearTimeout = setTimeout(later, wait);
+          if(callNow) func.apply(this,args);
+        };
+      };
+      const screens  = document.querySelector("#screens");
+      // const navbar  = document.querySelector("#navbar");
+
+      // const pageNames  = ["Flights","Rewards"];
+
+      const pageTransition  = debounce(() =>{
+      const index = Math.round(screens.scrollLeft / window.innerWidth);
+        // navbar.textContent = pageNames[index];
+      } , 60);
+      
+
+      screens.addEventListener("scroll", pageTransition);
+  </script>
 </body>
 </html>
