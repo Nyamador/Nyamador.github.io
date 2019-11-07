@@ -570,4 +570,48 @@ a.tab-svg:visited {
   min-height: calc(100vh - 70px);
   scroll-snap-align: start;
 }
+
+@media (max-width: 735px) {
+  .posts-grid {
+    border-top: 1px solid #efefef;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+  }
+
+  .posts-grid-column {
+    /* margin-bottom: 3px; */
+  }
+
+  .post-cell {
+    margin-right: 3px;
+  }
+}
+
+.posts-wrap {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.post-cell {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 0%;
+  -ms-flex: 1 0 0%;
+  flex: 1 0 0%;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.profile-feed {
+  height: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
 /* ================================================= [/-----PROFILE---/] ============================================ */
