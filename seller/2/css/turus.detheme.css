@@ -98,7 +98,7 @@ HEADING
 }
 
 .section.dark {
-  background-color: hsla(12.238805970149256, 100.00%, 60.59%, 1.00);
+  background-color: hsl(351, 100%, 45%);
 }
 
 .wrapper {
@@ -509,8 +509,7 @@ BUTTON
   clear: none;
   border: 1px none #096ad0;
   border-radius: 40px;
-  background-color: #ff3c00;
-  background-image: linear-gradient(97deg, #e042cb, #9258ee);
+  background-color: black;
   box-shadow: none;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
@@ -710,7 +709,7 @@ BUTTON
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #ff6038;
+  background-color: #e60023;
   font-family: Roboto, sans-serif;
 }
 
@@ -723,7 +722,7 @@ BUTTON
   align-self: flex-start;
   font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 120px;
+  font-size: 70px;
   line-height: 1;
   font-weight: 900;
   text-align: left;
@@ -1190,7 +1189,6 @@ BUTTON
 .nav-link-3.border.cta {
   border-style: none;
   background-color: #262626;
-  background-image: linear-gradient(102deg, hsla(307.012987012987, 70.00%, 56.86%, 1.00), hsla(263.841059602649, 81.62%, 63.73%, 1.00));
   font-family: Roboto, sans-serif;
   color: #fff;
 }
@@ -1460,7 +1458,7 @@ BUTTON
     opacity: 1;
   }
   .hero-text {
-    font-size: 80px;
+    font-size: 70px;
   }
   .image-10 {
     position: relative;
