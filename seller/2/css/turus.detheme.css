@@ -812,7 +812,7 @@ BUTTON
 }
 
 .circle.gradient {
-  background-color: hsla(2.325581395348829, 100.00%, 74.71%, 1.00);
+  background-color: #e60023;
   color: #fff;
 }
 
@@ -854,7 +854,7 @@ BUTTON
   width: 100vw;
   height: 1px;
   margin-bottom: 0px;
-  background-color: #ffb380;
+  background-color: #e60023;
 }
 
 .hexagon {
