@@ -722,7 +722,7 @@ BUTTON
   align-self: flex-start;
   font-family: Montserrat, sans-serif;
   color: #fff;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 1;
   font-weight: 900;
   text-align: left;
@@ -1458,7 +1458,7 @@ BUTTON
     opacity: 1;
   }
   .hero-text {
-    font-size: 70px;
+    font-size: 30px;
   }
   .image-10 {
     position: relative;
@@ -1795,7 +1795,7 @@ BUTTON
     flex-wrap: wrap;
   }
   .hero-text {
-    font-size: 70px;
+    font-size: 30px;
   }
   .circle {
     margin-right: 20px;
