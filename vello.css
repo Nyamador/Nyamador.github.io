@@ -1877,6 +1877,43 @@ article.vel-feed-card:last-child {
     margin-right: auto !important;
   }
 
+  .desktop-menu-link{
+    border-radius: 50px;
+    background: #edeeed;
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+  }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #e60023;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
   .stories.carousel .story {
     max-width: 70px !important;
   }
@@ -1939,6 +1976,10 @@ article.vel-feed-card:last-child {
 @media(max-width: 640px){
   .empty-state-link{
   display: none !important;
+}
+
+.stories-container-2{
+ display: none !important;
 }
 
 }
