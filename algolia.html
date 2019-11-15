@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@7.3.1/themes/algolia-min.css" integrity="sha256-HB49n/BZjuqiCtQQf49OdZn63XuKFaxcIHWf0HNKte8=" crossorigin="anonymous">
+    <title>Vello  | Search </title>
+    <style>
+body { font-family: sans-serif; padding: 1em; }
+.ais-ClearRefinements { margin: 1em 0; }
+.ais-SearchBox { margin: 1em 0; }
+.ais-Pagination { margin-top: 1em; }
+.left-panel { float: left; width: 250px; }
+.right-panel { margin-left: 260px; }
+.ais-InstantSearch { max-width: 960px; overflow: hidden; margin: 0 auto; }
+.ais-Hits-item { margin-bottom: 1em; width: calc(50% - 1rem); }
+.ais-Hits-item img { margin-right: 1em; }
+.hit-name { margin-bottom: 0.5em; }
+.hit-description { color: #888; font-size: 14px; margin-bottom: 0.5em; }
+    </style>
+</head>
+
+<div class="ais-InstantSearch">
+        <h1>InstantSearch.js e-commerce</h1>
+      
+        <div class="left-panel">
+          <div id="current-refinements"></div>
+      
+          <h2>Brands</h2>
+          <div id="brand-list"></div>
+        </div>
+      
+        <div class="right-panel">
+          <div id="searchbox"></div>
+          <div id="hits"></div>
+          <div id="pagination"></div>
+        </div>
+      </div>
+      <script src="http://twitter.github.com/hogan.js/builds/3.0.1/hogan-3.0.1.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
+        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.35.1/dist/algoliasearchLite.min.js" integrity="sha256-5rOQwvvJdM9oDYQYCGzaJuuTy6SUALjma3OtzEGyJM0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.0.0/dist/instantsearch.production.min.js" integrity="sha256-6S7q0JJs/Kx4kb/fv0oMjS855QTz5Rc2hh9AkIUjUsk=" crossorigin="anonymous"></script>
+        <script src="search.js"></script>
+</body>
+</html>
