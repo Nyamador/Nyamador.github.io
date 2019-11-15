@@ -11,6 +11,7 @@
         <link rel="shortcut icon" href="assets/images/favicon.ico">
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="../plugins/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css">
         <link href="assets/css/metismenu.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
@@ -44,20 +45,6 @@
 
                 <nav class="navbar-custom">
                     <ul class="navbar-right list-inline float-right mb-0">
-
-                        <!-- language-->
-                        <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
-                            <a class="nav-link dropdown-toggle arrow-none waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/flags/us_flag.jpg" class="mr-2" height="12" alt=""/> English <span class="mdi mdi-chevron-down"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated language-switch">
-                                <a class="dropdown-item" href="#"><img src="assets/images/flags/french_flag.jpg" alt="" height="16" /><span> French </span></a>
-                                <a class="dropdown-item" href="#"><img src="assets/images/flags/spain_flag.jpg" alt="" height="16" /><span> Spanish </span></a>
-                                <a class="dropdown-item" href="#"><img src="assets/images/flags/russia_flag.jpg" alt="" height="16" /><span> Russian </span></a>
-                                <a class="dropdown-item" href="#"><img src="assets/images/flags/germany_flag.jpg" alt="" height="16" /><span> German </span></a>
-                                <a class="dropdown-item" href="#"><img src="assets/images/flags/italy_flag.jpg" alt="" height="16" /><span> Italian </span></a>
-                            </div>
-                        </li>
 
                         <!-- full screen -->
                         <li class="dropdown notification-list list-inline-item d-none d-md-inline-block">
@@ -335,8 +322,8 @@
                                 <div class="col-sm-6">
                                     <ol class="breadcrumb float-right">
                                         <li class="breadcrumb-item"><a href="javascript:void(0);">Vello</a></li>
-                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Pages</a></li>
-                                        <li class="breadcrumb-item active">Starter</li>
+                                        <li class="breadcrumb-item"><a href="javascript:void(0);">Products</a></li>
+                                        <li class="breadcrumb-item active">Add a product</li>
                                     </ol>
                                 </div>
                             </div> <!-- end row -->
@@ -404,6 +391,10 @@
                                                       <input class="form-control" type="text" placeholder="Add keywords to provide relevance during search..." id="example-text-input">
                                                   </div>
                                               </div>
+
+                                              <button type="button" class="btn btn-warning btn-lg waves-effect waves-light">Create Product</button>
+                                              <button type="button" class="btn btn-light btn-lg waves-effect waves-light">Save as Draft</button>
+
                                             </div>
                                             <div class="tab-pane p-3" id="profile" role="tabpanel">
                                                 <div class="form-group row">
@@ -440,78 +431,79 @@
                                               </div>                                                                                                                                        
 
                                                 
-                                              <h4>Description</h4>                                                                                            
-
-                                                
+                                              <h4>Description</h4>                                                                                                                                        
                                                 <div  id="summernote" style="height: 300px;"></div>
 
+                                                <h4>Highlights</h4>                                                                                                                                        
+                                                <div  id="summernote2" style="height: 300px;"></div>
+
                                             </div>
+
+                                            
                                             <div class="tab-pane p-3" id="messages" role="tabpanel">
-                                                <p class="mb-0">
-                                                    Etsy mixtape wayfarers, ethical wes anderson tofu before they
-                                                    sold out mcsweeney's organic lomo retro fanny pack lo-fi
-                                                    farm-to-table readymade. Messenger bag gentrify pitchfork
-                                                    tattooed craft beer, iphone skateboard locavore carles etsy
-                                                    salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
-                                                    Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh
-                                                    mi whatever gluten-free, carles pitchfork biodiesel fixie etsy
-                                                    retro mlkshk vice blog. Scenester cred you probably haven't
-                                                    heard of them, vinyl craft beer blog stumptown. Pitchfork
-                                                    sustainable tofu synth chambray yr.
-                                                </p>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-2 col-form-label">Variation</label>
+                                                    <div class="col-sm-10">
+                                                        <select class="form-control">
+                                                            <option>Select</option>
+                                                            <option>Large select</option>
+                                                            <option>Small select</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Sku</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" placeholder="Stock Keeping Unit" id="example-text-input">
+                                                    </div>
+                                                </div>      
+                                                
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">ISBN/UPC/EAN</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" placeholder="ISBN / UPC / EAN" id="example-text-input">
+                                                    </div>
+                                                </div>        
+                                                
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Quantity</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" placeholder="Quantity" id="example-text-input">
+                                                    </div>
+                                                </div> 
+
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Price</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" placeholder="Price" id="example-text-input">
+                                                    </div>
+                                                </div> 
+                                                
+                                                <div class="form-group row">
+                                                    <label for="example-text-input" class="col-sm-2 col-form-label">Sale Price</label>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" placeholder="Sale Price" id="example-text-input">
+                                                    </div>
+                                                </div>                                                 
+                                                
                                             </div>
                                             <div class="tab-pane p-3" id="settings" role="tabpanel">
                                             <div class="container">
-                                            <div class="row">
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>
 
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>
+                                                    <p class="sub-title">Main Image</p>
+                                                    <div class="m-b-30">
+                                                            <form action="#" class="dropzone dz-clickable">
+                                                                
+                                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div></form>
+                                                        </div> 
 
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>
-
-
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>
-
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>
-
-                                             <div class="col-sm-2 imgUp">
-                                                    <div class="imagePreview img-fluid"></div>
-                                                    <label class="btn b-primary">
-                                                    Browse
-                                                            <input type="file" class="uploadFile img" value="Upload Photo" style="width: 0px;height: 0px;overflow: hidden;">
-                                                    </label>
-                                            </div>                                                                                                                                                                                                                            
-                                             </div><!-- row -->   
+                                                        <p class="sub-title">Secondary Images (Max - 6 ) </p>
+                                                    <div class="m-b-30">
+                                                            <form action="#" class="dropzone dz-clickable">
+                                                                
+                                                            <div class="dz-default dz-message"><span>Drop files here to upload</span></div></form>
+                                                        </div>  
                                              </div>  
                                             </div>
                                         </div>
@@ -550,6 +542,7 @@
         <script src="assets/js/jquery.slimscroll.js"></script>
         <script src="assets/js/waves.min.js"></script>
         <script src="../plugins/parsleyjs/parsley.min.js"></script>
+        <script src="../plugins/dropzone/dist/dropzone.js"></script>
 
         <!-- App js -->
         <script src="assets/js/app.js"></script>
@@ -559,28 +552,7 @@
         <script type="text/javascript">
             $(document).ready(function(){
                 $('#summernote').summernote();
-
-
-                
-$(function() {
-    $(document).on("change",".uploadFile", function()
-    {
-            var uploadFile = $(this);
-        var files = !!this.files ? this.files : [];
-        if (!files.length || !window.FileReader) return; // no file selected, or no FileReader support
- 
-        if (/^image/.test( files[0].type)){ // only image file
-            var reader = new FileReader(); // instance of the FileReader
-            reader.readAsDataURL(files[0]); // read the local file
- 
-            reader.onloadend = function(){ // set image data as background of div
-                //alert(uploadFile.closest(".upimage").find('.imagePreview').length);
-uploadFile.closest(".imgUp").find('.imagePreview').css("background-image", "url("+this.result+")");
-            }
-        }
-      
-    });
-});
+                $('#summernote2').summernote();
             })
         </script>
 
