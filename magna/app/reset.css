@@ -694,6 +694,10 @@ html input[disabled] {
   background: linear-gradient(left, #2874f0, #004eff);
 }
 
+.tel-input::after{
+  padding-left: 50px !important;
+}
+
 .focus-fieldInput::after {
   font-size: 15px;
   color: #999999;
