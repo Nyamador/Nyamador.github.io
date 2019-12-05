@@ -22,7 +22,7 @@
             </div> -->
           <div class="flex  mb-20">
             <p class="text-gray t">
-              Create a free account with Magna to get started
+              Create a free account
             </p>
           </div>
         </section>
@@ -38,8 +38,8 @@
 
           <div class="mg-input--wrap validate-input" data-validate="Invalid Number" >
 
-          <input class="fieldInput" type="tel" name="Number" id="phone"/>
-          <span class="focus-fieldInput tel-input" data-placeholder="Mobile Number"></span>
+          <input class="fieldInput" type="tel" name="Number" id="phone" />
+          <span class="focus-fieldInput" data-placeholder="Mobile Number"></span>
         </div>
           <!-- <div class="mg-input--wrap validate-input" data-validate="Invalid Email address" style="border-bottom:none;">
                           <input class="fieldInput p-8 bordered-input" type="email" name="email" placeholder="Email" required style="border:1px solid;border-radius:4px;">
@@ -75,7 +75,7 @@
             class="mg-button mg-button--rounded mg-button--positive mg-button--large block col-12-12"
             type="submit"
           >
-            Login
+            Continue
           </button>
         </form>
 
@@ -200,6 +200,14 @@
 
       var input = document.querySelector("#phone");
       window.intlTelInput(input);
+      //       ,{
+      //   initialCountry: "auto",
+      //   geoIpLookup: function(callback){
+      //     $get('https://ipinfo.io', function() {}, "jsonp").always(function (resp) {
+            
+      //     })
+      //   },}
+      // );
     </script>
   </body>
 </html>
