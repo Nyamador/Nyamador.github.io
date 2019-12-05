@@ -205,7 +205,7 @@ p:last-child {
 .section-title .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #4184f263;
   margin: 15px auto 20px;
   position: relative;
   border-radius: 30px;
@@ -219,7 +219,7 @@ p:last-child {
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2874ef;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -390,7 +390,7 @@ Preloader Area CSS
 /*================================================
 Navbar Area CSS
 =================================================*/
-.luvion-responsive-nav {
+.mg-responsive-nav {
   display: none;
 }
 
@@ -408,7 +408,7 @@ Navbar Area CSS
   display: none;
 }
 
-.luvion-nav {
+.mg-nav {
   background-color: transparent;
   padding-top: 0;
   padding-bottom: 0;
@@ -416,25 +416,25 @@ Navbar Area CSS
   padding-left: 0;
 }
 
-.luvion-nav .navbar {
+.mg-nav .navbar {
   padding-right: 0;
   padding-top: 0;
   padding-left: 0;
   padding-bottom: 0;
 }
 
-.luvion-nav .navbar ul {
+.mg-nav .navbar ul {
   padding-left: 0;
   list-style-type: none;
   margin-bottom: 0;
 }
 
-.luvion-nav .navbar .navbar-nav {
+.mg-nav .navbar .navbar-nav {
   font-family: "Raleway", sans-serif;
   margin-left: auto;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item {
+.mg-nav .navbar .navbar-nav .nav-item {
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -442,7 +442,7 @@ Navbar Area CSS
   padding-right: 0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item a {
+.mg-nav .navbar .navbar-nav .nav-item a {
   font-size: 17px;
   font-weight: 400;
   color: #ffffff;
@@ -455,28 +455,28 @@ Navbar Area CSS
   margin-right: 15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item a:hover, .luvion-nav .navbar .navbar-nav .nav-item a:focus, .luvion-nav .navbar .navbar-nav .nav-item a.active {
+.mg-nav .navbar .navbar-nav .nav-item a:hover, .mg-nav .navbar .navbar-nav .nav-item a:focus, .mg-nav .navbar .navbar-nav .nav-item a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item a i {
+.mg-nav .navbar .navbar-nav .nav-item a i {
   font-size: 10px;
   margin-left: 1px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item:last-child a {
+.mg-nav .navbar .navbar-nav .nav-item:last-child a {
   margin-right: 0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item:first-child a {
+.mg-nav .navbar .navbar-nav .nav-item:first-child a {
   margin-left: 0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item:hover a, .luvion-nav .navbar .navbar-nav .nav-item.active a {
+.mg-nav .navbar .navbar-nav .nav-item:hover a, .mg-nav .navbar .navbar-nav .nav-item.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu {
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
   background: #ffffff;
@@ -498,14 +498,14 @@ Navbar Area CSS
   padding-bottom: 20px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   text-transform: capitalize;
   padding: 8px 15px;
   margin: 0;
@@ -514,183 +514,183 @@ Navbar Area CSS
   font-weight: 400;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu {
   left: -250px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu {
   left: 220px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   left: -250px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   left: -250px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   left: -250px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu {
   left: -250px;
   top: 0;
   opacity: 0;
   visibility: hidden;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: -15px;
 }
 
-.luvion-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
+.mg-nav .navbar .navbar-nav .nav-item:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   top: 100%;
 }
 
-.luvion-nav .navbar .others-options {
+.mg-nav .navbar .others-options {
   margin-left: 25px;
 }
 
-.luvion-nav .navbar .others-options .login-btn {
+.mg-nav .navbar .others-options .login-btn {
   color: #ffffff;
   font-size: 17px;
   font-weight: 400;
   font-family: "Raleway", sans-serif;
 }
 
-.luvion-nav .navbar .others-options .login-btn i {
+.mg-nav .navbar .others-options .login-btn i {
   margin-right: 2px;
   color: #00b35b;
 }
 
-.luvion-nav .navbar .others-options .login-btn:hover {
+.mg-nav .navbar .others-options .login-btn:hover {
   color: #2874f0;
 }
 
@@ -731,111 +731,111 @@ Navbar Area CSS
   display: block;
 }
 
-.navbar-area.is-sticky .luvion-nav {
+.navbar-area.is-sticky .mg-nav {
   background-color: #ffffff;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
+.navbar-area.is-sticky .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .others-options .login-btn {
+.navbar-area.is-sticky .mg-nav .navbar .others-options .login-btn {
   color: #0e314c;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .others-options .login-btn i {
+.navbar-area.is-sticky .mg-nav .navbar .others-options .login-btn i {
   color: #2874f0;
 }
 
-.navbar-area.is-sticky .luvion-nav .navbar .others-options .login-btn:hover {
+.navbar-area.is-sticky .mg-nav .navbar .others-options .login-btn:hover {
   color: #2874f0;
 }
 
@@ -843,162 +843,162 @@ Navbar Area CSS
   display: block !important;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item:hover a, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:hover, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a:focus, .navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li a.active {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
+.navbar-area.navbar-style-two .mg-nav .navbar .navbar-nav .nav-item .dropdown-menu li.active a {
   color: #2874f0;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .others-options .login-btn {
+.navbar-area.navbar-style-two .mg-nav .others-options .login-btn {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .others-options .login-btn i {
+.navbar-area.navbar-style-two .mg-nav .others-options .login-btn i {
   color: #0e314c;
 }
 
-.navbar-area.navbar-style-two .luvion-nav .others-options .login-btn:hover {
+.navbar-area.navbar-style-two .mg-nav .others-options .login-btn:hover {
   color: #2874f0;
 }
 
 @media only screen and (max-width: 991px) {
-  .luvion-responsive-nav {
+  .mg-responsive-nav {
     display: block;
   }
-  .luvion-responsive-nav .luvion-responsive-menu {
+  .mg-responsive-nav .mg-responsive-menu {
     position: relative;
   }
-  .luvion-responsive-nav .luvion-responsive-menu.mean-container .mean-nav ul {
+  .mg-responsive-nav .mg-responsive-menu.mean-container .mean-nav ul {
     font-size: 14px;
   }
-  .luvion-responsive-nav .luvion-responsive-menu.mean-container .mean-nav ul li a.active {
+  .mg-responsive-nav .mg-responsive-menu.mean-container .mean-nav ul li a.active {
     color: #2874f0;
   }
-  .luvion-responsive-nav .luvion-responsive-menu.mean-container .mean-nav ul li li a {
+  .mg-responsive-nav .mg-responsive-menu.mean-container .mean-nav ul li li a {
     font-size: 13.5px;
   }
-  .luvion-responsive-nav .luvion-responsive-menu.mean-container .navbar-nav {
+  .mg-responsive-nav .mg-responsive-menu.mean-container .navbar-nav {
     overflow-y: scroll;
     height: 350px;
     -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
   }
-  .luvion-responsive-nav .mean-container a.meanmenu-reveal {
+  .mg-responsive-nav .mean-container a.meanmenu-reveal {
     color: #ffffff;
   }
-  .luvion-responsive-nav .mean-container a.meanmenu-reveal span {
+  .mg-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #ffffff;
   }
-  .luvion-responsive-nav .logo {
+  .mg-responsive-nav .logo {
     position: relative;
     width: 50%;
     z-index: 999;
   }
-  .luvion-responsive-nav .logo a img:nth-child(2) {
+  .mg-responsive-nav .logo a img:nth-child(2) {
     display: none;
   }
-  .luvion-responsive-nav .others-options {
+  .mg-responsive-nav .others-options {
     position: absolute;
     right: 52px;
     top: 3px;
   }
-  .luvion-responsive-nav .others-options .login-btn {
+  .mg-responsive-nav .others-options .login-btn {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     font-family: "Raleway", sans-serif;
   }
-  .luvion-responsive-nav .others-options .login-btn i {
+  .mg-responsive-nav .others-options .login-btn i {
     margin-right: 2px;
     color: #00b35b;
   }
-  .luvion-responsive-nav .others-options .login-btn:hover {
+  .mg-responsive-nav .others-options .login-btn:hover {
     color: #2874f0;
   }
   .navbar-area {
@@ -1011,46 +1011,46 @@ Navbar Area CSS
     -webkit-box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
             box-shadow: 0 7px 13px 0 rgba(0, 0, 0, 0.1);
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .mean-container a.meanmenu-reveal {
+  .navbar-area.is-sticky .mg-responsive-nav .mean-container a.meanmenu-reveal {
     color: #0e314c;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .mean-container a.meanmenu-reveal span {
+  .navbar-area.is-sticky .mg-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #0e314c;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .logo a img:nth-child(1) {
+  .navbar-area.is-sticky .mg-responsive-nav .logo a img:nth-child(1) {
     display: none;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .logo a img:nth-child(2) {
+  .navbar-area.is-sticky .mg-responsive-nav .logo a img:nth-child(2) {
     display: block;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .others-options .login-btn {
+  .navbar-area.is-sticky .mg-responsive-nav .others-options .login-btn {
     color: #0e314c;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .others-options .login-btn i {
+  .navbar-area.is-sticky .mg-responsive-nav .others-options .login-btn i {
     color: #2874f0;
   }
-  .navbar-area.is-sticky .luvion-responsive-nav .others-options .login-btn:hover {
+  .navbar-area.is-sticky .mg-responsive-nav .others-options .login-btn:hover {
     color: #2874f0;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .mean-container a.meanmenu-reveal {
+  .navbar-area.navbar-style-two .mg-responsive-nav .mean-container a.meanmenu-reveal {
     color: #0e314c;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .mean-container a.meanmenu-reveal span {
+  .navbar-area.navbar-style-two .mg-responsive-nav .mean-container a.meanmenu-reveal span {
     background: #0e314c;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .logo a img {
+  .navbar-area.navbar-style-two .mg-responsive-nav .logo a img {
     display: inline-block !important;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .others-options .login-btn {
+  .navbar-area.navbar-style-two .mg-responsive-nav .others-options .login-btn {
     color: #0e314c;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .others-options .login-btn i {
+  .navbar-area.navbar-style-two .mg-responsive-nav .others-options .login-btn i {
     color: #2874f0;
   }
-  .navbar-area.navbar-style-two .luvion-responsive-nav .others-options .login-btn:hover {
+  .navbar-area.navbar-style-two .mg-responsive-nav .others-options .login-btn:hover {
     color: #2874f0;
   }
-  .luvion-nav {
+  .mg-nav {
     display: none;
   }
 }
@@ -1857,7 +1857,7 @@ Services Area CSS
 .overview-box .overview-content .content .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #4184f263;
   margin: 20px 0 25px;
   position: relative;
   border-radius: 30px;
@@ -1871,7 +1871,7 @@ Services Area CSS
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2874ef;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -2224,7 +2224,7 @@ Features Area CSS
   height: 65px;
   text-align: center;
   line-height: 65px;
-  background-color: rgba(231, 70, 69, 0.2);
+  background-color: #4184f263;
   border-radius: 50%;
   color: #2874f0;
   -webkit-transition: 0.5s;
@@ -2237,23 +2237,23 @@ Features Area CSS
 }
 
 .single-features-box .icon.bg-f78acb {
-  background-color: rgba(247, 138, 203, 0.3);
-  color: #f78acb;
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .single-features-box .icon.bg-cdf1d8 {
-  background-color: #cdf1d8;
-  color: #44ce6f;
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .single-features-box .icon.bg-c679e3 {
-  color: #c679e3;
-  background: #edc3fc;
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .single-features-box .icon.bg-eb6b3d {
-  color: #eb6b3d;
-  background: rgba(235, 107, 61, 0.3);
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .single-features-box h3 {
@@ -2346,7 +2346,7 @@ Features Area CSS
   height: 65px;
   text-align: center;
   line-height: 65px;
-  background-color: rgba(231, 70, 69, 0.2);
+  background-color: #4184f263;
   border-radius: 50%;
   color: #2874f0;
   -webkit-transition: 0.5s;
@@ -2361,13 +2361,13 @@ Features Area CSS
 }
 
 .features-box .icon.bg-f78acb {
-  background-color: rgba(247, 138, 203, 0.3);
-  color: #f78acb;
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .features-box .icon.bg-cdf1d8 {
-  background-color: #cdf1d8;
-  color: #44ce6f;
+  background-color: #4184f263;
+  color: #2874ef;
 }
 
 .features-box .icon.bg-c679e3 {
@@ -2556,7 +2556,7 @@ Team Area CSS
   height: 30px;
   line-height: 30px;
   border-radius: 50%;
-  background-color: #44ce6f;
+  background-color: #2874ef;
   color: #ffffff;
   font-size: 13px;
   -webkit-transition: 0.5s;
@@ -2572,7 +2572,7 @@ Team Area CSS
 }
 
 .single-team-member .member-image .social li a i:hover {
-  background-color: #44ce6f;
+  background-color: #2874ef;
   color: #ffffff;
 }
 
@@ -2631,7 +2631,7 @@ Invoicing Area CSS
 .invoicing-content .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #4184f263;
   margin: 20px 0 25px;
   position: relative;
   border-radius: 30px;
@@ -2645,7 +2645,7 @@ Invoicing Area CSS
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2874ef;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -3172,7 +3172,7 @@ Feedback Area CSS
 
 .feedback-slides .client-feedback .single-feedback .client-img img {
   border-radius: 50%;
-  border: 2px solid #44ce6f;
+  border: 2px solid #2874ef;
   padding: 4px;
 }
 
@@ -3223,7 +3223,7 @@ Feedback Area CSS
   transition: 0.5s;
   display: inline-block;
   position: relative;
-  border: 2px solid #44ce6f;
+  border: 2px solid #2874ef;
   border-radius: 50%;
   padding: 3px;
   width: 85px;
@@ -3446,7 +3446,7 @@ App Download Area CSS
 .app-download-content .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #4184f263;
   margin: 20px 0 25px;
   position: relative;
   border-radius: 30px;
@@ -3460,7 +3460,7 @@ App Download Area CSS
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2874ef;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -4254,7 +4254,7 @@ blockquote::before, .blockquote::before {
 
 .comments-area .comment-respond .form-submit input:hover, .comments-area .comment-respond .form-submit input:focus {
   color: #ffffff;
-  background-color: #44ce6f;
+  background-color: #2874ef;
 }
 
 /*================================================
@@ -4382,7 +4382,7 @@ Page Title Area CSS
 }
 
 .page-title-text ul li a:hover {
-  color: #44ce6f;
+  color: #2874ef;
 }
 
 .page-title-text ul li::before {
@@ -4923,7 +4923,7 @@ FAQ Area CSS
 .faq-content .bar {
   height: 5px;
   width: 90px;
-  background: #cdf1d8;
+  background: #4184f263;
   margin: 20px 0 25px;
   position: relative;
   border-radius: 30px;
@@ -4937,7 +4937,7 @@ FAQ Area CSS
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background: #44ce6f;
+  background: #2874ef;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   -webkit-animation-timing-function: linear;
@@ -5508,7 +5508,7 @@ Contact Area CSS
 }
 
 .contact-info ul li:hover .icon {
-  border-color: #44ce6f;
+  border-color: #2874ef;
 }
 
 .contact-info ul li:hover .icon::before {
