@@ -22,4 +22,11 @@
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .iti__flag {background-image: url("assets/img/flags@2x.png");}
 }
+
+.iti--allow-dropdown:first-child{
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid #c7c7c7;
+    margin-bottom: 37px;
+}
 /* [AUTH] */

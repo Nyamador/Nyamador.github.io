@@ -28,18 +28,16 @@
         </section>
 
         <form class="validate-form">
-          <div
-            class="mg-input--wrap validate-input"
-            data-validate="Invalid Email address"
-          >
+            <div class="mg-input--wrap validate-input" data-validate="Enter password">
             <input class="fieldInput" type="email" name="email" />
             <span class="focus-fieldInput" data-placeholder="Email"></span>
           </div>
 
-          <div class="mg-input--wrap validate-input" data-validate="Invalid Number" >
-
-          <input class="fieldInput" type="tel" name="Number" id="phone" />
-          <!-- <span class="focus-fieldInput"></span> -->
+          <!-- <div class="mg-input--wrap validate-input" data-validate="Invalid Number" > -->
+          <div data-validate="Enter password">
+          <input class="fieldInput" type="tel" name="Number" id="phone" placeholder="Mobile" style="font-weight: 100;    font-size: 13px;
+          color: #8e8e8e;"/>
+          <span class="focus-fieldInput"></span>
         </div>
           <!-- <div class="mg-input--wrap validate-input" data-validate="Invalid Email address" style="border-bottom:none;">
                           <input class="fieldInput p-8 bordered-input" type="email" name="email" placeholder="Email" required style="border:1px solid;border-radius:4px;">
@@ -213,6 +211,8 @@
       //     })
       //   },}
       // );
+      document.querySelector(".iti-allow-dropdown").addClass("mg-input--wrap validate-input")
+      // class="mg-input--wrap validate-input" > iti-allow-dropdown:first-child
     </script>
   </body>
 </html>
