@@ -34,10 +34,9 @@
           </div>
 
           <!-- <div class="mg-input--wrap validate-input" data-validate="Invalid Number" > -->
-          <div data-validate="Enter password">
+          <div class="itt">
           <input class="fieldInput" type="tel" name="Number" id="phone" placeholder="Mobile" style="font-weight: 100;    font-size: 13px;
           color: #8e8e8e;"/>
-          <span class="focus-fieldInput"></span>
         </div>
           <!-- <div class="mg-input--wrap validate-input" data-validate="Invalid Email address" style="border-bottom:none;">
                           <input class="fieldInput p-8 bordered-input" type="email" name="email" placeholder="Email" required style="border:1px solid;border-radius:4px;">
@@ -199,9 +198,10 @@
   utilsScript:"./assets/js/utils.js",
   autoPlaceholder: "aggresive",
   nationalMode: false,
-  // customContainer : 'focus-fieldInput'
+  customContainer : 'ittt'
 
 });
+
 
       //       ,{
       //   initialCountry: "auto",
@@ -211,8 +211,9 @@
       //     })
       //   },}
       // );
-      document.querySelector(".iti-allow-dropdown").addClass("mg-input--wrap validate-input")
+      // document.querySelector(".iti-allow-dropdown").addClass("mg-input--wrap validate-input")
       // class="mg-input--wrap validate-input" > iti-allow-dropdown:first-child
+      $(".ittt").append("<span class=\"focus-fieldInput\"></span>");
     </script>
   </body>
 </html>
