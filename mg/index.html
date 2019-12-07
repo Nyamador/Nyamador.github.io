@@ -1,24 +1,23 @@
-<!doctype html>
-<html class="no-js" lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="description" content="Purpose Application UI is the following chapter we've finished in order to create a complete and robust solution next to the already known Purpose Website UI.">
+  <meta name="author" content="Webpixels">
+  <title>Purpose – Application UI Kit</title>
+  <!-- Favicon -->
+  <link rel="icon" href="img/brand/favicon.png" type="image/png">
+  <!-- Font Awesome 5 -->
+  <link rel="stylesheet" href="libs/@forteawesome/fontawesome-pro/all.min.css"><!-- Page CSS -->
   <link rel="stylesheet" href="libs/fullcalendar/dist/fullcalendar.min.css">
-  <link rel="stylesheet" href="libs/@forteawesome/fontawesome-pro/all.min.css">
-
-  <meta name="theme-color" content="#fafafa">
-  <style type="text/css">.apexcharts-canvas {
+  <!-- Purpose CSS -->
+  <link rel="stylesheet" href="css/purpose.css" id="stylesheet">
+  <style type="text/css">
+  
+  .apexcharts-canvas {
     position: relative;
     user-select: none;
     /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
@@ -576,19 +575,11 @@
     100% {
       opacity: 1;
     }
-  }
-
-  <style type="text/css"> @keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style>
-  </style>
+  }</style>
+  <style type="text/css">@keyframes resizeanim { from { opacity: 0; } to { opacity: 0; } } .resize-triggers { animation: 1ms resizeanim; visibility: hidden; opacity: 0; } .resize-triggers, .resize-triggers > div, .contract-trigger:before { content: " "; display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; } .resize-triggers > div { background: #eee; overflow: auto; } .contract-trigger:before { width: 200%; height: 200%; }</style>
 </head>
 
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Add your site or application content here -->
-  <body class="application application-offset ready sidenav-pinned" data-gr-c-s-loaded="true" style="">
+<body class="application application-offset">
     <!-- <div class="alert alert-danger bg-dark-dark text-white alert-flush alert-dismissible border-0 shadow-lg fade show mb-0" role="alert">
         <div class="container text-center">
             <h5 class="text-white mb-1">⚡️ Black and Cyber Week <strong>40% Off</strong></h5>
@@ -602,7 +593,7 @@
     </div> -->
   <!-- Chat modal -->
   <!-- Customizer modal -->
-  <div class="modal fade fixed-right" id="modal-chat" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+  <div class="modal fade fixed-right" id="modal-chat" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-vertical" role="document">
       <div class="modal-content">
         <div class="modal-header align-items-center">
@@ -611,174 +602,14 @@
             <span class="d-block text-sm">3 new conversations</span>
           </div>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <div class="scroll-wrapper scrollbar-inner" style="position: relative;"><div class="scrollbar-inner scroll-content scroll-scrolly_visible" style="height: auto; margin-bottom: 0px; margin-right: 0px; max-height: 463px;">
+        <div class="scrollbar-inner">
           <!-- Chat contacts -->
           <div class="list-group list-group-flush">
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="css/img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">John Sullivan</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="css/img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">Heather Wright</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="css/img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">James Lewis</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">Martin Gray</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="css/img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">John Snow</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">John Michael</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">Monroe Parker</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">Danielle Levin</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">Jesse Stevens</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
-                <div>
-                  <div class="avatar-parent-child">
-                    <img alt="Image placeholder" src="img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
-                    <span class="avatar-child avatar-badge bg-warning"></span>
-                  </div>
-                </div>
-                <div class="flex-fill ml-3">
-                  <h6 class="text-sm mb-0">John Snow</h6>
-                  <p class="text-sm mb-0">
-                    Working remotely
-                  </p>
-                </div>
-              </div>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
@@ -794,7 +625,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
@@ -810,7 +641,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
@@ -826,7 +657,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
@@ -842,7 +673,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
@@ -858,7 +689,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
@@ -874,7 +705,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
@@ -890,7 +721,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
@@ -906,7 +737,7 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
@@ -922,7 +753,167 @@
               </div>
             </a>
             <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="" data-original-title="" title="">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">John Snow</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">John Sullivan</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">Heather Wright</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">James Lewis</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">Martin Gray</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">John Snow</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-1-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">John Michael</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-2-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">Monroe Parker</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-3-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">Danielle Levin</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
+                <div>
+                  <div class="avatar-parent-child">
+                    <img alt="Image placeholder" src="img/theme/light/team-4-800x800.jpg" class="avatar  rounded-circle">
+                    <span class="avatar-child avatar-badge bg-warning"></span>
+                  </div>
+                </div>
+                <div class="flex-fill ml-3">
+                  <h6 class="text-sm mb-0">Jesse Stevens</h6>
+                  <p class="text-sm mb-0">
+                    Working remotely
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="">
                 <div>
                   <div class="avatar-parent-child">
                     <img alt="Image placeholder" src="img/theme/light/team-5-800x800.jpg" class="avatar  rounded-circle">
@@ -938,7 +929,7 @@
               </div>
             </a>
           </div>
-        </div><div class="scroll-element scroll-x scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="width: 0px;"></div></div></div><div class="scroll-element scroll-y scroll-scrolly_visible"><div class="scroll-element_outer"><div class="scroll-element_size"></div><div class="scroll-element_track"></div><div class="scroll-bar" style="height: 129px; top: 219.502px;"></div></div></div></div>
+        </div>
         <div class="modal-footer py-3 mt-auto">
           <a href="#" class="btn btn-block btn-sm btn-neutral btn-icon rounded-pill">
             <span class="btn-inner--icon"><i class="fab fa-facebook-messenger"></i></span>
@@ -951,7 +942,7 @@
   <!-- Application container -->
   <div class="container-fluid container-application">
     <!-- Sidenav -->
-    <div class="sidenav show" id="sidenav-main">
+    <div class="sidenav" id="sidenav-main">
       <!-- Sidenav header -->
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="../index.html">
@@ -959,7 +950,7 @@
         </a>
         <div class="ml-auto">
           <!-- Sidenav toggler -->
-          <div class="sidenav-toggler sidenav-toggler-dark d-md-none active" data-action="sidenav-unpin" data-target="#sidenav-main">
+          <div class="sidenav-toggler sidenav-toggler-dark d-md-none" data-action="sidenav-unpin" data-target="#sidenav-main">
             <div class="sidenav-toggler-inner">
               <i class="sidenav-toggler-line bg-white"></i>
               <i class="sidenav-toggler-line bg-white"></i>
@@ -1057,7 +1048,7 @@
           <div class="navbar-user d-lg-none ml-auto">
             <ul class="navbar-nav flex-row align-items-center">
               <li class="nav-item">
-                <a href="#" class="nav-link nav-link-icon sidenav-toggler active" data-action="sidenav-pin" data-target="#sidenav-main"><i class="far fa-bars"></i></a>
+                <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="far fa-bars"></i></a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link nav-link-icon" data-action="omnisearch-open" data-target="#omnisearch"><i class="far fa-search"></i></a>
@@ -1070,7 +1061,7 @@
                   </div>
                   <div class="list-group list-group-flush">
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
                         <div>
                           <span class="avatar bg-primary text-white rounded-circle">AM</span>
                         </div>
@@ -1083,7 +1074,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
                         <div>
                           <span class="avatar bg-warning text-white rounded-circle">SW</span>
                         </div>
@@ -1096,7 +1087,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
                         <div>
                           <span class="avatar bg-info text-white rounded-circle">JM</span>
                         </div>
@@ -1109,7 +1100,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
                         <div>
                           <span class="avatar bg-dark text-white rounded-circle">MJ</span>
                         </div>
@@ -1122,7 +1113,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
                         <div>
                           <span class="avatar bg-primary text-white rounded-circle">RN</span>
                         </div>
@@ -1365,48 +1356,7 @@
                         <div class="media d-flex align-items-center">
                           <!-- SVG icon -->
                           <figure style="width: 50px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145px" height="149px" viewBox="0 0 145 149" version="1.1" class="injected-svg svg-inject img-fluid" style="height: 50px;">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>DOC_File</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="DOC_File" transform="translate(1.000000, 1.000000)">
-            <path d="M140.8,36.4 L142,139.8 C142,143.3 139.2,146.1 135.7,146.1 L35.2,146.1 C31.7,146.1 28.9,143.3 28.9,139.8 L28.9,6.9 C28.9,3.4 31.7,0.6 35.2,0.6 L108.1,0.6 L140.8,36.4 Z" id="Shape" class="fill-neutral" fill-rule="nonzero"></path>
-            <path d="M63,106.3 L123.3,106.3" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M45.1,106.3 L55.7,106.3" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M96.3,90 L123.2,90" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M45.6,90 L84.9,90" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M113.3,73.8 L123.7,73.8" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M46.1,73.8 L103.6,73.8" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M74.2,124.1 L77.7,124.1" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M46.1,124.1 L67.5,124.1" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M87.2,57.5 L124.2,57.5" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M46.7,57.5 L75.3,57.5" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M47.2,20.3 L95.4,20.3" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M47.2,31.8 L65.6,31.8" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M108,0.7 L108,29.2 C108,33.1 111.5,36.5 115.4,36.5 L140.7,36.5" id="Shape" class="fill-neutral" fill-rule="nonzero"></path>
-            <path d="M111.6,3.5 L111.6,29.4 C111.6,33 114.8,36 118.3,36 L141.3,36" id="Shape" class="fill-primary-300" fill-rule="nonzero"></path>
-            <path d="M111.6,8.7 L111.6,34.6 C111.6,38.2 114.8,41.2 118.3,41.2 L141.3,41.2 L141.3,36" id="Shape" class="fill-primary-300" fill-rule="nonzero"></path>
-            <path d="M108,22.9 L108,29.1 C108,33 111.5,36.4 115.4,36.4 L140.7,36.4" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M108,0.7 L108,16" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M28.8,34.6 L28.8,33.1" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M28.8,25.8 L28.8,6.9 C28.8,3.4 31.6,0.6 35.1,0.6 L108,0.6 L140.7,36.4 L141.9,139.8 C141.9,143.3 139.1,146.1 135.6,146.1 L35.1,146.1 C31.6,146.1 28.8,143.3 28.8,139.8 L28.8,50.3" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <path d="M59.4,84.8 L5.6,84.8 C2.8,84.8 0.5,82.5 0.5,79.7 L0.5,55.2 C0.5,52.4 2.8,50.1 5.6,50.1 L59.4,50.1 C62.2,50.1 64.5,52.4 64.5,55.2 L64.5,79.7 C64.5,82.5 62.2,84.8 59.4,84.8 Z" id="Shape" class="fill-neutral" fill-rule="nonzero"></path>
-            <path d="M60,84.8 L11.7,84.8 C9.2,84.8 7.3,82.8 7.3,80.4 L7.3,59.4 C7.3,56.9 9.3,55 11.7,55 L60,55 C62.5,55 64.4,57 64.4,59.4 L64.4,80.4 C64.5,82.8 62.5,84.8 60,84.8 Z" id="Shape" class="fill-primary-100" fill-rule="nonzero"></path>
-            <path d="M59.4,84.8 L5.6,84.8 C2.8,84.8 0.5,82.5 0.5,79.7 L0.5,55.2 C0.5,52.4 2.8,50.1 5.6,50.1 L59.4,50.1 C62.2,50.1 64.5,52.4 64.5,55.2 L64.5,79.7 C64.5,82.5 62.2,84.8 59.4,84.8 Z" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            <text id="D" class="fill-primary" font-family="Helvetica" font-size="20.9718" font-weight="normal">
-                <tspan x="8.6125" y="74.8013">D</tspan>
-            </text>
-            <text id="O" class="fill-primary" font-family="Helvetica" font-size="20.9718" font-weight="normal">
-                <tspan x="25.2258" y="74.8013">O</tspan>
-            </text>
-            <text id="C" class="fill-primary" font-family="Helvetica" font-size="20.9718" font-weight="normal">
-                <tspan x="42.8938" y="74.8013">C</tspan>
-            </text>
-        </g>
-    </g>
-</svg>
+                            <img alt="Image placeholder" src="img/icons/essential/detailed/DOC_File.svg" class="svg-inject img-fluid" style="height: 50px;">
                           </figure>
                           <!-- Media body -->
                           <div class="media-body ml-3">
@@ -1421,59 +1371,7 @@
                         <div class="media d-flex align-items-center">
                           <!-- SVG icon -->
                           <figure style="width: 50px;">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143px" height="151px" viewBox="0 0 143 151" version="1.1" class="injected-svg svg-inject img-fluid" style="height: 50px;">
-    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-    <title>Mobile_UI</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile_UI" transform="translate(2.000000, 1.000000)">
-            <path d="M16.8,51.5 C14.3,46.7 12.8,41.2 12.8,35.4 C12.8,16.3 28.3,0.8 47.4,0.8 C60.6,0.8 72,8.2 77.9,19" id="Shape" class="stroke-primary-300" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1,7"></path>
-            <circle id="Oval" stroke-width="3" class="stroke-primary-300 fill-neutral" fill-rule="nonzero" stroke-linecap="round" stroke-linejoin="round" cx="20.1" cy="13.9" r="4.6"></circle>
-            <g id="Group" transform="translate(0.000000, 147.000000)" class="stroke-primary-300" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                <path d="M21.7,0.8 L0,0.8" id="Shape"></path>
-                <path d="M27,0.8 L26,0.8" id="Shape"></path>
-                <path d="M107.3,0.8 L32.3,0.8" id="Shape"></path>
-                <path d="M132.9,0.8 L111.6,0.8" id="Shape"></path>
-                <path d="M138.4,0.8 L136.8,0.8" id="Shape"></path>
-            </g>
-            <g id="Group" transform="translate(25.000000, 24.000000)">
-                <path d="M90.7,115 C90.7,119.9 86.7,123.9 81.8,123.9 L8.9,123.9 C4,123.9 -4.54747351e-13,119.9 -4.54747351e-13,115 L-4.54747351e-13,9.3 C-4.54747351e-13,4.4 4,0.4 8.9,0.4 L81.8,0.4 C86.7,0.4 90.7,4.4 90.7,9.3 L90.7,115 Z" id="Shape" class="fill-neutral" fill-rule="nonzero"></path>
-                <path d="M90.7,9.2 L90.7,115 C90.7,119.9 86.7,123.9 81.8,123.9 L8.9,123.9 C4,123.9 -4.54747351e-13,119.9 -4.54747351e-13,115 L-4.54747351e-13,9.3 C-4.54747351e-13,4.4 4,0.4 8.9,0.4 L81.8,0.4 C86.8,0.3 90.7,4.3 90.7,9.2 Z" id="Shape" class="fill-primary-200" fill-rule="nonzero"></path>
-                <rect id="Rectangle-path" class="fill-neutral" fill-rule="nonzero" x="0.1" y="10.2" width="90.7" height="99.5"></rect>
-                <path d="M0.1,11 L0.1,9.2 C0.1,4.3 4.1,0.3 9,0.3 L81.9,0.3 C86.8,0.3 90.8,4.3 90.8,9.2 L90.8,115 C90.8,119.9 86.8,123.9 81.9,123.9 L9,123.9 C4.1,123.9 0.1,119.9 0.1,115 L0.1,25.4" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M0.1,15.7 L0.1,15" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <circle id="Oval" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" cx="45.9" cy="116.6" r="3"></circle>
-                <path d="M83.5,10.6 L90.1,10.6" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M6.3,10.6 L78.2,10.6" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M75.1,109.3 L0.7,109.3" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M90.1,109.3 L80.6,109.3" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M42.9,5.5 L50.7,5.5" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M37.8,5.5 L38.4,5.5" id="Shape" class="stroke-primary" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-            <g id="Group" transform="translate(48.000000, 56.000000)" fill-rule="nonzero">
-                <path d="M39.5,60.1 L5.6,60.1 C3.6,60.1 2,58.5 2,56.5 L2,7.8 C2,5.8 3.6,4.2 5.6,4.2 L39.5,4.2 C41.5,4.2 43.1,5.8 43.1,7.8 L43.1,56.5 C43.1,58.5 41.5,60.1 39.5,60.1 Z" id="Shape" class="fill-primary-200"></path>
-                <path d="M0.4,9.2 L0.4,3.6 C0.4,1.9 1.8,0.5 3.5,0.5 L41.6,0.5 C43.3,0.5 44.7,1.9 44.7,3.6 L44.7,53.4 C44.7,55.1 43.3,56.5 41.6,56.5 L3.5,56.5 C1.8,56.5 0.4,55.1 0.4,53.4 L0.4,22.7" id="Shape" stroke-width="3" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M0.4,14.3 L0.4,13.7" id="Shape" stroke-width="3" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round"></path>
-                <circle id="Oval" stroke-width="3" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round" cx="22.5" cy="19.9" r="7.3"></circle>
-                <path d="M12.7,38.9 L32.4,38.9" id="Shape" stroke-width="3" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round"></path>
-                <path d="M18.6,45.5 L26.5,45.5" id="Shape" stroke-width="3" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round"></path>
-            </g>
-            <g id="Group" transform="translate(101.000000, 59.000000)" fill-rule="nonzero" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                <path d="M0.9,33.9 L0.9,3.9 C0.9,2.2 2.3,0.8 4,0.8 L35,0.8 C36.7,0.8 38.1,2.2 38.1,3.9 L38.1,44.7 C38.1,46.4 36.7,47.8 35,47.8 L4,47.8 C2.3,47.8 0.9,46.4 0.9,44.7 L0.9,39.9" id="Shape"></path>
-                <circle id="Oval" cx="19.5" cy="17.1" r="6.1"></circle>
-                <path d="M11.2,33.1 L27.8,33.1" id="Shape"></path>
-                <path d="M16.2,38.6 L22.8,38.6" id="Shape"></path>
-            </g>
-            <g id="Group" transform="translate(1.000000, 59.000000)" fill-rule="nonzero" class="stroke-primary-300 fill-neutral" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-                <path d="M0.2,33.9 L0.2,3.9 C0.2,2.2 1.6,0.8 3.3,0.8 L34.3,0.8 C36,0.8 37.4,2.2 37.4,3.9 L37.4,44.7 C37.4,46.4 36,47.8 34.3,47.8 L3.3,47.8 C1.6,47.8 0.2,46.4 0.2,44.7 L0.2,39.9" id="Shape"></path>
-                <circle id="Oval" cx="18.8" cy="17.1" r="6.1"></circle>
-                <path d="M10.5,33.1 L27.1,33.1" id="Shape"></path>
-                <path d="M15.5,38.6 L22.1,38.6" id="Shape"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+                            <img alt="Image placeholder" src="img/icons/essential/detailed/Mobile_UI.svg" class="svg-inject img-fluid" style="height: 50px;">
                           </figure>
                           <!-- Media body -->
                           <div class="media-body ml-3">
@@ -1522,7 +1420,7 @@
             </ul><!-- Right menu -->
             <ul class="navbar-nav ml-lg-auto align-items-center d-none d-lg-flex">
               <li class="nav-item">
-                <a href="#" class="nav-link nav-link-icon sidenav-toggler active" data-action="sidenav-pin" data-target="#sidenav-main"><i class="far fa-bars"></i></a>
+                <a href="#" class="nav-link nav-link-icon sidenav-toggler" data-action="sidenav-pin" data-target="#sidenav-main"><i class="far fa-bars"></i></a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link nav-link-icon" data-action="omnisearch-open" data-target="#omnisearch"><i class="far fa-search"></i></a>
@@ -1538,7 +1436,7 @@
                   </div>
                   <div class="list-group list-group-flush">
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
                         <div>
                           <span class="avatar bg-primary text-white rounded-circle">AM</span>
                         </div>
@@ -1551,7 +1449,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
                         <div>
                           <span class="avatar bg-warning text-white rounded-circle">SW</span>
                         </div>
@@ -1564,7 +1462,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="5 hrs ago">
                         <div>
                           <span class="avatar bg-info text-white rounded-circle">JM</span>
                         </div>
@@ -1577,7 +1475,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="2 hrs ago">
                         <div>
                           <span class="avatar bg-dark text-white rounded-circle">MJ</span>
                         </div>
@@ -1590,7 +1488,7 @@
                       </div>
                     </a>
                     <a href="#" class="list-group-item list-group-item-action">
-                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago" data-original-title="" title="">
+                      <div class="d-flex align-items-center" data-toggle="tooltip" data-placement="right" data-title="3 hrs ago">
                         <div>
                           <span class="avatar bg-primary text-white rounded-circle">RN</span>
                         </div>
@@ -1709,8 +1607,7 @@
         <div class="page-title">
           <div class="row justify-content-between align-items-center">
             <div class="col-md-6 mb-3 mb-md-0">
-              <h5 class="h3 font-weight-400 mb-0 text-white">Moning, Heather!</h5>
-              <span class="text-sm text-white opacity-8">Have a nice day!</span>
+              <h5 class="h3 font-weight-400 mb-0 text-white">Hello, Desmond!</h5>
             </div>
           </div>
         </div>
@@ -1720,17 +1617,17 @@
               <div class="card-header">
                 <h6 class="mb-0">Engagement</h6>
               </div>
-              <div class="card-body" style="position: relative;">
+              <div class="card-body">
                 <!-- Chart -->
-                <div id="apex-engagement" data-color="primary" data-height="280" style="min-height: 295px;"><div id="apexchartszb7bko03h" class="apexcharts-canvas apexchartszb7bko03h light" style="width: 596px; height: 280px;"><svg id="SvgjsSvg2158" width="596" height="280" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG2160" class="apexcharts-inner apexcharts-graphical" transform="translate(50.6875, 30)"><defs id="SvgjsDefs2159"><clipPath id="gridRectMaskzb7bko03h"><rect id="SvgjsRect2174" width="542.3125" height="211.112" x="-3.5" y="-3.5" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMaskzb7bko03h"><rect id="SvgjsRect2175" width="579.3125" height="248.112" x="-22" y="-22" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath></defs><line id="SvgjsLine2164" x1="303.5524726081002" y1="0" x2="303.5524726081002" y2="204.112" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="303.5524726081002" y="0" width="1" height="204.112" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG2197" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG2198" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"><text id="SvgjsText2199" font-family="Nunito" x="52.787614948151045" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2200" style="font-family: Nunito;">Feb</tspan><title>Feb</title></text><text id="SvgjsText2201" font-family="Nunito" x="125.68479749559773" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2202" style="font-family: Nunito;">Mar</tspan><title>Mar</title></text><text id="SvgjsText2203" font-family="Nunito" x="203.60937194286834" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2204" style="font-family: Nunito;">Apr</tspan><title>Apr</title></text><text id="SvgjsText2205" font-family="Nunito" x="279.02025044022696" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2206" style="font-family: Nunito;">May</tspan><title>May</title></text><text id="SvgjsText2207" font-family="Nunito" x="356.9448248874976" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2208" style="font-family: Nunito;">Jun</tspan><title>Jun</title></text><text id="SvgjsText2209" font-family="Nunito" x="432.3557033848562" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2210" style="font-family: Nunito;">Jul</tspan><title>Jul</title></text><text id="SvgjsText2211" font-family="Nunito" x="510.2802778321268" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2212" style="font-family: Nunito;">Aug</tspan><title>Aug</title></text><text id="SvgjsText2213" font-family="Nunito" x="588.2048522793974" y="233.112" text-anchor="middle" dominant-baseline="auto" font-size="14px" fill="#8898aa" class="apexcharts-xaxis-label apexcharts-xaxis-label" style="font-family: Nunito;"><tspan id="SvgjsTspan2214" style="font-family: Nunito;"></tspan><title></title></text></g></g><g id="SvgjsG2223" class="apexcharts-grid"><g id="SvgjsG2224" class="apexcharts-gridlines-horizontal"><line id="SvgjsLine2233" x1="0" y1="0" x2="535.3125" y2="0" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line><line id="SvgjsLine2234" x1="0" y1="40.8224" x2="535.3125" y2="40.8224" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line><line id="SvgjsLine2235" x1="0" y1="81.6448" x2="535.3125" y2="81.6448" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line><line id="SvgjsLine2236" x1="0" y1="122.4672" x2="535.3125" y2="122.4672" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line><line id="SvgjsLine2237" x1="0" y1="163.2896" x2="535.3125" y2="163.2896" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line><line id="SvgjsLine2238" x1="0" y1="204.11200000000002" x2="535.3125" y2="204.11200000000002" stroke="#dee2e6" stroke-dasharray="5" class="apexcharts-gridline"></line></g><g id="SvgjsG2225" class="apexcharts-gridlines-vertical"></g><line id="SvgjsLine2226" x1="52.787614948151045" y1="205.112" x2="52.787614948151045" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2227" x1="125.68479749559773" y1="205.112" x2="125.68479749559773" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2228" x1="203.60937194286834" y1="205.112" x2="203.60937194286834" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2229" x1="279.02025044022696" y1="205.112" x2="279.02025044022696" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2230" x1="356.9448248874976" y1="205.112" x2="356.9448248874976" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2231" x1="432.3557033848562" y1="205.112" x2="432.3557033848562" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2232" x1="510.2802778321268" y1="205.112" x2="510.2802778321268" y2="211.112" stroke="#dee2e6" stroke-dasharray="0" class="apexcharts-xaxis-tick"></line><line id="SvgjsLine2240" x1="0" y1="204.112" x2="535.3125" y2="204.112" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine2239" x1="0" y1="1" x2="0" y2="204.112" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG2177" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG2178" class="apexcharts-series Likes" data:longestSeries="true" rel="1" data:realIndex="0"><path id="apexcharts-line-0" d="M 0 176.89706666666666C 27.27360105654471 176.89706666666666 50.650973390725895 183.7008 77.9245744472706 183.7008C 103.43858833887694 183.7008 125.30774310311094 136.07466666666667 150.82175699471728 136.07466666666667C 178.05869998532577 136.07466666666667 201.40465112013305 142.8784 228.64159411074155 142.8784C 255.03540158481707 142.8784 277.65866513402466 6.803733333333355 304.0524726081002 6.803733333333355C 331.3260736646449 6.803733333333355 354.70344599882606 74.84106666666668 381.9770470553708 74.84106666666668C 408.3708545294463 74.84106666666668 430.9941180786539 54.42986666666667 457.3879255527294 54.42986666666667C 484.6615266092741 54.42986666666667 508.0388989434553 142.8784 535.3125 142.8784" fill="none" fill-opacity="1" stroke="rgba(110,0,255,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="7" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskzb7bko03h)" pathTo="M 0 176.89706666666666C 27.27360105654471 176.89706666666666 50.650973390725895 183.7008 77.9245744472706 183.7008C 103.43858833887694 183.7008 125.30774310311094 136.07466666666667 150.82175699471728 136.07466666666667C 178.05869998532577 136.07466666666667 201.40465112013305 142.8784 228.64159411074155 142.8784C 255.03540158481707 142.8784 277.65866513402466 6.803733333333355 304.0524726081002 6.803733333333355C 331.3260736646449 6.803733333333355 354.70344599882606 74.84106666666668 381.9770470553708 74.84106666666668C 408.3708545294463 74.84106666666668 430.9941180786539 54.42986666666667 457.3879255527294 54.42986666666667C 484.6615266092741 54.42986666666667 508.0388989434553 142.8784 535.3125 142.8784" pathFrom="M -1 204.112L -1 204.112L 77.9245744472706 204.112L 150.82175699471728 204.112L 228.64159411074155 204.112L 304.0524726081002 204.112L 381.9770470553708 204.112L 457.3879255527294 204.112L 535.3125 204.112"></path><g id="SvgjsG2179" class="apexcharts-series-markers-wrap"><g id="SvgjsG2181" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2182" r="4" cx="0" cy="176.89706666666666" class="apexcharts-marker no-pointer-events w52gbw9s4i" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="0" j="0" index="0" default-marker-size="4"></circle><circle id="SvgjsCircle2183" r="4" cx="77.9245744472706" cy="183.7008" class="apexcharts-marker no-pointer-events wy6uh0m1v" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="1" j="1" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2184" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2185" r="4" cx="150.82175699471728" cy="136.07466666666667" class="apexcharts-marker no-pointer-events wcrct33m9" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="2" j="2" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2186" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2187" r="4" cx="228.64159411074155" cy="142.8784" class="apexcharts-marker no-pointer-events wxtkae5y8" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="3" j="3" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2188" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2189" r="4" cx="304.0524726081002" cy="6.803733333333355" class="apexcharts-marker no-pointer-events w5c0jcyqc" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="4" j="4" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2190" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2191" r="4" cx="381.9770470553708" cy="74.84106666666668" class="apexcharts-marker no-pointer-events wqbe0ovcji" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="5" j="5" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2192" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2193" r="4" cx="457.3879255527294" cy="54.42986666666667" class="apexcharts-marker no-pointer-events wo1kpa17" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="6" j="6" index="0" default-marker-size="4"></circle></g><g id="SvgjsG2194" class="apexcharts-series-markers" clip-path="url(#gridRectMarkerMaskzb7bko03h)"><circle id="SvgjsCircle2195" r="4" cx="535.3125" cy="142.8784" class="apexcharts-marker no-pointer-events wj7gg45b2" stroke="#ffffff" fill="#6e00ff" fill-opacity="1" stroke-width="3" stroke-opacity="0.9" rel="7" j="7" index="0" default-marker-size="4"></circle></g></g><g id="SvgjsG2180" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine2241" x1="0" y1="0" x2="535.3125" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine2242" x1="0" y1="0" x2="535.3125" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG2243" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG2244" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG2245" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect2163" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG2215" class="apexcharts-yaxis" rel="0" transform="translate(17.6875, 0)"><g id="SvgjsG2216" class="apexcharts-yaxis-texts-g"><text id="SvgjsText2217" font-family="Nunito" x="20" y="31.5" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">30</text><text id="SvgjsText2218" font-family="Nunito" x="20" y="72.42240000000001" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">24</text><text id="SvgjsText2219" font-family="Nunito" x="20" y="113.34480000000002" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">18</text><text id="SvgjsText2220" font-family="Nunito" x="20" y="154.26720000000003" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">12</text><text id="SvgjsText2221" font-family="Nunito" x="20" y="195.18960000000004" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">6</text><text id="SvgjsText2222" font-family="Nunito" x="20" y="236.11200000000005" text-anchor="end" dominant-baseline="auto" font-size="12px" fill="#8898aa" class="apexcharts-yaxis-label " style="font-family: Nunito;">0</text></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip light" style="left: 247.641px; top: 9.5px;"><div class="apexcharts-tooltip-title" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;">11 May</div><div class="apexcharts-tooltip-series-group active" style="display: flex;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(110, 0, 255);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label">Likes: </span><span class="apexcharts-tooltip-text-value">29</span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-xaxistooltip apexcharts-xaxistooltip-bottom light" style="left: 317.099px; top: 236.112px;"><div class="apexcharts-xaxistooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px; min-width: 52.2813px;">11 May</div></div></div></div>
-              <div class="resize-triggers"><div class="expand-trigger"><div style="width: 645px; height: 344px;"></div></div><div class="contract-trigger"></div></div></div>
+                <div id="apex-engagement" data-color="primary" data-height="280"></div>
+              </div>
             </div>
           </div>
           <div class="col-xl-4 col-md-6">
             <div class="card card-fluid">
               <div class="card-body text-center d-flex flex-column justify-content-center">
                 <h5 class="mb-4">Emails sent</h5>
-                <div class="progress-circle progress-lg mx-auto" id="progress-5" data-progress="50" data-text="98" data-textclass="h1" data-color="warning" style="position: relative;"><svg viewBox="0 0 100 100" style="display: block;"><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#eee" stroke-width="2" fill-opacity="0"></path><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#ffab00" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 146.137;"></path></svg><div class="h1" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(255, 171, 0);">98</div></div>
+                <div class="progress-circle progress-lg mx-auto" id="progress-5" data-progress="50" data-text="98" data-textclass="h1" data-color="warning"></div>
                 <div class="d-flex mt-4">
                   <div class="col">
                     <span class="d-block badge badge-dot badge-lg h6">
@@ -1760,7 +1657,7 @@
               <div class="card-body">
                 <div class="row align-items-center mb-4">
                   <div class="col-auto">
-                    <div class="progress-circle progress-sm" id="progress-1" data-progress="90" data-color="primary" style="position: relative;"><svg viewBox="0 0 100 100" style="display: block;"><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#eee" stroke-width="2" fill-opacity="0"></path><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#6e00ff" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 29.2273;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(110, 0, 255);"></div></div>
+                    <div class="progress-circle progress-sm" id="progress-1" data-progress="90" data-color="primary"></div>
                   </div>
                   <div class="col">
                     <a href="#!" class="d-block h6 mb-0">98 tasks solved</a>
@@ -1769,7 +1666,7 @@
                 </div>
                 <div class="row align-items-center mb-4">
                   <div class="col-auto">
-                    <div class="progress-circle progress-sm" id="progress-2" data-progress="40" data-color="warning" style="position: relative;"><svg viewBox="0 0 100 100" style="display: block;"><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#eee" stroke-width="2" fill-opacity="0"></path><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#ffab00" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 175.364;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(255, 171, 0);"></div></div>
+                    <div class="progress-circle progress-sm" id="progress-2" data-progress="40" data-color="warning"></div>
                   </div>
                   <div class="col">
                     <a href="#!" class="d-block h6 mb-0">13 tasks solved</a>
@@ -1778,7 +1675,7 @@
                 </div>
                 <div class="row align-items-center">
                   <div class="col-auto">
-                    <div class="progress-circle progress-sm" id="progress-3" data-progress="60" data-color="info" style="position: relative;"><svg viewBox="0 0 100 100" style="display: block;"><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#eee" stroke-width="2" fill-opacity="0"></path><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#00b8d9" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 116.909;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(0, 184, 217);"></div></div>
+                    <div class="progress-circle progress-sm" id="progress-3" data-progress="60" data-color="info"></div>
                   </div>
                   <div class="col">
                     <a href="#!" class="d-block h6 mb-0">23 tasks solved</a>
@@ -1793,7 +1690,7 @@
             <div class="card card-fluid">
               <div class="card-body text-center d-flex flex-column justify-content-center">
                 <h5 class="mb-4">Congratulations!</h5>
-                <div class="progress-circle progress-lg mx-auto" id="progress-4" data-progress="78" data-text="23" data-textclass="h1" data-color="primary" style="position: relative;"><svg viewBox="0 0 100 100" style="display: block;"><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#eee" stroke-width="2" fill-opacity="0"></path><path d="M 50,50 m 0,-46.5 a 46.5,46.5 0 1 1 0,93 a 46.5,46.5 0 1 1 0,-93" stroke="#6e00ff" stroke-width="7" fill-opacity="0" style="stroke-dasharray: 292.273, 292.273; stroke-dashoffset: 64.3002;"></path></svg><div class="h1" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(110, 0, 255);">23</div></div>
+                <div class="progress-circle progress-lg mx-auto" id="progress-4" data-progress="78" data-text="23" data-textclass="h1" data-color="primary"></div>
                 <p class="mt-4 mb-0">
                   Github issues were closed this week.
                 </p>
@@ -1828,9 +1725,9 @@
               <div class="card-body">
                 <div class="row justify-content-between align-items-center">
                   <div class="col-6">
-                    <div style="max-width: 120px; position: relative;">
-                      <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color="danger" data-dataset="[42, 55, 19, 16, 84, 24, 10, 11, 93, 15, 81]" style="min-height: 50px;"><div id="apexchartse4c0r8sz" class="apexcharts-canvas apexchartse4c0r8sz light" style="width: 120px; height: 50px;"><svg id="SvgjsSvg1924" width="120" height="50" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1926" class="apexcharts-inner apexcharts-graphical" transform="translate(0, 0)"><defs id="SvgjsDefs1925"><clipPath id="gridRectMaske4c0r8sz"><rect id="SvgjsRect1931" width="122" height="52" x="-1" y="-1" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath><clipPath id="gridRectMarkerMaske4c0r8sz"><rect id="SvgjsRect1932" width="160" height="90" x="-20" y="-20" rx="0" ry="0" fill="#ffffff" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect></clipPath></defs><line id="SvgjsLine1930" x1="0" y1="0" x2="0" y2="50" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="50" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1939" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1940" class="apexcharts-xaxis-texts-g" transform="translate(0, 1.875)"></g></g><g id="SvgjsG1943" class="apexcharts-grid"><line id="SvgjsLine1945" x1="0" y1="50" x2="120" y2="50" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1944" x1="0" y1="1" x2="0" y2="50" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1934" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG1935" class="apexcharts-series seriesx1" data:longestSeries="true" rel="1" data:realIndex="0"><path id="apexcharts-line-0" d="M 0 29C 4.199999999999999 29 7.800000000000001 22.5 12 22.5C 16.2 22.5 19.8 40.5 24 40.5C 28.2 40.5 31.8 42 36 42C 40.2 42 43.8 8 48 8C 52.2 8 55.8 38 60 38C 64.2 38 67.8 45 72 45C 76.2 45 79.8 44.5 84 44.5C 88.2 44.5 91.8 3.5 96 3.5C 100.2 3.5 103.8 42.5 108 42.5C 112.2 42.5 115.8 9.5 120 9.5" fill="none" fill-opacity="1" stroke="rgba(255,86,48,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="2" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaske4c0r8sz)" pathTo="M 0 29C 4.199999999999999 29 7.800000000000001 22.5 12 22.5C 16.2 22.5 19.8 40.5 24 40.5C 28.2 40.5 31.8 42 36 42C 40.2 42 43.8 8 48 8C 52.2 8 55.8 38 60 38C 64.2 38 67.8 45 72 45C 76.2 45 79.8 44.5 84 44.5C 88.2 44.5 91.8 3.5 96 3.5C 100.2 3.5 103.8 42.5 108 42.5C 112.2 42.5 115.8 9.5 120 9.5" pathFrom="M -1 50L -1 50L 12 50L 24 50L 36 50L 48 50L 60 50L 72 50L 84 50L 96 50L 108 50L 120 50"></path><g id="SvgjsG1936" class="apexcharts-series-markers-wrap"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1951" r="0" cx="0" cy="0" class="apexcharts-marker wi73ist5v no-pointer-events" stroke="#ffffff" fill="#ff5630" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g><g id="SvgjsG1937" class="apexcharts-datalabels"></g></g></g><line id="SvgjsLine1946" x1="0" y1="0" x2="120" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1947" x1="0" y1="0" x2="120" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1948" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1949" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1950" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1929" width="0" height="0" x="0" y="0" rx="0" ry="0" fill="#fefefe" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0"></rect><g id="SvgjsG1941" class="apexcharts-yaxis" rel="0" transform="translate(-21, 0)"><g id="SvgjsG1942" class="apexcharts-yaxis-texts-g"></g></g></svg><div class="apexcharts-legend"></div><div class="apexcharts-tooltip light"><div class="apexcharts-tooltip-series-group"><span class="apexcharts-tooltip-marker" style="background-color: rgb(255, 86, 48);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div></div></div>
-                    <div class="resize-triggers"><div class="expand-trigger"><div style="width: 121px; height: 51px;"></div></div><div class="contract-trigger"></div></div></div>
+                    <div style="max-width: 120px;">
+                      <div class="spark-chart" data-toggle="spark-chart" data-type="line" data-height="50" data-color="danger" data-dataset="[42, 55, 19, 16, 84, 24, 10, 11, 93, 15, 81]"></div>
+                    </div>
                   </div>
                   <div class="col-auto text-center">
                     <span class="d-block h4 mb-0 text-white">8</span>
@@ -2002,11 +1899,11 @@
             <!-- Calendar -->
             <div class="card widget-calendar">
               <div class="card-header">
-                <div class="text-sm text-muted mb-1 widget-calendar-year">2019</div>
-                <div class="h5 mb-0 widget-calendar-day">Saturday, Dec 7</div>
+                <div class="text-sm text-muted mb-1 widget-calendar-year"></div>
+                <div class="h5 mb-0 widget-calendar-day"></div>
               </div>
               <!-- Calendar -->
-              <div data-toggle="widget-calendar" class="fc fc-unthemed fc-ltr"><div class="fc-toolbar fc-header-toolbar"><div class="fc-left"><button type="button" class="fc-prev-button fc-button fc-state-default fc-corner-left fc-corner-right" aria-label="prev"><span class="fc-icon fc-icon- fas fa-angle-left"></span></button></div><div class="fc-right"><button type="button" class="fc-next-button fc-button fc-state-default fc-corner-left fc-corner-right" aria-label="next"><span class="fc-icon fc-icon- fas fa-angle-right"></span></button></div><div class="fc-center"><h2>December 2018</h2></div><div class="fc-clear"></div></div><div class="fc-view-container" style=""><div class="fc-view fc-month-view fc-basic-view" style=""><table class=""><thead class="fc-head"><tr><td class="fc-head-container fc-widget-header"><div class="fc-row fc-widget-header"><table class=""><thead><tr><th class="fc-day-header fc-widget-header fc-sun"><span>Sun</span></th><th class="fc-day-header fc-widget-header fc-mon"><span>Mon</span></th><th class="fc-day-header fc-widget-header fc-tue"><span>Tue</span></th><th class="fc-day-header fc-widget-header fc-wed"><span>Wed</span></th><th class="fc-day-header fc-widget-header fc-thu"><span>Thu</span></th><th class="fc-day-header fc-widget-header fc-fri"><span>Fri</span></th><th class="fc-day-header fc-widget-header fc-sat"><span>Sat</span></th></tr></thead></table></div></td></tr></thead><tbody class="fc-body"><tr><td class="fc-widget-content"><div class="fc-scroller fc-day-grid-container" style="overflow: hidden auto; height: auto;"><div class="fc-day-grid fc-unselectable"><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-other-month fc-past" data-date="2018-11-25"></td><td class="fc-day fc-widget-content fc-mon fc-other-month fc-past" data-date="2018-11-26"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2018-11-27"></td><td class="fc-day fc-widget-content fc-wed fc-other-month fc-past" data-date="2018-11-28"></td><td class="fc-day fc-widget-content fc-thu fc-other-month fc-past" data-date="2018-11-29"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-past" data-date="2018-11-30"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2018-12-01"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-other-month fc-past" data-date="2018-11-25"><span class="fc-day-number">25</span></td><td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2018-11-26"><span class="fc-day-number">26</span></td><td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2018-11-27"><span class="fc-day-number">27</span></td><td class="fc-day-top fc-wed fc-other-month fc-past" data-date="2018-11-28"><span class="fc-day-number">28</span></td><td class="fc-day-top fc-thu fc-other-month fc-past" data-date="2018-11-29"><span class="fc-day-number">29</span></td><td class="fc-day-top fc-fri fc-other-month fc-past" data-date="2018-11-30"><span class="fc-day-number">30</span></td><td class="fc-day-top fc-sat fc-past" data-date="2018-12-01"><span class="fc-day-number">1</span></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-success fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">All day conference</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-info fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Meeting with Mary</span></div><div class="fc-resizer fc-end-resizer"></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2018-12-02"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2018-12-03"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2018-12-04"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2018-12-05"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2018-12-06"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2018-12-07"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2018-12-08"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2018-12-02"><span class="fc-day-number">2</span></td><td class="fc-day-top fc-mon fc-past" data-date="2018-12-03"><span class="fc-day-number">3</span></td><td class="fc-day-top fc-tue fc-past" data-date="2018-12-04"><span class="fc-day-number">4</span></td><td class="fc-day-top fc-wed fc-past" data-date="2018-12-05"><span class="fc-day-number">5</span></td><td class="fc-day-top fc-thu fc-past" data-date="2018-12-06"><span class="fc-day-number">6</span></td><td class="fc-day-top fc-fri fc-past" data-date="2018-12-07"><span class="fc-day-number">7</span></td><td class="fc-day-top fc-sat fc-past" data-date="2018-12-08"><span class="fc-day-number">8</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-warning fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Cyber Week</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-danger fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Winter Hackaton</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td></td><td></td><td></td><td class="fc-event-container" colspan="2"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-warning fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Digital event</span></div><div class="fc-resizer fc-end-resizer"></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2018-12-09"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2018-12-10"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2018-12-11"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2018-12-12"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2018-12-13"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2018-12-14"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2018-12-15"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2018-12-09"><span class="fc-day-number">9</span></td><td class="fc-day-top fc-mon fc-past" data-date="2018-12-10"><span class="fc-day-number">10</span></td><td class="fc-day-top fc-tue fc-past" data-date="2018-12-11"><span class="fc-day-number">11</span></td><td class="fc-day-top fc-wed fc-past" data-date="2018-12-12"><span class="fc-day-number">12</span></td><td class="fc-day-top fc-thu fc-past" data-date="2018-12-13"><span class="fc-day-number">13</span></td><td class="fc-day-top fc-fri fc-past" data-date="2018-12-14"><span class="fc-day-number">14</span></td><td class="fc-day-top fc-sat fc-past" data-date="2018-12-15"><span class="fc-day-number">15</span></td></tr></thead><tbody><tr><td></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-primary fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Marketing event</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2018-12-16"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2018-12-17"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2018-12-18"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2018-12-19"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2018-12-20"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2018-12-21"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2018-12-22"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2018-12-16"><span class="fc-day-number">16</span></td><td class="fc-day-top fc-mon fc-past" data-date="2018-12-17"><span class="fc-day-number">17</span></td><td class="fc-day-top fc-tue fc-past" data-date="2018-12-18"><span class="fc-day-number">18</span></td><td class="fc-day-top fc-wed fc-past" data-date="2018-12-19"><span class="fc-day-number">19</span></td><td class="fc-day-top fc-thu fc-past" data-date="2018-12-20"><span class="fc-day-number">20</span></td><td class="fc-day-top fc-fri fc-past" data-date="2018-12-21"><span class="fc-day-number">21</span></td><td class="fc-day-top fc-sat fc-past" data-date="2018-12-22"><span class="fc-day-number">22</span></td></tr></thead><tbody><tr><td></td><td></td><td></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-danger fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Dinner with Family</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2018-12-23"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2018-12-24"></td><td class="fc-day fc-widget-content fc-tue fc-past" data-date="2018-12-25"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2018-12-26"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2018-12-27"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2018-12-28"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2018-12-29"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2018-12-23"><span class="fc-day-number">23</span></td><td class="fc-day-top fc-mon fc-past" data-date="2018-12-24"><span class="fc-day-number">24</span></td><td class="fc-day-top fc-tue fc-past" data-date="2018-12-25"><span class="fc-day-number">25</span></td><td class="fc-day-top fc-wed fc-past" data-date="2018-12-26"><span class="fc-day-number">26</span></td><td class="fc-day-top fc-thu fc-past" data-date="2018-12-27"><span class="fc-day-number">27</span></td><td class="fc-day-top fc-fri fc-past" data-date="2018-12-28"><span class="fc-day-number">28</span></td><td class="fc-day-top fc-sat fc-past" data-date="2018-12-29"><span class="fc-day-number">29</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end bg-info fc-draggable fc-resizable"><div class="fc-content"> <span class="fc-title">Black Friday</span></div><div class="fc-resizer fc-end-resizer"></div></a></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content" style=""><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2018-12-30"></td><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2018-12-31"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2019-01-01"></td><td class="fc-day fc-widget-content fc-wed fc-other-month fc-past" data-date="2019-01-02"></td><td class="fc-day fc-widget-content fc-thu fc-other-month fc-past" data-date="2019-01-03"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-past" data-date="2019-01-04"></td><td class="fc-day fc-widget-content fc-sat fc-other-month fc-past" data-date="2019-01-05"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-sun fc-past" data-date="2018-12-30"><span class="fc-day-number">30</span></td><td class="fc-day-top fc-mon fc-past" data-date="2018-12-31"><span class="fc-day-number">31</span></td><td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2019-01-01"><span class="fc-day-number">1</span></td><td class="fc-day-top fc-wed fc-other-month fc-past" data-date="2019-01-02"><span class="fc-day-number">2</span></td><td class="fc-day-top fc-thu fc-other-month fc-past" data-date="2019-01-03"><span class="fc-day-number">3</span></td><td class="fc-day-top fc-fri fc-other-month fc-past" data-date="2019-01-04"><span class="fc-day-number">4</span></td><td class="fc-day-top fc-sat fc-other-month fc-past" data-date="2019-01-05"><span class="fc-day-number">5</span></td></tr></thead><tbody><tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div>
+              <div data-toggle="widget-calendar"></div>
             </div>
           </div>
         </div>
@@ -2015,7 +1912,7 @@
       <div class="footer pt-5 pb-4 footer-light" id="footer-main">
         <div class="row text-center text-sm-left align-items-sm-center">
           <div class="col-sm-6">
-            <p class="text-sm mb-0">© 2019 <a href="https://webpixels.io" class="h6 text-sm" target="_blank">Webpixels</a>. All rights reserved.</p>
+            <p class="text-sm mb-0">&copy; 2019 <a href="https://webpixels.io" class="h6 text-sm" target="_blank">Webpixels</a>. All rights reserved.</p>
           </div>
           <div class="col-sm-6 mb-md-0">
             <ul class="nav justify-content-center justify-content-md-end">
@@ -2043,22 +1940,21 @@
           </div>
         </div>
       </div>
-    <div class="sidenav-mask mask-body d-xl-none" data-action="sidenav-unpin" data-target="#sidenav-main"></div></div>
+    </div>
   </div>
   <!-- Scripts -->
   <!-- Core JS - includes jquery, bootstrap, popper, in-view and sticky-kit -->
-  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="js/purpose.core.js"></script>
+  <script src="js/purpose.core.js"></script>
+  <script src="js/vendor/jquery-3.4.1.min.js"></script>
   <!-- Page JS -->
   <script src="libs/progressbar/dist/progressbar.min.js"></script>
   <script src="libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="libs/moment/min/moment.min.js"></script>
   <script src="libs/fullcalendar/dist/fullcalendar.min.js"></script>
   <!-- Purpose JS -->
-  <script src="js/purpose.js"></script><div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"><div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div></div>
-  <!-- Demo JS - remove it when starting your project -->
-  <script src="js/demo.js"></script>
+  <script src="js/purpose.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -2068,50 +1964,7 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-104437451-1');
-  </script>
-
-
-
-<svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg></body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  <script src="js/bootsrap.min.js"></script>
-  <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </script> -->
 </body>
 
 </html>
