@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magna Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <div class="col-12-12 flex-row dashboard-header-wrap">
+            <section class="col-9-12">
+                <a class="dashboard-header-logo-link" href="#">
+                    <i class="dashboard-header-logo" style="height: 20px; width: 99px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="111" height="28" viewBox="0 0 111 28"><text transform="translate(0 22)" fill="#fff" font-size="20" font-family="inherit" font-weight="800"><tspan x="0" y="0">ticketmag</tspan></text></svg>
+                    </i>
+                </a>
+
+
+            </section>
+
+            <section class="col-3-12">
+
+                <div class="header-links-wrap">
+                    <a target="_blank" href="#" class="header-link flex-row pl-20 pr-20 al-ctr text-gray">
+
+                        <span class="med-up">
+                                <svg viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 16.2c-2.3 0-4.2-1.9-4.2-4.2 0-2.3 1.9-4.2 4.2-4.2 2.3 0 4.2 1.9 4.2 4.2 0 2.3-1.9 4.2-4.2 4.2zm0-10.5c-4.2 0-7.8 2.6-9.2 6.3 1.5 3.7 5 6.3 9.2 6.3s7.8-2.6 9.2-6.3c-1.4-3.7-5-6.3-9.2-6.3z"></path><circle fill-rule="evenodd" clip-rule="evenodd" cx="12" cy="12" r="2.5"></circle></svg>
+                        </span>
+
+                        <span class="med-down">
+                            View
+                        </span>
+                    </a>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+    <div class="mobile-nav-header p-8">
+            <span style="font-size:30px;cursor:pointer" class="mobile-nav-toggler" onclick="openNav()">&#9776;</span>
+    </div>    
+
+
+    <main class="full-width-content flex-row">
+        <aside class="desktop-navigation flex-column">
+            <div class="desktop-navigation-content">
+                <div class="event-name-wrap">
+                    <h3 style="font-weight: 400;" class="event-name">
+                        <a href="#">
+                                Toastmasters InterClub Debate
+                        </a>
+                    </h3>
+                    <p class="pt-8">Wed, Sep 4, 2019 6:00 PM</p>
+                </div>
+
+                <ul>
+                    <li>
+                        <div class="navbar-item">
+                            <a class="navbar-link active-navbar-link">
+                                <div class="nav-item-iconized flex-row text-black">
+                                    <!-- <div class="nav-icon ml-10">
+                                            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+                                    </div> -->
+
+                                    <span class="ml-10 menu-text">
+                                        Basic Information
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
+                            <div class="navbar-item">
+                                <a class="navbar-link">
+                                    <div class="nav-item-iconized flex-row text-black">
+                                        <!-- <div class="nav-icon ml-10">
+                                                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+                                        </div> -->
+    
+                                        <span class="ml-10 menu-text">
+                                            Details
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                    </li>
+
+                    <li>
+                            <div class="navbar-item">
+                                <a class="navbar-link">
+                                    <div class="nav-item-iconized flex-row text-black">
+                                        <!-- <div class="nav-icon ml-10">
+                                                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+                                        </div> -->
+    
+                                        <span class="ml-10 menu-text">
+                                            Tickets
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                    </li>                    
+                    
+                </ul>
+
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <div class="dashboard-content m-auto">
+            <h2>Event Dashboard</h2>
+            <section>
+                    <div class="divider"></div>
+            </section>
+        </div>
+
+    </main>
+
+    <!-- Mobile Sidenav -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

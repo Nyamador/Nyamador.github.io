@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Magna Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <div class="col-12-12 flex-row dashboard-header-wrap">
+            <section class="col-9-12">
+                <a class="dashboard-header-logo-link" href="#">
+                    <i class="dashboard-header-logo" style="height: 20px; width: 99px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="111" height="28" viewBox="0 0 111 28">
+                            <text transform="translate(0 22)" fill="#fff" font-size="20" font-family="inherit"
+                                font-weight="800">
+                                <tspan x="0" y="0">ticketmag</tspan>
+                            </text>
+                        </svg>
+                    </i>
+                </a>
+            </section>
+
+            <section class="col-3-12">
+                <div class="header-links-wrap">
+                    <a target="_blank" href="#" class="header-link flex-row pl-20 pr-20 al-ctr text-gray">
+                        <span class="med-up">
+                            <svg viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M12 16.2c-2.3 0-4.2-1.9-4.2-4.2 0-2.3 1.9-4.2 4.2-4.2 2.3 0 4.2 1.9 4.2 4.2 0 2.3-1.9 4.2-4.2 4.2zm0-10.5c-4.2 0-7.8 2.6-9.2 6.3 1.5 3.7 5 6.3 9.2 6.3s7.8-2.6 9.2-6.3c-1.4-3.7-5-6.3-9.2-6.3z">
+                                </path>
+                                <circle fill-rule="evenodd" clip-rule="evenodd" cx="12" cy="12" r="2.5"></circle>
+                            </svg>
+                        </span>
+
+                        <span class="med-down">
+                            View
+                        </span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main class="pl-16 pr-16">
+        <div>
+            <div class="event-list-main">
+                <div class="m-auto title-button-div">
+                    <div class="col-8-12">
+                        <h1>Events</h1>
+                    </div>
+
+                    <div class="col-4-12">
+                        <a class="btn-link" style="float: right;">
+                            Create Event
+                        </a>
+                    </div>
+                </div>
+
+                <div class="events-table">
+                    <div class="events-container">
+                        <div class="events-header bg-gray p-20 col-10-12 m-auto mt-10 al-ctr js-space-between">
+                            <div class="col-11-12">
+                                <div class="col-6-12">
+                                    <span class="strong">Event</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="events-list-items mt-10">
+                            <article class="event-item ">
+                                <a class="flex-row mb-10 p-2" href="#">
+                                    <div class="col-9-12">
+                                        <p class="text-muted">Event Name</p>
+                                        <p class="text-dark-blue">
+                                            Toastmasters InterClub Debate
+                                        </p>
+
+                                        <!-- <p class="text-muted mt-2">Date And Time</p> -->
+                                        <p>
+                                                September 4, 2019 at 6:00 PM GMT
+                                        </p>
+                                        <p class="text-blue">
+                                            Draft
+                                        </p>
+                                    </div>
+
+                                    <div class="col-3-12">
+                                        <p class="text-muted">Total Tickets</p>
+
+                                        <p>
+                                            10 / 200
+                                        </p>
+                                    </div>
+                                </a>
+                            </article>
+
+                            <div class="divider"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MSS</title>
+    <link href="css/reset.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main class="col-9-12 m-auto mt-20">
+        <div class="p-8">
+            <h1 class="mb-10">Form Elements</h1>
+        </div>
+
+        <form>
+            <section class="p-8">
+                <!-- <label for="text">Text</label> -->
+                <div class="m-10">
+                    <input type="text" name="username" id="text" placeholder="Username"
+                        class="form-control has-error " />
+                </div>
+
+                <div class="m-10">
+                    <input type="email" name="username" id="text2" placeholder="Email" class="form-control" />
+                </div>
+
+                <input type="submit" class="m-10 btn" value="Submit" />
+            </section>
+        </form>
+
+        <div class="p-8">
+            <h3>Buttons</h3>
+
+            <section class="p-8">
+                <button class="btn btn-block btn-default">Default</button>
+            </section>
+
+            <section class="p-8">
+                    <button class="btn btn-block btn-green">Green</button>
+            </section>   
+                     
+            <section class="p-8">
+                    <button class="btn btn-block btn-blue">Blue</button>
+            </section>
+        </div>
+
+        <div class="p-8">
+            <div class="divider">
+                <strong class="divider-title ng-binding">Divider</strong>
+            </div>
+
+            <p class="text-muted">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+                officia.
+            </p>
+
+            <p class="text-muted text-disclaimer">
+                    If you click "Log in with Facebook" and are not a Spotify user, you will be registered and you agree to  our
+                    <a href="#">Terms and Conditions</a> and 
+                    <a href="#">Privacy Policy </a>
+                </p>
+
+                <div class="mt-10 box-note">
+                    <p>
+                            Note: This doesn’t include partner devices, such as Sonos and PlayStation. For more information about logging out (or unlinking) Spotify from a partner device, check the device’s manufacturer guide.
+                    </p>
+                </div>
+        </div>
+
+        <div class="p-8">
+            <p class="h4">Card</p>
+            <div class="divider">
+
+            </div>
+
+            <section class="card-wrap">
+                <div class="card-container">   
+                    <div class="card-gradient-header-purple">
+                        Header
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <div class="p-8">
+
+            <div class="divider"></div>
+
+            <button class="trigger">Click here to trigger the modal!</button>
+        <div class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+
+            
+            <h1>Hello, I am a modal!</h1>
+        </div>
+
+        </div>
+    </main>
+
+    <script>
+    	
+        var modal = document.querySelector(".modal");
+    var trigger = document.querySelector(".trigger");
+    var closeButton = document.querySelector(".close-button");
+
+    function toggleModal() {
+        modal.classList.toggle("show-modal");
+    }
+
+    function windowOnClick(event) {
+        if (event.target === modal) {
+            toggleModal();
+        }
+    }
+
+    trigger.addEventListener("click", toggleModal);
+    closeButton.addEventListener("click", toggleModal);
+    window.addEventListener("click", windowOnClick);
+    </script>
+</body>
+
+</html>
