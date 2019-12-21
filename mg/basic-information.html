@@ -1001,7 +1001,7 @@
                 </li>           
 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html" role="button" aria-controls="sidebarDashboards">
+                    <a class="nav-link" href="tickets.html" role="button" aria-controls="sidebarDashboards">
                       <i class="fe fe-tag"></i>
                        Tickets
                     </a>
@@ -3199,13 +3199,30 @@
 
                   <div class="form-group">
                     <label>
+                        Event Type
+                    </label>
+                    <select class="form-control" data-toggle="select" data-options='{"placeholder": "Organizer"}'>
+                            <option>Games</option>
+                            <option>Webinar</option>
+                    </select>                    
+                  </div>                  
+
+                  <div class="form-group">
+                    <label>
                         Organizer
                     </label>
-                    <select class="form-control" data-toggle="select" data-options='{"placeholder": "Organizer"}' multiple>
+                    <select class="form-control" data-toggle="select" data-options='{"placeholder": "Organizer"}'>
                             <option>Toastmasters</option>
                             <option>Google</option>
                     </select>                    
                   </div>
+
+                  <div class="form-group">
+                    <label>
+                      Event Link (For Online Events)
+                    </label>
+                    <input type="text" class="form-control">
+                  </div>                  
 
                   <!-- Project tags -->
                   <div class="form-group">
@@ -3322,13 +3339,17 @@
                   </div>
                 </div>    
                 
-                      <!-- Start date -->
+                      <!-- Location -->
                       <div class="form-group">
                         <label>
                           Location
                         </label>
-                        <input type="text" class="form-control">
-                      </div>                
+                        <input type="text" class="form-control" disabled>
+                      </div>  
+
+                <div class="alert alert-light" role="alert">
+                   You can't change the location for this event because this event has tickets
+                  </div>              
 
                 <!-- Header -->
                 <div class="header mt-md-5">
@@ -3346,6 +3367,7 @@
                             <i class="fe fe-clock"></i>
                             Date and Time
                         </h1>
+                       
     
                       </div>
                     </div> <!-- / .row -->
@@ -3376,7 +3398,7 @@
                         <input type="text" class="form-control" data-toggle="flatpickr">
                       </div>
 
-                    
+                
     
                     </div>
                   </div> <!-- / .row -->                
@@ -3403,9 +3425,24 @@
                         <input type="text" class="form-control" data-mask="00:00">
                       </div>
 
-                    
+                      
     
                     </div>
+
+                    <div class="card bg-light border">
+                            <div class="card-body">
+                              
+                              <h4 class="mb-2">
+                                <i class="fe fe-alert-triangle"></i> Warning
+                              </h4>
+        
+                              <p class="small text-muted mb-0">
+                               You can't change this setting because this event has already been published
+                              </p>
+        
+                            </div>
+                     </div>                    
+
                   </div> <!-- / .row --> 
 
 
