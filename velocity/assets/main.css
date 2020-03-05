@@ -1,0 +1,26 @@
+/* =======  LARGE SCREENS ======== */
+@media (min-width: 640px){
+
+
+
+}
+
+/* =======  SMALL SCREENS ======== */
+
+@media (max-width: 640px){
+
+.main-content{
+    height: 100vh;
+    justify-content: center;
+}    
+
+}
+
+/* ======= GENERAL ========= */
+.form-group{
+    margin-bottom: 20px !important;
+}
+
+.auth-btn{
+    margin-top: 40px !important;
+}

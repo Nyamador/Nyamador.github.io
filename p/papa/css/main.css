@@ -375,7 +375,7 @@ ul{
 }
 
 .image-container{
-  background-image: url('../img/group.png');
+  background-image: url('../img/papa.png');
   background-repeat: no-repeat;
   height: 100vh;
   /* margin-left: auto; */
@@ -460,4 +460,8 @@ h1{
 .cta-container{
  margin-left: 40px;
  margin-top: 20px;
+}
+
+.skills{
+  margin-left: 40px;
 }
