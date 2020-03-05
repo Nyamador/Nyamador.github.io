@@ -24,6 +24,35 @@
     padding: 100px;
 }
 
+.dashboard-main{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  height: 100vh !important;
+}
+
+.mobile-nav{
+    border: 0 !important;
+    border-right: 1px solid #EDEDED !important;
+    width: 20vw;
+    flex-direction: column;
+    height: 100vh !important;
+}
+
+.dashboard-content{
+    width: 80vw;
+}
+
+.mobile-icon{
+    display: none;
+}
+
 }
 
 /* =======  SMALL SCREENS ======== */
@@ -31,9 +60,7 @@
 @media (max-width: 640px){
 
 .main-content{
-    height: 100vh;
-    justify-content: center;
-      display: -webkit-box;
+    display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
