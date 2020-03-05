@@ -50,9 +50,17 @@
     display: none !important;
 }
 
+.dashboard-content{
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-/* ======= GENERAL ========= */
+}
+/* ======= Mobile End ======= */
+
+
+/* ======= GLOBAL ========= */
 .form-group{
     margin-bottom: 20px !important;
 }
@@ -68,4 +76,21 @@
 .interaction-container{
     margin: auto;
     width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    line-height: 1.8; 
+    /* text-align: center; */
+}
+
+.mobile-nav{
+    border-bottom: 1px solid #EDEDED;
+}
+
+.box{
+    border-radius: 8px;
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 300px;
 }
