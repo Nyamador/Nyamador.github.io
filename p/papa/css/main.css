@@ -143,6 +143,10 @@ video {
   text-decoration: none;
 }
 
+h2{
+  margin: 0;
+}
+
 
 
 /*
@@ -375,13 +379,17 @@ ul{
 }
 
 .image-container{
-  background-image: url('../img/papa.png');
+  background-image: url('../img/g18.png');
   background-repeat: no-repeat;
   height: 100vh;
   /* margin-left: auto; */
   width: 50vw;
   z-index: 0;
   filter: grayscale(100%);
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .navbar{
@@ -464,4 +472,18 @@ h1{
 
 .skills{
   margin-left: 40px;
+}
+
+.social-icons{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.social-divider{
+      transform: rotate(90deg);
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
