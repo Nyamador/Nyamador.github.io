@@ -19,6 +19,7 @@ html {
   --black: #000000;
   --white: #ffffff;
   --gray: #f8f8f8;
+  --dark-gray : #444444;
   --light: #c2c2cc;
 }
 
@@ -758,6 +759,14 @@ input {
 
 .text-gray {
   color: var(--light);
+}
+
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+
+.text-orange {
+  color: var(--orange);
 }
 
 .text-white {
