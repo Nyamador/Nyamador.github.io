@@ -72,7 +72,7 @@ body::focus {
   .detail-container {
     margin: 0 auto;
     max-width: 1200px;
-    margin-top: 70px !important;
+    margin-top: 90px !important;
   }
 
   .vel-mobile--header {
@@ -312,7 +312,6 @@ body::focus {
   border-bottom: 1px solid #ededed;
 }
 
-
 .profile-navbar--dark {
   background-color: #000;
   -webkit-box-orient: vertical;
@@ -388,7 +387,7 @@ body::focus {
   margin-top: 50px;
 }
 
-.vel-player--container{
+.vel-player--container {
   border-bottom: none;
   margin-bottom: 24px;
   padding-bottom: 0;
@@ -616,9 +615,8 @@ a.tab-svg:visited {
   .post-cell {
     margin-right: 3px;
   }
-}/
-
-.posts-wrap {
+}
+/ .posts-wrap {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
@@ -645,34 +643,32 @@ a.tab-svg:visited {
 }
 /* ================================================= [/-----PROFILE---/] ============================================ */
 
-
-
 /* ================================================[ACCOUNT]================================================= */
 @media (min-width: 640px) {
-.account-container{
-  width: 83%;
-  margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  .account-container {
+    width: 83%;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .account-options {
+    width: 25%;
+  }
+
+  .account-main {
+    width: 75%;
+  }
+
+  .account-menu {
+    position: fixed;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
 }
 
-.account-options{
-  width: 25%;
-}
-
-.account-main{
-  width: 75%;
-}
-
-.account-menu{
-  position: fixed;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-}
-
-.list-link{
+.list-link {
   text-align: left;
   color: #333;
   font-size: 16px;
@@ -682,27 +678,26 @@ a.tab-svg:visited {
   hyphens: auto;
   word-wrap: break-word;
   font-weight: 400;
-  letter-spacing: -.4px;
+  letter-spacing: -0.4px;
 }
 
-.setting-text{
+.setting-text {
   font-weight: 700;
 }
 
-.setting-text:hover{
+.setting-text:hover {
   text-decoration: underline;
   color: #000;
 }
 
-.account-main-wrap{
+.account-main-wrap {
   margin-bottom: 60px;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-
 }
 
-.inactive{
+.inactive {
   color: #8e8e8e;
 }
 .timeline-item {
@@ -719,10 +714,10 @@ a.tab-svg:visited {
 
 @keyframes placeHolderShimmer {
   0% {
-      background-position: -468px 0
+    background-position: -468px 0;
   }
   100% {
-      background-position: 468px 0
+    background-position: 468px 0;
   }
 }
 
@@ -739,7 +734,7 @@ a.tab-svg:visited {
   position: relative;
 }
 
-.account-title{
+.account-title {
   font-size: 36px;
 }
 /* ================================================[/ACCOUNT//]================================================ */
