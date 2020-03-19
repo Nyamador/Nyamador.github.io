@@ -373,6 +373,8 @@ ul{
   margin-left: auto;
 }
 
+
+
 .left-side{
   width: 50vw;
   height: 100vh;
@@ -486,4 +488,60 @@ h1{
     margin: 0;
     margin-top: 60px;
     margin-bottom: 60px;
+}
+
+@media (min-width: 800px){
+.skills-mobile{
+  display: none;
+}
+
+}
+
+@media (max-width: 800px){
+
+  .navbar{
+    padding: 10px 0;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+
+  .image-container, .skills{
+    display: none;
+  }
+
+  .flex{
+    flex-direction: column;
+  }
+
+  .left-side{
+    width: 100vw;
+  }
+
+  .header-text{
+    margin: 0 auto;
+  }
+
+  .skills-mobile{
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .h2-text{
+    font-size: 50px;
+  }
+
+  .cta-container{
+    margin: 0 auto;
+    width: 100vw;
+    align-items: center;
+  }
+  
+  .cta-container >  .action{
+    width: 80vw !important;
+    margin-bottom: 8px !important;
+    margin: 0 auto;
+  }
+
 }
