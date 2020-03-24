@@ -75,13 +75,57 @@
     align-items: center;
 }
 
+@media only screen and (max-width: 640px){
 .scrollable-container{
     overflow-x: scroll;
     width: 100%;
 
 }
 
+.scrollable-container:last-of-type{
+    margin-bottom: 50px;
+}
+
 .scrollable{
     width: 900px;
+}
+
+.category-item{
+    margin-right: 20px;
+}
+
+.category-name{
+    font-size: 12px !important;
+}
+
+.category-row > .category-item:first-child{
+    margin-left: 10px;
+}
+
+.category-row > .box:first-child{
+    margin-left: 10px;
+}
+
+.gray{
+    margin-left: 10px;
+}
+
+.cart-counter{
+    line-height: 1.1em;
+    background: #e60023;
+    border-radius: 50%;
+    position: absolute;
+    right: 13px;
+    margin-left: 10px;
+    color: #fff;
+    min-width: 18px;
+    min-height: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    text-indent: -1px;
+    top: 12px;
+    text-align: center;
+}
+
 }
 /* ########  MOBILE SCREENS ########## */
