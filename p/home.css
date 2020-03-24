@@ -66,9 +66,22 @@
 
 .category-item{
     width: 20%;
-    background-color: #8e8e8e;
+    background-color: #fbfbfb;
     height: 150px;
     border-radius: 12px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scrollable-container{
+    overflow-x: scroll;
+    width: 100%;
+
+}
+
+.scrollable{
+    width: 900px;
 }
 /* ########  MOBILE SCREENS ########## */

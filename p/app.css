@@ -13,7 +13,7 @@ body::focus {
 
 @media (max-width: 640px) {
   .vel-mobile--header {
-    display: none !important;
+    display: none ;
   }
 
   .header-buttons {
@@ -738,3 +738,5 @@ a.tab-svg:visited {
   font-size: 36px;
 }
 /* ================================================[/ACCOUNT//]================================================ */
+
+
