@@ -1,5 +1,5 @@
 :root {
-  --red: #e60023;
+  --orange: #ff6500;
   --black: #000000;
   --warm-black: #2d2926;
   --gray: #f7f7f7;
@@ -25,7 +25,7 @@ html {
 /* *:focus{
   outline: 0;
   box-shadow: 0px 6px 8px 2px rgba(196, 74, 74, 0.3);
-  border-color: #e60023;
+  border-color: #ff6500;
 } */
 
 body {
@@ -481,13 +481,13 @@ h6 {
 }
 
 .vel-button--default {
-  border: 1px solid #e60023;
-  color: #e60023;
+  border: 1px solid #ff6500;
+  color: #ff6500;
 }
 
 .vel-button--text {
   border-color: transparent;
-  color: #e60023;
+  color: #ff6500;
 }
 
 .vel-button--text:not(.vel-button--disabled):hover {
@@ -573,8 +573,8 @@ body:not([data-focus-source="keyboard"]) :focus {
 
 /* Outlined */
 .vel-button--positive {
-  background-color: #e60023;
-  border-color: #e60023;
+  background-color: #ff6500;
+  border-color: #ff6500;
   color: #fff;
   box-shadow: 0px 6px 8px 2px rgba(196, 74, 74, 0.3);
 }
@@ -703,10 +703,10 @@ body:not([data-focus-source="keyboard"]) :focus {
   transition: all 0.4s;
 
   background: #6a7dfe;
-  background: -webkit-linear-gradient(left, #fb0026, #e60023);
-  background: -o-linear-gradient(left, #fb0026, #e60023);
-  background: -moz-linear-gradient(left, #fb0026, #e60023);
-  background: linear-gradient(left, #fb0026, #e60023);
+  background: -webkit-linear-gradient(left, #fb0026, #ff6500);
+  background: -o-linear-gradient(left, #fb0026, #ff6500);
+  background: -moz-linear-gradient(left, #fb0026, #ff6500);
+  background: linear-gradient(left, #fb0026, #ff6500);
 }
 
 .focus-fieldInput::after {
@@ -1008,11 +1008,11 @@ body:not([data-focus-source="keyboard"]) :focus {
 }
 
 input:checked + .slider {
-  background-color: #e60023;
+  background-color: #ff6500;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #e60023;
+  box-shadow: 0 0 1px #ff6500;
 }
 
 input:checked + .slider:before {
@@ -1062,7 +1062,7 @@ input:checked + .slider:before {
   left: 0;
   height: 20px;
   width: 20px;
-  border: 1px solid #e60023;
+  border: 1px solid #ff6500;
   border-radius: 50%;
 }
 
@@ -1090,7 +1090,7 @@ input:checked + .slider:before {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #e60023;
+  background: #ff6500;
 }
 
 /* =============NAVS================  */
@@ -1163,7 +1163,7 @@ input[type="number"] {
 }
 
 .stories.facesnap .story > .item-link > .item-preview {
-  background: #e60023 !important;
+  background: #ff6500 !important;
 }
 .feed-container {
   margin-top: 70px;
@@ -1362,7 +1362,7 @@ article.vel-feed-card:last-child {
 
 .cart-counter{
   line-height: 1.1em;
-  background: #e60023;
+  background: #ff6500;
   border-radius: 50%;
   position: absolute;
   right: 1px;
@@ -1894,7 +1894,7 @@ article.vel-feed-card:last-child {
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 120px;
-  background-color: #e60023;
+  background-color: #ff6500;
   color: #fff;
   text-align: center;
   padding: 5px 0;
