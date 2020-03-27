@@ -87,13 +87,24 @@
                 <img class="cart-item-image" src="assets/watch1.webp">
             </div>
 
-            <div class="col-10-12 flex-row ml-10">
+            <div class="col-10-12 flex-column ml-10">
                 <h4 class="col-4-12">
                     <a href="#">
                         Bobobird Watch Red
                     </a>
                 </h4>
-                <p>s</p>
+                
+                <div class="quantity flex-row" style="height: 40px;">
+                    <!-- <small class="mr-4">Quantity : </small> -->
+
+                      <div class="quantity-nav flex-row">
+                        <div class="quantity-button quantity-down">-</div>
+                        <input type="number" min="1" max="10" step="1" value="1" readonly="">
+                        <div class="quantity-button quantity-up mr-4 ml-8">+</div>
+                      </div>
+                  </div>                
+
+
                 <p class="col-3-12">Subtotal: <strong> GHC 200 </strong></p>
                 <!-- <a href="#" class="vel-button vel-button--grayscale vel-button block view-product">
                     View
@@ -123,5 +134,45 @@
           </div>
         </div>
       </nav>
+
+      <script src="jquery.js"></script>
+      <script>
+
+$('.quantity').each(function() {
+      var spinner = jQuery(this),
+        input = spinner.find('input[type="number"]'),
+        btnUp = spinner.find('.quantity-up'),
+        btnDown = spinner.find('.quantity-down'),
+        min = input.attr('min'),
+        max = input.attr('max');
+
+      btnUp.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue >= max) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue + 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+        const unitCost = $('#feed-product-price').data('unitCost');
+        $('#feed-product-price').text("GHC " + unitCost * newVal);
+      });
+
+      btnDown.click(function() {
+        var oldValue = parseFloat(input.val());
+        if (oldValue <= min) {
+          var newVal = oldValue;
+        } else {
+          var newVal = oldValue - 1;
+        }
+        spinner.find("input").val(newVal);
+        spinner.find("input").trigger("change");
+        const unitCost = $('#feed-product-price').data('unitCost');
+        $('#feed-product-price').text("GHC " + unitCost * newVal);
+      });
+
+    });
+      </script>
 </body>
 </html>
