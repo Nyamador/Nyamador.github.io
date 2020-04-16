@@ -23,7 +23,22 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <main>  
+  <main>
+
+    <div class="mobile-menu-overlay flex-column" id="menu">
+          <div class="flex">
+                <img id="close" src="img/x.svg" height="20" width="20">
+          </div>
+          <section class="menu-links">
+            <a>About</a>
+            <a>Papa's Vision</a>
+            <a>Papa's Videos</a>
+            <a>Podcast</a>
+            <a>Papa's Journal</a>
+            <a>Contact</a>
+          </section>
+    </div>
+
 
     <header class="navbar flex">
       <ul class="nav-menu">
@@ -65,6 +80,10 @@
 
       </ul>
 
+      <div class="menu" id="menu-trigger">
+        <img src="img/menu.svg" alt="">
+      </div>
+
 
       <div class="btn-container">
         <button class="outlined-btn">
@@ -87,6 +106,10 @@
               <h5>Keynote Speaker | Serial Mentor  | Relentless Optimizer</h5>
             </div>
 
+      <div class="mobile-papa">
+        <img src="img/papa-mobile.png" height="270">
+      </div>
+
       <div class="flex cta-container">
         <button class="filled-btn action" style="width: 30%;padding:20px 0;">
           <strong>Book Papa Now</strong>
@@ -101,7 +124,27 @@
         <h4>Keynote Speaker   &nbsp;&nbsp; | &nbsp;&nbsp; Serial Mentor  &nbsp;&nbsp;| &nbsp;&nbsp; Relentless Optimizer</h4>
       </div>
 
+      <div class="mobile-divider"></div>
+      <div class="social-icon-mobile col-6-12" style="margin-left: auto;margin-right: auto;">
+          <p>Follow Me</p>
+          
+          <a href="https://instagram.com" class="icon">
+            <img src="img/instagram.svg" height="20">
+          </a>
+          <a href="https://facebook.com" class="icon">
+            <img src="img/facebook.svg" height="20">
+          </a>     
+          <a href="https://twitter.com" class="icon">
+            <img src="img/twitter.svg" height="20">
+          </a>      
+          <a href="https://youtube.com" class="icon">
+            <img src="img/youtube.svg" height="20">
+          </a>  
+        </div>
+
     </section>
+
+
 
     <div class="image-container">
 
@@ -139,6 +182,17 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script> -->
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+  <script>
+    const trigger = document.querySelector('#menu-trigger');
+    const menu = document.querySelector('#menu');
+    const close = document.querySelector('#close');
+    trigger.addEventListener('click', function(event){
+      menu.style.display = 'block';
+    })
+    close.addEventListener('click', function (event) {
+      menu.style.display = 'none';
+    })
+  </script>
 </body>
 
 </html>

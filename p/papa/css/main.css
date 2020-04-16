@@ -495,9 +495,98 @@ h1{
   display: none;
 }
 
+.social-icon-mobile,
+.mobile-papa,
+.menu{
+  display: none !important;
+}
+
+.mobile-menu-overlay{
+  display: none;
+}
+
+
 }
 
 @media (max-width: 800px){
+
+  .mobile-menu-overlay{
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+    display: none;
+    padding: 20px;
+    animation-name: bounceOut;
+    animation-duration: 0.4s;
+  }
+
+  #close{
+    align-self: center;
+  }
+
+  .menu-links{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    line-height: 2;
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  @keyframes bounceOut {
+    from{
+      /*border-radius: 900px;*/
+      border-radius: 50%;
+      border-top-left-radius: 0%;
+      border-top-right-radius: 50%;
+      width: 30vw;
+      height: 40vh;
+    }
+
+    to{
+      border-bottom-right-radiusradius: 0%;
+      width: 100vw;
+      height: 100vh;
+    }
+
+
+  }
+
+  .menu{
+    margin-left: 10px;
+  }
+
+  .navbar{
+    flex-direction: row !important;
+    width: 100vw;
+  }
+
+  .header-text{
+    margin-top: 190px !important;
+  }
+
+  .mobile-papa{
+    text-align: center;
+    filter: grayscale(100%);
+  }
+
+  .social-icon-mobile{
+    bottom: 0;
+    width: 100vw;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .icon{
+    margin-right: 10px;
+  }
+
+  .mobile-divider{
+    display: none !important;
+    border-top: 1px solid #ededed;
+  }
 
   .navbar{
     padding: 10px 0;
@@ -537,7 +626,7 @@ h1{
     width: 100vw;
     align-items: center;
   }
-  
+
   .cta-container >  .action{
     width: 80vw !important;
     margin-bottom: 8px !important;
