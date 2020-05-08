@@ -36,12 +36,12 @@ body {
 }
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #76f294;
 }
 .btn_get:hover {
     color: #fff;
-    background: #6754e2;
-    border-color: #6754e2;
+    background: #76f294;
+    border-color: #76f294;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -53,7 +53,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-    color: #5e2ced;
+    color: #76f294;
 }
 .new_footer_top .f_widget.about-widget .f_list li {
     margin-bottom: 11px;
@@ -105,19 +105,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .btn_get_two {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #76f294;
+    border-color: #76f294;
     color: #fff;
 }
 
 .btn_get_two:hover {
     background: transparent;
-    color: #5e2ced;
+    color: #76f294;
 }
 
 .new_footer_top .f_social_icon a:hover {
-    background: #5e2ced;
-    border-color: #5e2ced;
+    background: #76f294;
+    border-color: #76f294;
   color:white;
 }
 .new_footer_top .f_social_icon a + a {
