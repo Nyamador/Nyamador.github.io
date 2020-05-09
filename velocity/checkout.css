@@ -695,3 +695,35 @@ label{
     pointer-events: none;
     background-color: #E8E8E8;
 }
+
+.text-primary{
+  color:#F68C1E;
+}
+
+.shipment-item:last-child{
+  border-bottom: 1px solid #F7F7F7;
+}
+
+.main-content{
+  padding: 0 10px;
+  margin-bottom: 90px;
+}
+
+.button{
+  border-radius: 2px;
+  width: 100%;
+  padding: 12px;
+  background-color: #F68C1E;
+  color: white;
+  font-weight: bold;
+}
+
+.cta-container{
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 14px 25px;
+  z-index: 10;
+  border-top: 1px solid #ededed;
+}
