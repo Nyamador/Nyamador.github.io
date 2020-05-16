@@ -40,8 +40,8 @@ body {
 }
 .btn_get:hover {
     color: #fff;
-    background: #76f294;
-    border-color: #76f294;
+    background: #000000;
+    border-color: #000000;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -105,13 +105,13 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .btn_get_two {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #76f294;
-    border-color: #76f294;
+    background: #000000;
+    border-color: #000000;
     color: #fff;
 }
 
 .btn_get_two:hover {
-    background: transparent;
+    background: black;
     color: #76f294;
 }
 
@@ -202,4 +202,39 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.loading_overlay{
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    background: #323233d6;
+    top: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overflow{
+    overflow: hidden !important;
+}
+
+.block{
+    display: block;
+}
+
+.fixed-button{
+    top: 0;
+    width: 100vw;
+    position: fixed;
+}
+
+.shipment_request{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 0;
+}
 /*************footer End*****************/

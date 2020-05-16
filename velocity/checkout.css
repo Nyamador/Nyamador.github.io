@@ -636,13 +636,6 @@ body {
   color: rgba(0, 0, 0, 0.56) !important;
 }
 
-@media(max-width: 640px){
-
-}
-@media (min-width: 640px){
-
-}
-
 .header{
     background-color: white;
     height: 50px;
@@ -701,7 +694,11 @@ label{
 }
 
 .shipment-item:last-child{
+  border-bottom: none;
+}
+.shipment-item{
   border-bottom: 1px solid #F7F7F7;
+  margin-bottom: 8px;
 }
 
 .main-content{
@@ -726,4 +723,126 @@ label{
   padding: 14px 25px;
   z-index: 10;
   border-top: 1px solid #ededed;
+}
+
+.has-error{
+  border-color: #e60023;
+}
+
+.has-error:focus{
+  border-color: #e60023;
+}
+
+.error-text{
+  color: #e60023;
+  padding: 12px;
+}
+
+.card-gradient-header-purple {
+  border-width: initial;
+  border-style: none;
+  border-image: initial;
+  background: linear-gradient(
+    -180deg,
+    rgb(182, 43, 190) 0%,
+    rgb(150, 34, 185) 100%
+  );
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.card-spaceer{
+  display: none;
+}
+
+.desktop-pay{
+  display: none;
+}
+
+
+@media(min-width: 800px){
+  .address-card{
+    width: 70%;
+  }
+
+  .main-content{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+
+  .cta-wrap{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .cta-container{
+    width: 70%;
+    position: unset;
+    display: none ;
+  }
+
+  .form-group{
+    width: 49%;
+  }
+
+  .form-row{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card-spacer{
+    width: 30%;
+  }
+
+  .addresses{
+    margin-bottom: 10px;
+  }
+
+  .card{
+    padding: 20px;
+  }
+  .desktop-pay{
+    display: block;
+  }
 }
